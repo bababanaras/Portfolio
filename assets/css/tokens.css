@@ -1,0 +1,65 @@
+/* Warm Editorial design tokens.
+   Light is the default; dark follows the OS unless <html data-theme> forces one. */
+
+:root {
+  --canvas: #faf9f5;
+  --soft: #f5f0e8;
+  --card: #efe9de;
+  --ink: #141413;
+  --body-strong: #252523;
+  --body: #3d3d3a;
+  --muted: #6c6a64;
+  --hair: #e6dfd8;
+
+  --dark: #181715;
+  --dark-el: #252320;
+  --dark-hair: #3a3732;
+  --on-dark: #faf9f5;
+  --on-dark-soft: #a09d96;
+
+  --agent-text: #9e5038;
+  --accent: #cc785c;
+
+  --serif: "Cormorant Garamond", "EB Garamond", Garamond, "Times New Roman", serif;
+  --sans: Inter, -apple-system, "Segoe UI", sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, monospace;
+
+  --max: 1280px;
+  --gutter: 24px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --ease: cubic-bezier(0.2, 0, 0, 1);
+
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --canvas: #181715;
+    --soft: #1f1e1b;
+    --card: #252320;
+    --ink: #faf9f5;
+    --body-strong: #ece8e1;
+    --body: #d4d0c8;
+    --muted: #a09d96;
+    --hair: #3a3732;
+    --dark: #0e0d0c;
+    --agent-text: #e0927a;
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme="dark"] {
+  --canvas: #181715;
+  --soft: #1f1e1b;
+  --card: #252320;
+  --ink: #faf9f5;
+  --body-strong: #ece8e1;
+  --body: #d4d0c8;
+  --muted: #a09d96;
+  --hair: #3a3732;
+  --dark: #0e0d0c;
+  --agent-text: #e0927a;
+  color-scheme: dark;
+}

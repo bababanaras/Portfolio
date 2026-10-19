@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How I think — Varun Velhankar</title>
+<meta name="description" content="How I design AI agents people can trust, and how I lead design so the right calls get made fast.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/css/tokens.css">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="container site-header">
+  <a class="brand" href="index.html">Varun Velhankar</a>
+  <nav class="nav" aria-label="Primary">
+    <a href="index.html#work">Work</a>
+    <a href="how-i-think.html" aria-current="page">How I think</a>
+    <a href="writing.html">Writing</a>
+    <a href="about.html">About</a>
+    <a class="nav__cta" href="#hello">Say hello</a>
+  </nav>
+</header>
+
+<main id="main">
+
+<section class="container hero hero--stack">
+  <p class="eyebrow">How I think</p>
+  <h1 class="serif display-xl" style="max-width: 1040px">Design is a decision-making discipline. My job is to make the right decisions visible, and the wrong ones <em class="em-agent">impossible to ship.</em></h1>
+  <p class="lede" style="max-width: 620px">Two halves of the same practice: how I design AI agents people can trust, and how I lead design so the right calls get made fast.</p>
+  <div class="actions" style="gap: 8px 24px">
+    <a class="text-link" href="#agents" style="padding: 10px 0">Designing agents</a>
+    <a class="text-link" href="#leading" style="padding: 10px 0">Leading design</a>
+  </div>
+</section>
+
+<section id="agents" class="on-dark">
+  <div class="container pad-96 stack" style="gap: 56px">
+    <div class="row row--tight" style="align-items: flex-end">
+      <span class="row__label" style="padding-top: 0">Part one</span>
+      <h2 class="serif heading-1 row__body row__body--md">Designing agents people can trust with a lease.</h2>
+    </div>
+
+    <div id="autonomy" class="row row--tight principle">
+      <span class="principle__num">01</span>
+      <div class="principle__body">
+        <h3 class="serif heading-3">Autonomy is a dial, not a switch.</h3>
+        <p>Every action an agent can take gets its own setting: decide, ask, or hand off. Two questions set it. How much does a mistake cost? Can it be undone? Not: what can the model technically do?</p>
+        <div class="chips">
+          <span class="chip chip--fill">Booking a tour · decides</span>
+          <span class="chip">Changing a move-in date · asks</span>
+          <span class="chip chip--dashed">Lease exception · hands off</span>
+        </div>
+      </div>
+    </div>
+
+    <div id="handoff" class="row row--tight principle">
+      <span class="principle__num">02</span>
+      <div class="principle__body">
+        <h3 class="serif heading-3">Design the handoff before the happy path.</h3>
+        <p>Trust is won or lost the moment an agent says "this isn't mine to decide." I design that moment first: what the renter is told, what the person on the other end receives in Vida, and how fast the loop closes.</p>
+      </div>
+    </div>
+
+    <div id="undo" class="row row--tight principle">
+      <span class="principle__num">03</span>
+      <div class="principle__body">
+        <h3 class="serif heading-3">If it can't be undone, explain it first.</h3>
+        <p>Reversible steps move fast. Irreversible ones slow down, show their reasoning and wait for a yes. Signatures, payments and anything legal never happen silently.</p>
+      </div>
+    </div>
+
+    <div id="cockpit" class="row row--tight principle">
+      <span class="principle__num">04</span>
+      <div class="principle__body">
+        <h3 class="serif heading-3">Operators need a cockpit, not a chat log.</h3>
+        <p>Nobody supervises a portfolio by reading transcripts. Vida leads with what needs a human now, why, and the one action that fixes it.</p>
+      </div>
+    </div>
+
+    <div id="states" class="row row--tight principle">
+      <span class="principle__num">05</span>
+      <div class="principle__body">
+        <h3 class="serif heading-3">Every AI state is a design state.</h3>
+        <p>Thinking, confident, uncertain, escalated, completed. Each one looks and reads the same everywhere, so renters and operators always know where things stand.</p>
+        <div class="legend">
+          <span><span class="ai-dot ai-dot--half" aria-hidden="true"></span>Thinking</span>
+          <span><span class="ai-dot" aria-hidden="true"></span>Confident</span>
+          <span><span class="ai-dot ai-dot--ring" aria-hidden="true"></span>Uncertain</span>
+          <span><svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg>Escalated</span>
+          <span style="color: var(--on-dark-soft)"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8.5l3 3 7-7"/></svg>Completed</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="leading" class="container pad-96 stack" style="gap: 64px">
+  <div class="row row--tight" style="align-items: flex-end">
+    <span class="row__label" style="padding-top: 0">Part two</span>
+    <div class="row__body row__body--md stack" style="gap: 14px">
+      <h2 class="serif heading-1">Process scales teams. Judgment scales impact.</h2>
+      <p class="text-lg" style="max-width: 640px">I keep the artefacts that sharpen thinking and drop the ones that only look productive. The aim is confident decisions and fast learning loops.</p>
+    </div>
+  </div>
+
+  <div class="row row--tight">
+    <span class="row__label" style="padding-top: 4px">The loop</span>
+    <div class="row__body loop">
+      <div><span class="mono-meta">01</span><span class="serif title-26">Align</span><span>Success metrics, owners, timeline.</span></div>
+      <div><span class="mono-meta">02</span><span class="serif title-26">Discover</span><span>Research until the problem is sharp.</span></div>
+      <div><span class="mono-meta">03</span><span class="serif title-26">Define</span><span>Strategy, architecture, constraints.</span></div>
+      <div><span class="mono-meta">04</span><span class="serif title-26">Design</span><span>Iterate and validate with users.</span></div>
+      <div><span class="mono-meta">05</span><span class="serif title-26">Deliver</span><span>Handoff, build support, UX QA.</span></div>
+      <div><span class="mono-meta">06</span><span class="serif title-26">Evolve</span><span>Measure, learn, feed the roadmap.</span></div>
+    </div>
+  </div>
+
+  <div class="row row--tight">
+    <span class="row__label" style="padding-top: 4px">How I partner</span>
+    <div class="row__body grid-fit" style="--min: 320px; gap: 32px 48px">
+      <div class="stack" style="gap: 8px"><span class="strong">With product</span><span class="text-md">PMs co-own the experience. I help shape the roadmap by user impact, and push back on scope with data, not ego.</span></div>
+      <div class="stack" style="gap: 8px"><span class="strong">With engineering</span><span class="text-md">Engineers are design partners. I bring them in at discovery and check feasibility before committing to a pattern.</span></div>
+      <div class="stack" style="gap: 8px"><span class="strong">Handoff is a ceremony</span><span class="text-md">Annotated specs with states, edge cases and accessibility notes, a live walkthrough, and me on hand through the build.</span></div>
+      <div class="stack" style="gap: 8px"><span class="strong">QA is design's job too</span><span class="text-md">Nothing ships without UX QA against the spec and WCAG 2.1 AA. I sign off builds with the rigor of a code review.</span></div>
+      <div class="stack" style="gap: 8px"><span class="strong">A design roadmap</span><span class="text-md">Research sprints, system work and UX debt get their own milestones, so leadership sees design capacity before the crunch.</span></div>
+      <div class="stack" style="gap: 8px"><span class="strong">Guardrails built in</span><span class="text-md">Compliance, privacy and accessibility are designed in from the start, not bolted on at legal review.</span></div>
+    </div>
+  </div>
+
+  <div class="row row--tight">
+    <span class="row__label" style="padding-top: 4px">Always</span>
+    <ol class="row__body always">
+      <li>Users first, always.</li>
+      <li>Data informs. Intuition leads.</li>
+      <li>Design is a team sport.</li>
+      <li>Constraints breed creativity.</li>
+      <li>Ship with intention. Iterate with purpose.</li>
+      <li>Accessibility is not optional.</li>
+    </ol>
+  </div>
+</section>
+
+<section class="band-soft band-soft--top">
+  <div class="container pad-96 row row--tight">
+    <span class="row__label">TL;DR</span>
+    <p class="serif statement row__body">I don't just design screens. I design the conditions for good decisions, for the people on the team and for the agents we ship.</p>
+  </div>
+</section>
+
+</main>
+
+<section id="hello" class="on-dark">
+  <div class="container contact">
+    <h2 class="serif display-cta">Designing agents of your own? Let's compare notes.</h2>
+    <div class="actions">
+      <a class="btn btn--light" href="mailto:varunuxd@gmail.com">varunuxd@gmail.com</a>
+      <a class="text-link" href="https://www.linkedin.com/in/varunvelhankar/">LinkedIn</a>
+    </div>
+    <footer class="site-footer">
+      <span>© 2026 Varun Velhankar · Guelph, Ontario</span>
+      <nav aria-label="Footer"><a href="https://www.linkedin.com/in/varunvelhankar/">LinkedIn</a><a href="writing.html">Writing</a><a href="about.html">About</a></nav>
+    </footer>
+  </div>
+</section>
+
+</body>
+</html>
