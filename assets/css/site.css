@@ -279,6 +279,46 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--ink); outline-o
 .draft-card .mono-label { color: var(--agent-text); }
 
 
+/* ---------- Case studies ---------- */
+
+.cs-hero { padding-top: 32px; padding-bottom: 72px; display: flex; flex-direction: column; gap: 28px; }
+.cs-hero .lede { max-width: 700px; }
+.cs-title { max-width: 1040px; font-size: clamp(42px, 5.6vw, 80px); line-height: 1; letter-spacing: -0.025em; }
+.cs-back { align-self: flex-start; font-size: 14px; font-weight: 500; text-decoration: none; padding: 8px 0; }
+.cs-start { align-self: flex-start; padding: 10px 0; }
+.cs-meta { display: flex; flex-direction: column; gap: 4px; padding-top: 14px; border-top: 1px solid var(--hair); }
+.cs-meta__value { font-size: 15px; line-height: 1.45; color: var(--ink); }
+.cs-stats { padding-bottom: 72px; }
+
+.cs-band { padding-top: 88px; padding-bottom: 88px; }
+.cs-label { padding-top: 10px; }
+.cs-body { display: flex; flex-direction: column; gap: 40px; }
+.cs-h3 { font-size: 18px; font-weight: 500; line-height: 1.35; color: var(--ink); }
+.cs-p { max-width: 680px; font-size: 17px; line-height: 1.6; }
+.cs-callout { max-width: 760px; font-family: var(--serif); font-weight: 500; font-size: clamp(26px, 2.8vw, 38px); line-height: 1.2; letter-spacing: -0.015em; color: var(--ink); }
+.cs-quote { margin: 0; padding: 4px 0; max-width: 760px; font-family: var(--serif); font-weight: 500; font-size: clamp(24px, 2.4vw, 32px); line-height: 1.25; letter-spacing: -0.01em; color: var(--ink); }
+.cs-list { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 8px; max-width: 680px; }
+.cs-list li { font-size: 16px; line-height: 1.55; }
+
+.cs-figure { margin: 0; min-width: 0; display: flex; flex-direction: column; gap: 10px; }
+.cs-img { width: 100%; height: auto; object-fit: cover; border-radius: var(--radius-md); background: var(--card); }
+.cs-img--phone { border-radius: 18px; }
+.cs-caption { font-size: 13px; color: var(--muted); }
+
+.cs-card { background: var(--canvas); border: 1px solid var(--hair); border-radius: var(--radius-md); padding: 24px; display: flex; flex-direction: column; gap: 10px; }
+.cs-card__title { font-size: 17px; font-weight: 500; color: var(--ink); }
+.cs-card__text { font-size: 15px; line-height: 1.55; }
+
+.cs-stat { padding-top: 16px; border-top: 1px solid var(--hair); display: flex; flex-direction: column; gap: 8px; }
+.cs-stat__value { font-family: var(--serif); font-weight: 500; font-size: clamp(36px, 4vw, 56px); line-height: 1; letter-spacing: -0.02em; color: var(--ink); }
+
+.on-dark .cs-stat { border-top-color: var(--dark-hair); }
+.on-dark .cs-stat__value, .on-dark .cs-quote, .on-dark .cs-list li { color: var(--on-dark); }
+.cs-soft { color: var(--on-dark-soft); }
+
+.cs-next { padding-top: 56px; padding-bottom: 56px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px; }
+.btn--round { border-radius: 9999px; padding: 0 20px 0 22px; }
+
 /* ---------- Contact / footer ---------- */
 
 .contact { padding-top: 96px; padding-bottom: 40px; display: flex; flex-direction: column; gap: 40px; }

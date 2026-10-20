@@ -1,0 +1,506 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Oaken Digital — Varun Velhankar</title>
+<meta name="description" content="Case study: redesigning Oaken&#x27;s digital banking so customers over 60 can open and run accounts on their own.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="../assets/css/tokens.css">
+<link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="container site-header">
+  <a class="brand" href="../index.html">Varun Velhankar</a>
+  <nav class="nav" aria-label="Primary">
+    <a href="../index.html#work" aria-current="page">Work</a>
+    <a href="../how-i-think.html">How I think</a>
+    <a href="../writing.html">Writing</a>
+    <a href="../about.html">About</a>
+    <a class="nav__cta" href="#hello">Say hello</a>
+  </nav>
+</header>
+
+<main id="main">
+<section class="container cs-hero">
+<a class="cs-back" href="../index.html#work">← All work</a>
+<p class="eyebrow">Digital banking · B2C · Web, iOS and Android</p>
+<h1 class="serif cs-title">Oaken Digital: banking that customers over 60 can finish on their own.</h1>
+<p class="lede">I led the redesign of Oaken's digital banking platform, turning a costly, assisted model into a digital-first, zero-touch experience for a customer base where nearly 80% are over 60.</p>
+<a class="text-link cs-start" href="https://digitalbanking.oaken.com/htc/signin.aspx" target="_blank" rel="noopener">Live product ↗<span class="sr-only"> (opens in a new tab)</span></a>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px 32px; padding-top: 8px">
+<div class="cs-meta"><span class="mono-label">Role</span><span class="cs-meta__value">Senior UX Manager, leading a cross-functional UX team</span></div>
+<div class="cs-meta"><span class="mono-label">Scope</span><span class="cs-meta__value">Onboarding, authenticated banking and originations</span></div>
+<div class="cs-meta"><span class="mono-label">Platforms</span><span class="cs-meta__value">Desktop web, iOS and Android</span></div>
+<div class="cs-meta"><span class="mono-label">Company</span><span class="cs-meta__value">Fairstone Bank (formerly Home Trust)</span></div>
+</div>
+</section>
+<section class="container cs-stats"><div class="grid-fit" style="--min: 200px; gap: 28px">
+<div class="cs-stat"><span class="cs-stat__value">20% → 83%</span><span class="text-md">Zero-touch account openings, across channels</span></div>
+<div class="cs-stat"><span class="cs-stat__value">68%</span><span class="text-md">Engagement across a 40K user base</span></div>
+<div class="cs-stat"><span class="cs-stat__value">80+</span><span class="text-md">NPS, sustained 2022 to 2025</span></div>
+</div></section>
+<section class="band-soft" id="context">
+<div class="container row cs-band">
+<span class="row__label cs-label">Context</span>
+<div class="row__body cs-body">
+<h2 class="serif heading-2">Why this mattered to the business</h2>
+<p class="cs-p">Oaken's assisted banking model was expensive to run and hard to scale. This work made it digital-first and zero-touch for the people who actually bank with Oaken.</p>
+<p class="cs-p">By removing friction for older customers, we cut operational dependency and grew trust in self-service. It also proved a point to the business: clear, data-driven UX drives revenue efficiency, lowers risk and supports long-term growth.</p>
+<div class="stack" style="gap: 10px">
+<h3 class="cs-h3">What is Oaken Financial?</h3>
+<p class="cs-p">Oaken is a Canadian direct-to-consumer savings and investment brand, owned by Home Trust and now part of Fairstone Bank. It offers high-interest savings accounts with no monthly fees or minimum balance, and Guaranteed Investment Certificates (GICs) in registered (TFSA, RSP, RIF) and non-registered forms.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="problem">
+<div class="container row cs-band">
+<span class="row__label cs-label">Problem</span>
+<div class="row__body cs-body">
+<h2 class="serif heading-2">Built for confident users. Used by customers over 60.</h2>
+<p class="cs-p">The platform was optimized for digitally confident users, but nearly 80% of active customers were over 60. The result was confusion, high abandonment and very few straight-through account openings.</p>
+<p class="cs-callout">Only 20% of account openings were zero-touch.</p>
+<div class="stack" style="gap: 12px">
+<h3 class="cs-h3">If we left it unsolved</h3>
+<ul class="cs-list">
+<li>Account opening would keep leaning on call centres and branches, pushing up operating costs.</li>
+<li>Older customers would lose trust in digital channels and fall back to assisted banking, or leave.</li>
+<li>Oaken would never scale as a true digital-first bank, capping growth and profitability.</li>
+<li>Manual interventions and incomplete applications would raise regulatory and compliance risk.</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section class="band-soft" id="research">
+<div class="container row cs-band">
+<span class="row__label cs-label">Research</span>
+<div class="row__body cs-body">
+<h2 class="serif heading-2">What digital-first banks were getting right</h2>
+<div class="grid-fit" style="--min: 300px; gap: 32px">
+<div class="stack" style="gap: 12px">
+<h3 class="cs-h3">What they did well</h3>
+<ul class="cs-list">
+<li>Mobile-first, task-focused journeys with few decision points</li>
+<li>Plain language, progressive disclosure and strong visual hierarchy</li>
+<li>Speed, reassurance and transparency during onboarding</li>
+<li>Success measured by completion rates, not feature depth</li>
+</ul>
+</div>
+<div class="stack" style="gap: 12px">
+<h3 class="cs-h3">How they designed it</h3>
+<ul class="cs-list">
+<li>Linear, predictable flows with clear progress indicators</li>
+<li>Prominent, unambiguous calls to action ("Continue", "Finish application")</li>
+<li>Fewer choices per screen to reduce cognitive load</li>
+<li>Contextual help, inline validation and real-time feedback</li>
+</ul>
+</div>
+</div>
+<div class="stack" style="gap: 10px">
+<h3 class="cs-h3">Competitor benchmarking</h3>
+<p class="cs-p">We benchmarked leading digital banks on account-opening steps and time to complete, language complexity and readability, error handling and recovery, and how clearly the dashboard surfaced the primary task.</p>
+</div>
+<p class="cs-callout">Competitors optimized for confidence, not intelligence. That was our gap.</p>
+<figure class="cs-figure">
+<img class="cs-img" src="../assets/img/oaken/01-competitor-landscape-analysis.jpg" alt="Competitor landscape analysis" width="1201" height="627" loading="lazy" decoding="async">
+</figure>
+<figure class="cs-figure">
+<img class="cs-img" src="../assets/img/oaken/02-competitor-benchmarking.jpg" alt="Competitor benchmarking" width="1200" height="1016" loading="lazy" decoding="async">
+</figure>
+<div class="grid-fit" style="--min: 320px; gap: 16px">
+<figure class="cs-figure">
+<img class="cs-img" src="../assets/img/oaken/03-competitor-onboarding-flows-and-guidance-patterns.jpg" alt="Competitor onboarding flows and guidance patterns" width="1342" height="1016" loading="lazy" decoding="async">
+</figure>
+<figure class="cs-figure">
+<img class="cs-img" src="../assets/img/oaken/04-competitor-account-access-filtering-and-insights.jpg" alt="Competitor account access, filtering and insights" width="1342" height="1016" loading="lazy" decoding="async">
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="discovery">
+<div class="container row cs-band">
+<span class="row__label cs-label">Discovery</span>
+<div class="row__body cs-body">
+<h2 class="serif heading-2">Understanding why customers were failing, not just where</h2>
+<div class="stack" style="gap: 12px">
+<h3 class="cs-h3">Gaps in the existing journey</h3>
+<ul class="cs-list">
+<li>Dense information architecture with unclear priorities</li>
+<li>Several competing calls to action, causing decision paralysis</li>
+<li>Non-linear flows that broke users' confidence</li>
+<li>An assumption that users already knew how digital banking works</li>
+</ul>
+</div>
+<figure class="cs-figure">
+<img class="cs-img" src="../assets/img/oaken/05-current-user-journey-map.jpg" alt="Current user journey map" width="2000" height="601" loading="lazy" decoding="async">
+<figcaption class="cs-caption">Current user journey across the authenticated space</figcaption>
+</figure>
+<div class="grid-fit" style="--min: 280px; gap: 16px">
+<figure class="cs-figure">
+<img class="cs-img" src="../assets/img/oaken/06-existing-dashboard.jpg" alt="Existing dashboard" style="max-height: 620px; object-fit: contain" width="536" height="1042" loading="lazy" decoding="async">
+</figure>
+<figure class="cs-figure">
+<img class="cs-img" src="../assets/img/oaken/07-existing-experience.jpg" alt="Existing experience" width="1800" height="1012" loading="lazy" decoding="async">
+</figure>
+</div>
+<div class="stack" style="gap: 12px">
+<h3 class="cs-h3">Deep behavioural analysis</h3>
+<p class="cs-p">Funnel tracking told us where people dropped off. We needed to know why. So we went a level deeper:</p>
+<ul class="cs-list">
+<li>Funnel drop-offs at every onboarding and origination step, which isolated identity verification, document upload and long-form data entry as the hardest moments.</li>
+<li>Time on task, to find steps that demanded too much effort or caused hesitation.</li>
+<li>Form-level abandonment, field error rates and backtracking, to pinpoint unclear instructions and validation issues.</li>
+</ul>
+</div>
+<div class="stack" style="gap: 10px">
+<h3 class="cs-h3">A single view of user behaviour</h3>
+<p class="cs-p">To make this repeatable, we spent a year building Power BI dashboards that combined API-level events, platform telemetry and third-party analytics, desktop and mobile interaction data, and drop-off trends by device, step and cohort. They gave the whole team one trusted view, faster diagnosis and data-backed priorities.</p>
+</div>
+<p class="cs-callout">The core issue was clarity and flow, not a lack of intent.</p>
+<div class="stack" style="gap: 16px">
+<h3 class="cs-h3">Mobile app insights</h3>
+<div class="grid-fit" style="--min: 200px; gap: 28px">
+<div class="cs-stat"><span class="cs-stat__value">15%</span><span class="text-md">Of applications started on iOS and Android, many then went inactive</span></div>
+<div class="cs-stat"><span class="cs-stat__value">70%</span><span class="text-md">Of applications started in the app were never finished</span></div>
+<div class="cs-stat"><span class="cs-stat__value">3%</span><span class="text-md">Of all applications were submitted through the app</span></div>
+</div>
+</div>
+<div class="grid-fit" style="--min: 320px; gap: 16px">
+<figure class="cs-figure">
+<img class="cs-img" src="../assets/img/oaken/08-ios-analytics.jpg" alt="iOS analytics" width="1241" height="697" loading="lazy" decoding="async">
+</figure>
+<figure class="cs-figure">
+<img class="cs-img" src="../assets/img/oaken/09-ios-analytics.jpg" alt="iOS analytics" width="1241" height="709" loading="lazy" decoding="async">
+</figure>
+<figure class="cs-figure">
+<img class="cs-img" src="../assets/img/oaken/10-android-analytics.jpg" alt="Android analytics" width="1241" height="697" loading="lazy" decoding="async">
+</figure>
+<figure class="cs-figure">
+<img class="cs-img" src="../assets/img/oaken/11-android-analytics.jpg" alt="Android analytics" width="1241" height="709" loading="lazy" decoding="async">
+</figure>
+</div>
+<p class="cs-p">Side by side, the data showed what we were tracking, what we were missing and what was broken.</p>
+<figure class="cs-figure">
+<img class="cs-img" src="../assets/img/oaken/12-tracking-dashboard.jpg" alt="Tracking dashboard" width="1800" height="534" loading="lazy" decoding="async">
+</figure>
+<div class="grid-fit" style="--min: 300px; gap: 16px">
+<figure class="cs-figure">
+<img class="cs-img" src="../assets/img/oaken/13-analytics-view.jpg" alt="Analytics view" width="2000" height="851" loading="lazy" decoding="async">
+</figure>
+<figure class="cs-figure">
+<img class="cs-img" src="../assets/img/oaken/14-analytics-view.jpg" alt="Analytics view" width="2000" height="1137" loading="lazy" decoding="async">
+</figure>
+<figure class="cs-figure">
+<img class="cs-img" src="../assets/img/oaken/15-analytics-view.jpg" alt="Analytics view" width="2000" height="661" loading="lazy" decoding="async">
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section class="band-soft" id="strategy">
+<div class="container row cs-band">
+<span class="row__label cs-label">Strategy</span>
+<div class="row__body cs-body">
+<h2 class="serif heading-2">Four principles to design for zero assistance</h2>
+<div class="grid-fit" style="--min: 220px; gap: 16px">
+<div class="cs-card"><span class="cs-card__title">Clarity over cleverness</span><div class="cs-card__text">Plain language and obvious next steps beat novel patterns.</div></div>
+<div class="cs-card"><span class="cs-card__title">One primary action per screen</span><div class="cs-card__text">Every screen asks for one decision, and only one.</div></div>
+<div class="cs-card"><span class="cs-card__title">Progressive disclosure</span><div class="cs-card__text">Complexity appears only when the user needs it.</div></div>
+<div class="cs-card"><span class="cs-card__title">Design for zero assistance</span><div class="cs-card__text">If someone would need to call us, the screen has failed.</div></div>
+</div>
+<div class="stack" style="gap: 12px">
+<h3 class="cs-h3">A new, predictable journey</h3>
+<ul class="cs-list">
+<li>Linear and predictable from start to finish</li>
+<li>Explicit about what happens next</li>
+<li>Reinforced with reassurance and progress cues</li>
+</ul>
+</div>
+<figure class="cs-figure">
+<img class="cs-img" src="../assets/img/oaken/16-improved-user-journey-map.jpg" alt="Improved user journey map" width="2000" height="1415" loading="lazy" decoding="async">
+<figcaption class="cs-caption">Proposed and improved user journey</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section id="insights">
+<div class="container row cs-band">
+<span class="row__label cs-label">Insights</span>
+<div class="row__body cs-body">
+<h2 class="serif heading-2">Jobs to be done</h2>
+<blockquote class="cs-quote">"When I open a bank account online, I want to feel confident I'm doing it right, so I don't need to call anyone."</blockquote>
+<blockquote class="cs-quote">"When I log in, I want to immediately see what matters most, without figuring things out."</blockquote>
+<div class="stack" style="gap: 12px">
+<h3 class="cs-h3">These shaped three pieces of work</h3>
+<ul class="cs-list">
+<li>A simpler onboarding experience</li>
+<li>A decluttered dashboard with clear primary actions</li>
+<li>A redesigned application and origination flow</li>
+</ul>
+</div>
+<div class="stack" style="gap: 12px">
+<h3 class="cs-h3">How we redesigned onboarding, the dashboard and origination</h3>
+<ul class="cs-list">
+<li>Step-by-step onboarding with visible progress</li>
+<li>Large type, high contrast and plain language</li>
+<li>Wireframes reviewed early with business, compliance and engineering to avoid late friction</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section class="band-soft" id="desktop">
+<div class="container row cs-band">
+<span class="row__label cs-label">Desktop</span>
+<div class="row__body cs-body">
+<h2 class="serif heading-2">The web experience, before and after</h2>
+<blockquote class="cs-quote">"I want to easily open or connect my account so I can start managing my money right away."</blockquote>
+<div class="grid-fit" style="--min: 300px; gap: 16px">
+<figure class="cs-figure">
+<img class="cs-img" src="../assets/img/oaken/17-legacy-dashboard.jpg" alt="Legacy dashboard" width="1086" height="1188" loading="lazy" decoding="async">
+<figcaption class="cs-caption">Before: legacy dashboard</figcaption>
+</figure>
+<figure class="cs-figure">
+<img class="cs-img" src="../assets/img/oaken/18-redesigned-dashboard.jpg" alt="Redesigned dashboard" width="1800" height="1320" loading="lazy" decoding="async">
+<figcaption class="cs-caption">After: redesigned dashboard</figcaption>
+</figure>
+</div>
+<blockquote class="cs-quote">"I want to easily open a transaction account so I can start funding it and managing my money right away."</blockquote>
+<div class="grid-fit" style="--min: 300px; gap: 16px">
+<figure class="cs-figure">
+<img class="cs-img" src="../assets/img/oaken/19-transaction-account-before.jpg" alt="Transaction account, before" width="1440" height="1638" loading="lazy" decoding="async">
+<figcaption class="cs-caption">Before</figcaption>
+</figure>
+<figure class="cs-figure">
+<img class="cs-img" src="../assets/img/oaken/20-transaction-account-after.jpg" alt="Transaction account, after" width="1800" height="1972" loading="lazy" decoding="async">
+<figcaption class="cs-caption">After</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="ui">
+<div class="container row cs-band">
+<span class="row__label cs-label">Final UI</span>
+<div class="row__body cs-body">
+<h2 class="serif heading-2">Calm, clear and built for confidence</h2>
+<p class="cs-p">The final UI turned research and jobs-to-be-done into confident, readable interfaces for older users, without falling behind modern digital banking standards.</p>
+<figure class="cs-figure">
+<img class="cs-img" src="../assets/img/oaken/21-final-desktop-ui.jpg" alt="Final desktop UI" width="1400" height="800" loading="lazy" decoding="async">
+</figure>
+<div class="grid-fit" style="--min: 260px; gap: 16px">
+<div class="cs-card"><span class="cs-card__title">Typography and readability</span><div class="cs-card__text">Larger base sizes, generous line height and less jargon. A clear hierarchy from heading to supporting to helper text.</div></div>
+<div class="cs-card"><span class="cs-card__title">Visual hierarchy and focus</span><div class="cs-card__text">One dominant call to action per screen, and whitespace used to guide attention.</div></div>
+<div class="cs-card"><span class="cs-card__title">Spacing and layout</span><div class="cs-card__text">More room between interactive elements and a steady vertical rhythm, so every screen feels predictable.</div></div>
+<div class="cs-card"><span class="cs-card__title">Feedback and error prevention</span><div class="cs-card__text">Inline validation, reassurance at critical steps like identity checks, and clear success states.</div></div>
+<div class="cs-card"><span class="cs-card__title">Consistency across channels</span><div class="cs-card__text">A shared design system and responsive layouts that keep hierarchy intact on small screens.</div></div>
+<div class="cs-card"><span class="cs-card__title">Design system</span><div class="cs-card__text">Accessibility-first patterns: scalable type, contrast-safe colour tokens, larger targets and reusable onboarding and origination components.</div></div>
+</div>
+<p class="cs-p">Together these made the experience feel simple, calm and trustworthy, which is what zero-touch completion depends on.</p>
+</div>
+</div>
+</section>
+<section class="band-soft" id="app">
+<div class="container row cs-band">
+<span class="row__label cs-label">Mobile app</span>
+<div class="row__body cs-body">
+<h2 class="serif heading-2">The app experience</h2>
+<blockquote class="cs-quote">"I want to easily open or connect my account so I can start managing my money right away."</blockquote>
+<div class="grid-fit" style="--min: 150px; gap: 14px">
+<figure class="cs-figure">
+<img class="cs-img cs-img--phone" src="../assets/img/oaken/22-app-onboarding.jpg" alt="App onboarding" width="414" height="896" loading="lazy" decoding="async">
+</figure>
+<figure class="cs-figure">
+<img class="cs-img cs-img--phone" src="../assets/img/oaken/23-app-onboarding.jpg" alt="App onboarding" width="370" height="800" loading="lazy" decoding="async">
+</figure>
+<figure class="cs-figure">
+<img class="cs-img cs-img--phone" src="../assets/img/oaken/24-app-screen.jpg" alt="App screen" width="480" height="1040" loading="lazy" decoding="async">
+</figure>
+<figure class="cs-figure">
+<img class="cs-img cs-img--phone" src="../assets/img/oaken/25-app-screen.jpg" alt="App screen" width="480" height="1040" loading="lazy" decoding="async">
+</figure>
+<figure class="cs-figure">
+<img class="cs-img cs-img--phone" src="../assets/img/oaken/26-app-screen.jpg" alt="App screen" width="480" height="1040" loading="lazy" decoding="async">
+</figure>
+</div>
+<blockquote class="cs-quote">"I want to quickly see how much money I have, and what's going on with my accounts."</blockquote>
+<div class="grid-fit" style="--min: 150px; gap: 14px">
+<figure class="cs-figure">
+<img class="cs-img cs-img--phone" src="../assets/img/oaken/27-app-dashboard.jpg" alt="App dashboard" width="480" height="1051" loading="lazy" decoding="async">
+</figure>
+<figure class="cs-figure">
+<img class="cs-img cs-img--phone" src="../assets/img/oaken/28-app-account-information.jpg" alt="App account information" width="480" height="1039" loading="lazy" decoding="async">
+</figure>
+<figure class="cs-figure">
+<img class="cs-img cs-img--phone" src="../assets/img/oaken/29-app-transactions.jpg" alt="App transactions" width="480" height="1040" loading="lazy" decoding="async">
+</figure>
+<figure class="cs-figure">
+<img class="cs-img cs-img--phone" src="../assets/img/oaken/30-app-transactions.jpg" alt="App transactions" width="480" height="1042" loading="lazy" decoding="async">
+</figure>
+<figure class="cs-figure">
+<img class="cs-img cs-img--phone" src="../assets/img/oaken/31-app-account-details.jpg" alt="App account details" width="480" height="1040" loading="lazy" decoding="async">
+</figure>
+</div>
+<div class="grid-fit" style="--min: 150px; gap: 14px">
+<figure class="cs-figure">
+<img class="cs-img cs-img--phone" src="../assets/img/oaken/32-app-gic.jpg" alt="App GIC" width="480" height="1039" loading="lazy" decoding="async">
+</figure>
+<figure class="cs-figure">
+<img class="cs-img cs-img--phone" src="../assets/img/oaken/33-app-investment.jpg" alt="App investment" width="480" height="1040" loading="lazy" decoding="async">
+</figure>
+<figure class="cs-figure">
+<img class="cs-img cs-img--phone" src="../assets/img/oaken/34-app-investment.jpg" alt="App investment" width="480" height="1040" loading="lazy" decoding="async">
+</figure>
+<figure class="cs-figure">
+<img class="cs-img cs-img--phone" src="../assets/img/oaken/35-app-investment.jpg" alt="App investment" width="480" height="1040" loading="lazy" decoding="async">
+</figure>
+<figure class="cs-figure">
+<img class="cs-img cs-img--phone" src="../assets/img/oaken/36-app-investment.jpg" alt="App investment" width="480" height="1040" loading="lazy" decoding="async">
+</figure>
+</div>
+<div class="stack" style="gap: 16px">
+<h3 class="cs-h3">The design system in Figma</h3>
+<div class="grid-fit" style="--min: 300px; gap: 16px">
+<figure class="cs-figure">
+<img class="cs-img" src="../assets/img/oaken/37-figma-design-system.jpg" alt="Figma design system" width="1800" height="1977" loading="lazy" decoding="async">
+</figure>
+<figure class="cs-figure">
+<img class="cs-img" src="../assets/img/oaken/38-figma-design-system.jpg" alt="Figma design system" width="1800" height="1318" loading="lazy" decoding="async">
+</figure>
+<figure class="cs-figure">
+<img class="cs-img" src="../assets/img/oaken/39-figma-design-system.jpg" alt="Figma design system" width="2000" height="1421" loading="lazy" decoding="async">
+</figure>
+<figure class="cs-figure">
+<img class="cs-img" src="../assets/img/oaken/40-figma-design-system.jpg" alt="Figma design system" width="1800" height="1975" loading="lazy" decoding="async">
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="validation">
+<div class="container row cs-band">
+<span class="row__label cs-label">Validation</span>
+<div class="row__body cs-body">
+<h2 class="serif heading-2">Testing, iterating and shipping what we designed</h2>
+<div class="stack" style="gap: 12px">
+<h3 class="cs-h3">Testing and iteration</h3>
+<ul class="cs-list">
+<li>Usability testing with older users to check comprehension and confidence</li>
+<li>A/B tests on call-to-action language, layout density and step order</li>
+<li>Ongoing analytics to track drop-off and completion speed</li>
+<li>Refinements based on real behaviour, not opinions</li>
+</ul>
+</div>
+<figure class="cs-figure">
+<img class="cs-img" src="../assets/img/oaken/41-testing-sessions.jpg" alt="Testing sessions" width="1800" height="804" loading="lazy" decoding="async">
+</figure>
+<div class="stack" style="gap: 12px">
+<h3 class="cs-h3">Handshake with engineering</h3>
+<p class="cs-p">To keep design intent from eroding in build, we worked with engineering early and throughout:</p>
+<ul class="cs-list">
+<li>Frontend and backend engineers joined discovery to check feasibility and surface constraints early.</li>
+<li>Detailed specs, annotated flows and component documentation removed ambiguity.</li>
+<li>The design system became a shared language, with tokens, components and states mapped directly to code.</li>
+<li>Regular design reviews during sprints protected visual and interaction fidelity and accessibility.</li>
+<li>Edge cases, error states and responsive behaviour were worked through together for desktop and mobile parity.</li>
+</ul>
+</div>
+<figure class="cs-figure">
+<img class="cs-img" src="../assets/img/oaken/42-engineering-handoff.jpg" alt="Engineering handoff" width="1523" height="890" loading="lazy" decoding="async">
+</figure>
+<p class="cs-p">What we designed is what shipped.</p>
+</div>
+</div>
+</section>
+<section class="band-soft" id="leadership">
+<div class="container row cs-band">
+<span class="row__label cs-label">Leadership</span>
+<div class="row__body cs-body">
+<h2 class="serif heading-2">My role and how I led</h2>
+<p class="cs-p">As Senior UX Manager I owned the end-to-end experience across onboarding, authenticated banking and originations, from strategy through execution to outcomes, bridging user needs with business and compliance constraints.</p>
+<div class="grid-fit" style="--min: 240px; gap: 32px">
+<div class="stack" style="gap: 10px">
+<h3 class="cs-h3">Team leadership</h3>
+<ul class="cs-list">
+<li>Led and mentored a cross-functional UX team around a shared vision of clarity and accessibility.</li>
+<li>Set design principles and success metrics so the team could make confident decisions on its own.</li>
+<li>Moved critique from opinion to evidence with data-informed sessions.</li>
+</ul>
+</div>
+<div class="stack" style="gap: 10px">
+<h3 class="cs-h3">Stakeholder management</h3>
+<ul class="cs-list">
+<li>Partnered with Product, Engineering, Compliance, Legal, Analytics and Operations from day one.</li>
+<li>Used journey maps, JTBD and funnel data to align everyone on real pain points.</li>
+<li>Raised risk and compliance concerns early to prevent late rework.</li>
+</ul>
+</div>
+<div class="stack" style="gap: 10px">
+<h3 class="cs-h3">Decisions and trade-offs</h3>
+<ul class="cs-list">
+<li>Chose clarity over feature richness, deliberately.</li>
+<li>Used behavioural data and experiments to settle disagreements.</li>
+<li>Balanced short-term goals with long-term scale and inclusivity.</li>
+</ul>
+</div>
+</div>
+<div class="stack" style="gap: 12px">
+<h3 class="cs-h3">What I learned</h3>
+<ul class="cs-list">
+<li>Designing for the most vulnerable user makes the experience better for everyone.</li>
+<li>Data and empathy need each other: analytics tells you where, users tell you why.</li>
+<li>Great banking UX is less about innovation and more about removing doubt.</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section class="on-dark" id="outcome">
+<div class="container row pad-96">
+<span class="row__label cs-label">Outcome</span>
+<div class="row__body cs-body">
+<h2 class="serif heading-2">Business and product impact</h2>
+<div class="grid-fit" style="--min: 200px; gap: 28px">
+<div class="cs-stat"><span class="cs-stat__value">20% → 83%</span><span class="text-md cs-soft">Zero-touch account openings, across channels</span></div>
+<div class="cs-stat"><span class="cs-stat__value">68%</span><span class="text-md cs-soft">Engagement across a 40K user base</span></div>
+<div class="cs-stat"><span class="cs-stat__value">80+</span><span class="text-md cs-soft">NPS, sustained 2022 to 2025</span></div>
+</div>
+<ul class="cs-list">
+<li>Significantly less dependence on the call centre</li>
+<li>More customer confidence and trust in digital channels</li>
+<li>A scalable, inclusive design system ready for future products</li>
+</ul>
+<p class="cs-quote">UX as a business enabler, not just a design function.</p>
+</div>
+</div>
+</section>
+<section class="container cs-next">
+<a class="text-link" href="../index.html#work">← All work</a>
+<a class="btn btn--ink btn--round" href="deposit-broker-portal.html">Next: Deposit Broker Portal<svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"></path></svg></a>
+</section>
+</main>
+
+<section id="hello" class="on-dark">
+  <div class="container contact">
+    <h2 class="serif display-cta">Building something hard? I'd like to hear about it.</h2>
+    <div class="actions">
+      <a class="btn btn--light" href="mailto:varunuxd@gmail.com">varunuxd@gmail.com</a>
+      <a class="text-link" href="https://www.linkedin.com/in/varunvelhankar/">LinkedIn</a>
+    </div>
+    <footer class="site-footer">
+      <span>© 2026 Varun Velhankar</span>
+      <nav aria-label="Footer"><a href="../index.html#work">All work</a><a href="https://www.linkedin.com/in/varunvelhankar/">LinkedIn</a><a href="../about.html">About</a></nav>
+    </footer>
+  </div>
+</section>
+
+</body>
+</html>
