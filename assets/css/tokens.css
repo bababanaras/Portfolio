@@ -8,7 +8,7 @@
   --ink: #141413;
   --body-strong: #252523;
   --body: #3d3d3a;
-  --muted: #6c6a64;
+  --muted: #696760; /* canvas #6c6a64, nudged to pass AA on --card */
   --hair: #e6dfd8;
 
   --dark: #181715;
@@ -19,7 +19,12 @@
 
   --agent-text: #9e5038;
   --accent: #cc785c;
+  /* Filled coral buttons. Canvas uses #cc785c; light theme uses the canvas's darker
+     accent option so white button text passes WCAG AA (4.8:1 vs 3.1:1). */
+  --accent-fill: #a9583e;
 
+  /* Display face: swap the first family when the owner's own typeface is ready. */
+  --display: Copernicus, "Tiempos Headline", "Cormorant Garamond", "EB Garamond", Garamond, "Times New Roman", serif;
   --serif: "Cormorant Garamond", "EB Garamond", Garamond, "Times New Roman", serif;
   --sans: Inter, -apple-system, "Segoe UI", sans-serif;
   --mono: "JetBrains Mono", ui-monospace, monospace;
@@ -46,6 +51,7 @@
     --hair: #3a3732;
     --dark: #0e0d0c;
     --agent-text: #e0927a;
+    --accent-fill: #cc785c;
     color-scheme: dark;
   }
 }
@@ -61,5 +67,6 @@
   --hair: #3a3732;
   --dark: #0e0d0c;
   --agent-text: #e0927a;
+  --accent-fill: #cc785c;
   color-scheme: dark;
 }
