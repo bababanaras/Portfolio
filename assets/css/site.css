@@ -23,6 +23,8 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--ink); outline-o
 .on-dark a { color: var(--on-dark); }
 .on-dark a:hover { color: var(--on-dark-soft); }
 .on-dark a:focus-visible, .on-dark button:focus-visible { outline-color: var(--on-dark); }
+/* Warm grey dark band (How I think, part one). Soft text lightened to pass AA on this ground. */
+.band-grey { background: #3d3d3a; --on-dark-soft: #bdbab3; }
 
 .skip-link {
   position: absolute; left: 16px; top: -48px; padding: 10px 14px;
