@@ -259,16 +259,23 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--ink); outline-o
 
 /* ---------- Writing ---------- */
 
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.hero-figure { flex: 0 1 360px; min-width: 0; max-width: 360px; width: 100%; margin: 0; display: flex; flex-direction: column; gap: 10px; }
+.hero-figure img { width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; border-radius: var(--radius-lg); background: var(--card); }
+
+.article-row { display: flex; flex-wrap: wrap; gap: 24px 40px; align-items: flex-start; }
+.article-thumb { flex: 0 1 320px; min-width: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; }
+.article-thumb img { width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; border-radius: 10px; background: var(--card); }
+.article-row__copy { flex: 1 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 12px; }
+.article-row__meta { font-size: 12px; letter-spacing: 0.06em; }
+.article-row__title { font-size: clamp(26px, 2.6vw, 34px); line-height: 1.15; letter-spacing: -0.01em; }
+.article-row__copy p { max-width: 560px; }
+.article-row__link { align-self: flex-start; font-size: 15px; font-weight: 500; text-underline-offset: 4px; padding: 6px 0; }
+.btn--pill-outline { border: 1px solid var(--ink); border-radius: 9999px; }
+
 .draft-card { background: var(--canvas); border: 1px dashed var(--hair); border-radius: var(--radius-md); padding: 24px; display: flex; flex-direction: column; gap: 10px; }
 .draft-card .mono-label { color: var(--agent-text); }
 
-.posts { border-bottom: 1px solid var(--hair); }
-.post { text-decoration: none; color: inherit; padding: 28px 0; border-top: 1px solid var(--hair); display: flex; flex-wrap: wrap; gap: 8px 40px; align-items: baseline; }
-.post:hover { color: inherit; }
-.post:hover .post__title { text-decoration: underline; text-underline-offset: 6px; text-decoration-thickness: 1px; }
-.post__copy { flex: 1 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 8px; }
-.post__title { font-size: clamp(26px, 2.6vw, 36px); line-height: 1.1; letter-spacing: -0.01em; }
-.post__meta { flex: 0 0 auto; }
 
 /* ---------- Contact / footer ---------- */
 

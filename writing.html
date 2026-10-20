@@ -7,7 +7,7 @@
 <meta name="description" content="Short pieces on design leadership, systems and how teams ship.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap">
 <link rel="stylesheet" href="assets/css/tokens.css">
 <link rel="stylesheet" href="assets/css/site.css">
 </head>
@@ -27,10 +27,15 @@
 
 <main id="main">
 
-<section class="container hero hero--stack" style="gap: 24px; padding-bottom: 72px">
-  <p class="eyebrow">Writing</p>
-  <h1 class="serif display-xxl" style="max-width: 980px">Pixels fade.<br>Words stick around.</h1>
-  <p class="lede">Short pieces on design leadership, systems and how teams ship. Most start as LinkedIn posts.</p>
+<section class="container hero hero--end">
+  <div class="hero__copy" style="flex-basis: 620px">
+    <p class="eyebrow">Writing</p>
+    <h1 class="display display-hero">Pixels fade.<br>Words stick around.</h1>
+    <p class="lede">Short pieces on design leadership, systems and how teams ship. Most start as LinkedIn posts.</p>
+  </div>
+  <figure class="hero-figure">
+    <img src="assets/img/writing/hero.jpg" width="720" height="960" alt="Abstract painting: coloured squares scattering and fading at the top, above calm flowing ink lines and a coral sun">
+  </figure>
 </section>
 
 <section class="band-soft">
@@ -48,36 +53,93 @@
 </section>
 
 <section class="container row" style="padding-top: 72px; padding-bottom: 96px">
-  <span class="row__label" style="padding-top: 28px">Published</span>
-  <div class="row__body stack posts">
-    <a class="post" href="https://www.linkedin.com/posts/varunvelhankar_the-single-greatest-skill-you-can-develop-activity-7419568436038541312-g8M0" target="_blank" rel="noopener">
-      <div class="post__copy"><span class="serif post__title">The single greatest skill you can develop</span><span>The one skill that compounds across every role, team and stage of a career.</span></div>
-      <span class="mono-meta post__meta">Leadership · 2025 ↗</span>
-    </a>
-    <a class="post" href="https://www.linkedin.com/posts/varunvelhankar_ux-productdesign-designleadership-activity-7411590111445868544-E-R_" target="_blank" rel="noopener">
-      <div class="post__copy"><span class="serif post__title">Why most UX teams stay stuck at wireframes</span><span>Getting design out of the execution trap and into product strategy.</span></div>
-      <span class="mono-meta post__meta">Design leadership · 2025 ↗</span>
-    </a>
-    <a class="post" href="https://www.linkedin.com/posts/activity-7394360727953833984-KqHs" target="_blank" rel="noopener">
-      <div class="post__copy"><span class="serif post__title">UX designers: honesty over hype</span><span>Why most design systems don't scale, and what to do about yours.</span></div>
-      <span class="mono-meta post__meta">Design systems · 2025 ↗</span>
-    </a>
-    <a class="post" href="https://www.linkedin.com/posts/activity-7389425663843131392-OriI" target="_blank" rel="noopener">
-      <div class="post__copy"><span class="serif post__title">Stop designing for stakeholders. Design with them.</span><span>Moving from presentation mode to collaboration mode changed how my team ships.</span></div>
-      <span class="mono-meta post__meta">Collaboration · 2025 ↗</span>
-    </a>
-    <a class="post" href="https://www.linkedin.com/posts/activity-7386174268675624960-X6bm" target="_blank" rel="noopener">
-      <div class="post__copy"><span class="serif post__title">Shipping EquityAccess</span><span>On launching Home Trust's reverse mortgage suite for Canadians 55+.</span></div>
-      <span class="mono-meta post__meta">Launch · 2025 ↗</span>
-    </a>
-    <a class="post" href="https://www.linkedin.com/posts/activity-7380973415295373312-tyTc" target="_blank" rel="noopener">
-      <div class="post__copy"><span class="serif post__title">Trust UX experts over data for obvious fixes</span><span>Not every fix needs an A/B test. When expertise should win.</span></div>
-      <span class="mono-meta post__meta">Craft · 2025 ↗</span>
-    </a>
-    <a class="post" href="https://www.linkedin.com/posts/activity-7372656753349660672-aopF" target="_blank" rel="noopener">
-      <div class="post__copy"><span class="serif post__title">You don't need a design culture. You need design courage.</span><span>Waiting for a design-mature org is a trap. Good designers shift the culture from inside.</span></div>
-      <span class="mono-meta post__meta">Design culture · 2025 ↗</span>
-    </a>
+  <span class="row__label" style="padding-top: 4px">Published</span>
+  <div class="row__body stack" style="gap: 56px">
+      <article class="article-row">
+        <figure class="article-thumb">
+          <img src="assets/img/writing/study-1.jpg" width="640" height="400" loading="lazy" decoding="async" alt="Abstract painting: a coral sun over cream and teal waves on a deep navy field">
+          <figcaption class="fig-caption">Study No. 1, <em>Night tide</em>, 2026</figcaption>
+        </figure>
+        <div class="article-row__copy">
+          <span class="mono-label article-row__meta">2025 · Leadership</span>
+          <h3 class="serif article-row__title">The single greatest skill you can develop</h3>
+          <p>The one skill that compounds across every role, team and stage of a career.</p>
+          <a class="article-row__link" href="https://www.linkedin.com/posts/varunvelhankar_the-single-greatest-skill-you-can-develop-activity-7419568436038541312-g8M0" target="_blank" rel="noopener">Read on LinkedIn ›<span class="sr-only"> (opens in a new tab)</span></a>
+        </div>
+      </article>
+      <article class="article-row">
+        <figure class="article-thumb">
+          <img src="assets/img/writing/study-2.jpg" width="640" height="400" loading="lazy" decoding="async" alt="Abstract painting: overlapping ink, amber, teal and clay rectangles with a single circle on cream">
+          <figcaption class="fig-caption">Study No. 2, <em>Stacked fields</em>, 2026</figcaption>
+        </figure>
+        <div class="article-row__copy">
+          <span class="mono-label article-row__meta">2025 · Design leadership</span>
+          <h3 class="serif article-row__title">Why most UX teams stay stuck at wireframes</h3>
+          <p>Getting design out of the execution trap and into product strategy.</p>
+          <a class="article-row__link" href="https://www.linkedin.com/posts/varunvelhankar_ux-productdesign-designleadership-activity-7411590111445868544-E-R_" target="_blank" rel="noopener">Read on LinkedIn ›<span class="sr-only"> (opens in a new tab)</span></a>
+        </div>
+      </article>
+      <article class="article-row">
+        <figure class="article-thumb">
+          <img src="assets/img/writing/study-3.jpg" width="640" height="400" loading="lazy" decoding="async" alt="Abstract painting: loose ink strokes crossing a soft blush cloud with a small coral form">
+          <figcaption class="fig-caption">Study No. 3, <em>Lines in tension</em>, 2026</figcaption>
+        </figure>
+        <div class="article-row__copy">
+          <span class="mono-label article-row__meta">2025 · Design systems</span>
+          <h3 class="serif article-row__title">UX designers: honesty over hype</h3>
+          <p>Why most design systems don't scale, and what to do about yours.</p>
+          <a class="article-row__link" href="https://www.linkedin.com/posts/activity-7394360727953833984-KqHs" target="_blank" rel="noopener">Read on LinkedIn ›<span class="sr-only"> (opens in a new tab)</span></a>
+        </div>
+      </article>
+      <article class="article-row">
+        <figure class="article-thumb">
+          <img src="assets/img/writing/study-4.jpg" width="640" height="400" loading="lazy" decoding="async" alt="Abstract painting: concentric arcs in coral, ink, amber and teal with a small black form">
+          <figcaption class="fig-caption">Study No. 4, <em>Arcs</em>, 2026</figcaption>
+        </figure>
+        <div class="article-row__copy">
+          <span class="mono-label article-row__meta">2025 · Collaboration</span>
+          <h3 class="serif article-row__title">Stop designing for stakeholders. Design with them.</h3>
+          <p>Moving from presentation mode to collaboration mode changed how my team ships.</p>
+          <a class="article-row__link" href="https://www.linkedin.com/posts/activity-7389425663843131392-OriI" target="_blank" rel="noopener">Read on LinkedIn ›<span class="sr-only"> (opens in a new tab)</span></a>
+        </div>
+      </article>
+      <article class="article-row">
+        <figure class="article-thumb">
+          <img src="assets/img/writing/study-5.jpg" width="640" height="400" loading="lazy" decoding="async" alt="Abstract painting: layered rolling bands in amber, coral, olive, teal and slate under a pale moon">
+          <figcaption class="fig-caption">Study No. 5, <em>Fold of hills</em>, 2026</figcaption>
+        </figure>
+        <div class="article-row__copy">
+          <span class="mono-label article-row__meta">2025 · Launch</span>
+          <h3 class="serif article-row__title">Shipping EquityAccess</h3>
+          <p>On launching Home Trust's reverse mortgage suite for Canadians 55+.</p>
+          <a class="article-row__link" href="https://www.linkedin.com/posts/activity-7386174268675624960-X6bm" target="_blank" rel="noopener">Read on LinkedIn ›<span class="sr-only"> (opens in a new tab)</span></a>
+        </div>
+      </article>
+      <article class="article-row">
+        <figure class="article-thumb">
+          <img src="assets/img/writing/study-6.jpg" width="640" height="400" loading="lazy" decoding="async" alt="Abstract painting: a grid of cream and slate dots on black, with one coral dot">
+          <figcaption class="fig-caption">Study No. 6, <em>One of forty</em>, 2026</figcaption>
+        </figure>
+        <div class="article-row__copy">
+          <span class="mono-label article-row__meta">2025 · Craft</span>
+          <h3 class="serif article-row__title">Trust UX experts over data for obvious fixes</h3>
+          <p>Not every fix needs an A/B test. When expertise should win.</p>
+          <a class="article-row__link" href="https://www.linkedin.com/posts/activity-7380973415295373312-tyTc" target="_blank" rel="noopener">Read on LinkedIn ›<span class="sr-only"> (opens in a new tab)</span></a>
+        </div>
+      </article>
+      <article class="article-row">
+        <figure class="article-thumb">
+          <img src="assets/img/writing/study-7.jpg" width="640" height="400" loading="lazy" decoding="async" alt="Abstract painting: clay and ink diagonal bands with an amber form and a teal stroke on cream">
+          <figcaption class="fig-caption">Study No. 7, <em>Diagonal</em>, 2026</figcaption>
+        </figure>
+        <div class="article-row__copy">
+          <span class="mono-label article-row__meta">2025 · Design culture</span>
+          <h3 class="serif article-row__title">You don't need a design culture. You need design courage.</h3>
+          <p>Waiting for a design-mature org is a trap. Good designers shift the culture from inside.</p>
+          <a class="article-row__link" href="https://www.linkedin.com/posts/activity-7372656753349660672-aopF" target="_blank" rel="noopener">Read on LinkedIn ›<span class="sr-only"> (opens in a new tab)</span></a>
+        </div>
+      </article>
+      <a class="btn btn--pill-outline" href="https://www.linkedin.com/in/varunvelhankar/recent-activity/all/" target="_blank" rel="noopener">View all on LinkedIn<span class="sr-only"> (opens in a new tab)</span></a>
   </div>
 </section>
 
@@ -87,12 +149,10 @@
   <div class="container contact">
     <h2 class="serif display-cta">New posts land on LinkedIn first.</h2>
     <div class="actions">
-      <a class="btn btn--light" href="https://www.linkedin.com/in/varunvelhankar/" target="_blank" rel="noopener">Follow on LinkedIn</a>
-      <a class="text-link" href="mailto:varunuxd@gmail.com">varunuxd@gmail.com</a>
+      <a class="btn btn--light" href="https://www.linkedin.com/in/varunvelhankar/" target="_blank" rel="noopener">Follow on LinkedIn<span class="sr-only"> (opens in a new tab)</span></a>
     </div>
-    <footer class="site-footer">
-      <span>© 2026 Varun Velhankar • Handcrafted by yours truly :)</span>
-      <nav aria-label="Footer"><a href="https://www.linkedin.com/in/varunvelhankar/">LinkedIn</a><a href="about.html">About</a><a href="#adplist">ADPList</a></nav>
+    <footer class="site-footer site-footer--plain">
+      <span>© 2026 Varun Velhankar • Handcrafted by yours truly 🍁</span>
     </footer>
   </div>
 </section>
