@@ -2,135 +2,116 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Reverse Mortgage and Customer Journey Analytics — Varun Velhankar</title>
-<meta name="description" content="Two shorter Fairstone Bank / Home Trust stories told as slide decks: launching a reverse mortgage product, and rebuilding customer journey analytics.">
+<meta name="description" content="Two decks: launching the Home Trust reverse mortgage, and building one reliable view of the Oaken customer.">
+<link rel="icon" type="image/png" href="/assets/media/911ac5585da3.png">
+<link rel="apple-touch-icon" href="/assets/media/30bafb827bce.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="canonical" href="https://www.varunvelhankar.com/work/reverse-mortgage-and-customer-journey.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Reverse Mortgage and Customer Journey Analytics — Varun Velhankar">
+<meta property="og:description" content="Two decks: launching the Home Trust reverse mortgage, and building one reliable view of the Oaken customer.">
+<meta property="og:url" content="https://www.varunvelhankar.com/work/reverse-mortgage-and-customer-journey.html">
+<meta property="og:image" content="https://www.varunvelhankar.com/assets/media/bc9236260c94.webp">
+<meta name="twitter:card" content="summary">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap">
-<link rel="stylesheet" href="../assets/css/tokens.css">
-<link rel="stylesheet" href="../assets/css/site.css">
-<script src="../assets/js/deck.js" defer></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,400..700;1,14..32,400..700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap">
+<style>
+body{margin:0}
+.mm{--bg:#ffffff;--ink:#111111;--text:#333333;--muted:#666666;--line:#e8e8e8;--accent:#9e5038;--serif:"Source Serif 4",Georgia,serif;--mono:"JetBrains Mono",ui-monospace,monospace}
+.mm[data-theme="dark"]{--bg:#141413;--ink:#f2f0ea;--text:#d6d3cc;--muted:#9a978f;--line:#2c2b28;--accent:#e0927a}
+@media (prefers-color-scheme:dark){.mm[data-theme="auto"]{--bg:#141413;--ink:#f2f0ea;--text:#d6d3cc;--muted:#9a978f;--line:#2c2b28;--accent:#e0927a}}
+.mm a{color:var(--text);text-decoration:underline;text-decoration-color:var(--muted);text-decoration-thickness:1px;text-underline-offset:3px}
+.mm a:hover{color:var(--ink);text-decoration-color:var(--ink)}
+.mm a:focus-visible,.mm button:focus-visible{outline:2px solid var(--ink);outline-offset:3px;border-radius:2px}
+.mm .row{text-decoration:none;color:var(--ink)}
+.mm .row:hover .t{text-decoration:underline;text-decoration-color:var(--muted);text-underline-offset:3px}
+.mm h3{margin:0;font-family:var(--serif);font-weight:600;font-size:21px;line-height:1.3;letter-spacing:-0.2px;color:var(--ink)}
+.mm p{margin:0}
+.mm [aria-current="page"]{color:var(--ink);text-decoration:underline;text-decoration-color:var(--ink);text-underline-offset:6px}
+.mm .wide{width:min(920px,calc(100vw - 40px));position:relative;left:50%;transform:translateX(-50%);margin:0}
+.mm figure{margin:0;display:flex;flex-direction:column;gap:8px}
+.mm figure img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:6px;background:var(--line)}
+.mm figcaption{font-family:var(--mono);font-size:12px;color:var(--muted)}
+.mm .grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:16px}
+.mm .grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+.mm .cs h2{margin:0;font-family:var(--mono);font-weight:400;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.mm .cs h3{margin:0;font-family:var(--serif);font-weight:600;font-size:21px;line-height:1.3;letter-spacing:-.2px;color:var(--ink)}
+.mm .cs ul{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:6px}
+.mm .cs .lead{font-size:19px;line-height:1.55;color:var(--ink)}
+.mm .quote{margin:0;padding-left:16px;border-left:2px solid var(--ink);color:var(--ink);font-style:italic}
+.mm .note{font-family:var(--mono);font-size:12px;line-height:1.6;color:var(--muted);padding:12px 14px;border:1px dashed var(--line)}
+.mm{--serif:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;--mono:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif}
+.mm .ascii{font-family:"JetBrains Mono",ui-monospace,monospace!important}
+</style>
 </head>
 <body>
-<a class="skip-link" href="#main">Skip to content</a>
+<div class="mm" data-theme="light" style="background: var(--bg); color: var(--text); font-family: var(--serif); font-size: 17px; line-height: 1.65; min-height: 100vh">
+<div style="max-width: 575px; margin: 0 auto; padding: 32px 20px 96px; display: flex; flex-direction: column; gap: 40px">
 
-<header class="container site-header">
-  <a class="brand" href="../index.html">Varun Velhankar</a>
-  <nav class="nav" aria-label="Primary">
-    <a href="../index.html#work" aria-current="page">Work</a>
-    <a href="../how-i-think.html">How I think</a>
-    <a href="../writing.html">Writing</a>
-    <a href="../about.html">About</a>
-    <a class="nav__cta" href="#hello">Say hello</a>
-  </nav>
+<header style="display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap">
+<a href="/" aria-label="Varun Velhankar, home" title="Varun Velhankar" style="text-decoration: none; color: var(--ink); display: inline-flex; align-items: center; gap: 14px; line-height: 1"><svg width="38" height="38" viewBox="0 0 200 200" aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" style="flex: none"><rect x="10" y="10" width="180" height="180" rx="20" stroke-width="10"></rect><g transform="translate(40.5 30)" stroke-width="5.5"><g transform="translate(0 0)"><path d="M2 2Q2 24 10 24Q18 24 18 2M-1 2H21M0 9H4M16 9H20"></path></g><g transform="translate(31 0)"><path d="M0 13Q9 2 18 13Q9 24 0 13ZM18 13L24 6M18 13L24 20"></path></g><g transform="translate(67 0)"><circle cx="10" cy="4" r="3"></circle><path d="M10 7V17M3 11H17M10 17L5 26M10 17L15 26"></path></g><g transform="translate(98 0)"><path d="M4 1V25M11 1V25M18 1V25"></path></g></g><g transform="translate(-6 10)" stroke-width="6.5"><path d="M46 122Q46 101 70 100H124Q138 100 141 112Q143 125 133 131H60Q46 131 46 122Z"></path><path d="M133 103Q139 89 151 84L167 93Q170 99 162 101L142 113"></path><circle cx="154" cy="91" r="1.6" fill="currentColor" stroke="none"></circle><path d="M152 85Q159 70 172 62"></path><path d="M148 87L144 79"></path><path d="M138 106Q143 114 139 122M131 104Q136 113 132 122" stroke-width="4"></path><path d="M62 131V156M75 131V153M120 131V153M132 130V156"></path><path d="M47 114Q37 121 40 138"></path><path d="M160 120Q168 131 176 120ZM168 126V160M161 160H175M164 113H172"></path></g></svg><span style="font-family: var(--serif); font-weight: 600; font-size: 20px; letter-spacing: -0.3px; line-height: 1; color: var(--ink); white-space: nowrap">Varun Velhankar</span></a>
+<nav aria-label="Primary" style="display: flex; align-items: center; gap: 4px 20px; flex-wrap: wrap; font-family: var(--mono); font-size: 14px">
+<a href="/projects.html" aria-current="page" style="text-decoration: none; padding: 8px 0">Projects</a>
+<a href="/writing.html" style="text-decoration: none; padding: 8px 0">Writing</a>
+<a href="/thinking.html" style="text-decoration: none; padding: 8px 0">Thinking</a>
+<a href="/about.html" style="text-decoration: none; padding: 8px 0">About</a>
+<button type="button" id="theme-toggle" aria-label="Switch to dark theme" style="width: 36px; height: 36px; display: inline-flex; align-items: center; justify-content: center; background: transparent; border: 0; color: var(--text); cursor: pointer; padding: 0">
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.5 9.5A5.5 5.5 0 1 1 6.5 2.5a4.5 4.5 0 0 0 7 7z"></path></svg>
+</button>
+</nav>
 </header>
 
-<main id="main">
-<section class="container cs-hero" style="padding-bottom: 56px; gap: 24px">
-<a class="cs-back" href="../index.html#work">← All work</a>
-<p class="eyebrow">Fairstone Bank / Home Trust · Two shorter stories</p>
-<h1 class="serif cs-title" style="max-width: 980px">A new product, and a new view of the customer.</h1>
-<p class="lede" style="max-width: 680px">Two projects told as the decks I presented them with: launching Home Trust's reverse mortgage, and rebuilding how Oaken understands its customers' journeys.</p>
-<div class="actions" style="gap: 8px 24px"><a class="text-link" href="#reverse-mortgage" style="padding: 10px 0">Reverse Mortgage</a><a class="text-link" href="#customer-journey" style="padding: 10px 0">Customer Journey Analytics</a></div>
+<section class="cs" style="display: flex; flex-direction: column; gap: 18px">
+<a href="/projects.html" style="align-self: flex-start; font-family: var(--mono); font-size: 13px; text-decoration: none">← Projects</a>
+<p style="font-family: var(--mono); font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted)">Fairstone Bank · Two shorter stories</p>
+<h1 style="margin: 0; font-family: var(--serif); font-weight: 600; font-size: 38px; line-height: 1.12; letter-spacing: -0.6px; color: var(--ink)">A new product, and a new view of the customer</h1>
+<p class="lead">Two projects told through the decks I presented them with: launching Home Trust's reverse mortgage, and rebuilding how Oaken understands its customers' journeys.</p>
+<dl style="margin: 0; display: flex; flex-direction: column; border-bottom: 1px solid var(--line)"><div style="display: flex; gap: 16px; padding: 6px 0; border-top: 1px solid var(--line)"><dt style="flex: 0 0 110px; font-family: var(--mono); font-size: 12px; color: var(--muted); padding-top: 3px">Role</dt><dd style="margin: 0; flex: 1; color: var(--ink)">Senior Manager, Product Design</dd></div><div style="display: flex; gap: 16px; padding: 6px 0; border-top: 1px solid var(--line)"><dt style="flex: 0 0 110px; font-family: var(--mono); font-size: 12px; color: var(--muted); padding-top: 3px">Formats</dt><dd style="margin: 0; flex: 1; color: var(--ink)">Product strategy deck, data strategy deck</dd></div><div style="display: flex; gap: 16px; padding: 6px 0; border-top: 1px solid var(--line)"><dt style="flex: 0 0 110px; font-family: var(--mono); font-size: 12px; color: var(--muted); padding-top: 3px">Company</dt><dd style="margin: 0; flex: 1; color: var(--ink)">Fairstone Bank (formerly Home Trust)</dd></div></dl>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 20px; padding-top: 6px"><div style="display: flex; flex-direction: column; gap: 2px"><span style="font-family: var(--serif); font-weight: 600; font-size: 28px; line-height: 1.1; color: var(--ink); letter-spacing: -0.4px">+42%</span><span style="font-size: 14px; line-height: 1.45; color: var(--muted)">Commitments secured, one week after the reverse mortgage launch</span></div><div style="display: flex; flex-direction: column; gap: 2px"><span style="font-family: var(--serif); font-weight: 600; font-size: 28px; line-height: 1.1; color: var(--ink); letter-spacing: -0.4px">1</span><span style="font-size: 14px; line-height: 1.45; color: var(--muted)">Shared source of customer data, in place of siloed tools</span></div></div>
+
 </section>
 
-<section id="reverse-mortgage" class="band-soft">
-  <div class="container row cs-band">
-    <span class="row__label cs-label">Deck 01 · 0 → 1</span>
-    <div class="row__body stack" style="gap: 28px">
-      <div class="stack" style="gap: 12px">
-        <p class="kicker">Product strategy · Fintech</p>
-        <h2 class="serif heading-2">Reverse Mortgage</h2>
-        <p class="cs-p">A crowded market and growing demand led Home Trust to introduce a reverse mortgage product that builds brand trust and fuels post-merger growth.</p>
-        <a class="text-link" href="https://www.hometrust.ca/reverse-mortgage/" target="_blank" rel="noopener" style="align-self: flex-start; padding: 8px 0">Live product page ↗<span class="sr-only"> (opens in a new tab)</span></a>
-      </div>
-      <div class="deck" data-deck aria-roledescription="carousel" aria-label="Reverse Mortgage slides">
-        <div class="deck__stage">
-          <img class="deck__slide" src="../assets/img/banking-decks/reverse-mortgage-01-reverse-mortgage.jpg" width="1600" height="900" alt="Reverse Mortgage: Introducing the Home Trust reverse mortgage product." loading="lazy" decoding="async">
-        </div>
-        <div class="deck__bar">
-          <div class="deck__text">
-            <span class="deck__title">Reverse Mortgage</span>
-            <span class="text-md">Introducing the Home Trust reverse mortgage product.</span>
-          </div>
-          <div class="deck__controls">
-            <button type="button" class="deck__btn" data-prev aria-label="Previous slide of Reverse Mortgage"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 8H3M7 4L3 8l4 4"/></svg></button>
-            <span class="deck__count" aria-live="polite">1 / 8</span>
-            <button type="button" class="deck__btn deck__btn--next" data-next aria-label="Next slide of Reverse Mortgage"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></button>
-          </div>
-        </div>
-        <div class="deck__thumbs">
-        <button type="button" class="deck__thumb" data-slide="0" data-src="../assets/img/banking-decks/reverse-mortgage-01-reverse-mortgage.jpg" data-title="Reverse Mortgage" data-caption="Introducing the Home Trust reverse mortgage product." aria-label="Go to slide 1: Reverse Mortgage" aria-current="true"><img src="../assets/img/banking-decks/reverse-mortgage-01-reverse-mortgage-thumb.jpg" width="320" height="180" alt="" loading="lazy" decoding="async"></button>
-        <button type="button" class="deck__thumb" data-slide="1" data-src="../assets/img/banking-decks/reverse-mortgage-02-the-opportunity.jpg" data-title="The opportunity" data-caption="A crowded market and growing demand led Home Trust to introduce a reverse mortgage product that builds brand trust and fuels post-merger growth." aria-label="Go to slide 2: The opportunity"><img src="../assets/img/banking-decks/reverse-mortgage-02-the-opportunity-thumb.jpg" width="320" height="180" alt="" loading="lazy" decoding="async"></button>
-        <button type="button" class="deck__thumb" data-slide="2" data-src="../assets/img/banking-decks/reverse-mortgage-03-task-vs-ux-goals.jpg" data-title="Task vs. UX goals" data-caption="From delivering a compliant webpage to designing a trusted, transparent experience that simplifies complexity and drives engagement." aria-label="Go to slide 3: Task vs. UX goals"><img src="../assets/img/banking-decks/reverse-mortgage-03-task-vs-ux-goals-thumb.jpg" width="320" height="180" alt="" loading="lazy" decoding="async"></button>
-        <button type="button" class="deck__thumb" data-slide="3" data-src="../assets/img/banking-decks/reverse-mortgage-04-competitive-analysis.jpg" data-title="Competitive analysis" data-caption="What competitors do well, and where they fall short, to find room to differentiate." aria-label="Go to slide 4: Competitive analysis"><img src="../assets/img/banking-decks/reverse-mortgage-04-competitive-analysis-thumb.jpg" width="320" height="180" alt="" loading="lazy" decoding="async"></button>
-        <button type="button" class="deck__thumb" data-slide="4" data-src="../assets/img/banking-decks/reverse-mortgage-05-an-informed-design-process.jpg" data-title="An informed design process" data-caption="A cross-functional, insight-driven process balancing business goals, brand integrity and user needs." aria-label="Go to slide 5: An informed design process"><img src="../assets/img/banking-decks/reverse-mortgage-05-an-informed-design-process-thumb.jpg" width="320" height="180" alt="" loading="lazy" decoding="async"></button>
-        <button type="button" class="deck__thumb" data-slide="5" data-src="../assets/img/banking-decks/reverse-mortgage-06-the-solution.jpg" data-title="The solution" data-caption="A reverse mortgage product page designed for clarity, trust and accessibility on desktop and mobile." aria-label="Go to slide 6: The solution"><img src="../assets/img/banking-decks/reverse-mortgage-06-the-solution-thumb.jpg" width="320" height="180" alt="" loading="lazy" decoding="async"></button>
-        <button type="button" class="deck__thumb" data-slide="6" data-src="../assets/img/banking-decks/reverse-mortgage-07-early-engagement-signals.jpg" data-title="Early engagement signals" data-caption="One week after launch: 7 pilot applications, 14 submissions, +42% commitments secured, +7% funding completed." aria-label="Go to slide 7: Early engagement signals"><img src="../assets/img/banking-decks/reverse-mortgage-07-early-engagement-signals-thumb.jpg" width="320" height="180" alt="" loading="lazy" decoding="async"></button>
-        <button type="button" class="deck__thumb" data-slide="7" data-src="../assets/img/banking-decks/reverse-mortgage-08-looking-ahead.jpg" data-title="Looking ahead" data-caption="From early traction to meaningful impact, unlocking more adoption and funding." aria-label="Go to slide 8: Looking ahead"><img src="../assets/img/banking-decks/reverse-mortgage-08-looking-ahead-thumb.jpg" width="320" height="180" alt="" loading="lazy" decoding="async"></button>
-        </div>
-      </div>
-    </div>
-  </div>
+<section id="reverse-mortgage" class="cs" style="display: flex; flex-direction: column; gap: 14px; scroll-margin-top: 24px">
+<h2>Deck 01 · Reverse Mortgage</h2>
+<h3>From a compliant webpage to a trusted product</h3>
+<p>A crowded market and growing demand led Home Trust to introduce a reverse mortgage for Canadians 55+, launched as EquityAccess to build brand trust and fuel post-merger growth.</p>
+<figure class="wide"><img src="/assets/media/d539bdf78523.jpg" alt="Reverse Mortgage: Introducing the Home Trust reverse mortgage product." loading="lazy"><figcaption>01 · Reverse Mortgage. Introducing the Home Trust reverse mortgage product.</figcaption></figure>
+<figure class="wide"><img src="/assets/media/7c73e6520574.jpg" alt="The opportunity: A crowded market and growing demand led Home Trust to introduce a reverse mortgage product that builds brand trust and fuels post-merger growth." loading="lazy"><figcaption>02 · The opportunity. A crowded market and growing demand led Home Trust to introduce a reverse mortgage product that builds brand trust and fuels post-merger growth.</figcaption></figure>
+<figure class="wide"><img src="/assets/media/366ba48687cc.jpg" alt="Task vs. UX goals: From delivering a compliant webpage to designing a trusted, transparent experience that simplifies complexity and drives engagement." loading="lazy"><figcaption>03 · Task vs. UX goals. From delivering a compliant webpage to designing a trusted, transparent experience that simplifies complexity and drives engagement.</figcaption></figure>
+<figure class="wide"><img src="/assets/media/21fb42a6b57c.jpg" alt="Competitive analysis: What competitors do well, and where they fall short, to find room to differentiate." loading="lazy"><figcaption>04 · Competitive analysis. What competitors do well, and where they fall short, to find room to differentiate.</figcaption></figure>
+<figure class="wide"><img src="/assets/media/8dc87cc8de39.jpg" alt="An informed design process: A cross-functional, insight-driven process balancing business goals, brand integrity and user needs." loading="lazy"><figcaption>05 · An informed design process. A cross-functional, insight-driven process balancing business goals, brand integrity and user needs.</figcaption></figure>
+<figure class="wide"><img src="/assets/media/71542ea769d7.jpg" alt="The solution: A reverse mortgage product page designed for clarity, trust and accessibility on desktop and mobile." loading="lazy"><figcaption>06 · The solution. A reverse mortgage product page designed for clarity, trust and accessibility on desktop and mobile.</figcaption></figure>
+<figure class="wide"><img src="/assets/media/80cf29ed7c42.jpg" alt="Early engagement signals: One week after launch: 7 pilot applications, 14 submissions, +42% commitments secured, +7% funding completed." loading="lazy"><figcaption>07 · Early engagement signals. One week after launch: 7 pilot applications, 14 submissions, +42% commitments secured, +7% funding completed.</figcaption></figure>
+<figure class="wide"><img src="/assets/media/e1c249f16b42.jpg" alt="Looking ahead: From early traction to meaningful impact, unlocking more adoption and funding." loading="lazy"><figcaption>08 · Looking ahead. From early traction to meaningful impact, unlocking more adoption and funding.</figcaption></figure>
 </section>
 
-<section id="customer-journey">
-  <div class="container row cs-band">
-    <span class="row__label cs-label">Deck 02 · Data strategy</span>
-    <div class="row__body stack" style="gap: 28px">
-      <div class="stack" style="gap: 12px">
-        <p class="kicker">Analytics · Internal tools</p>
-        <h2 class="serif heading-2">Customer Journey Analytics</h2>
-        <p class="cs-p">Our data tracking needed a major overhaul: insights were fragmented, unreliable and hard to act on. A unified data source replaced the silos.</p>
-      </div>
-      <div class="deck" data-deck aria-roledescription="carousel" aria-label="Customer Journey Analytics slides">
-        <div class="deck__stage">
-          <img class="deck__slide" src="../assets/img/banking-decks/customer-journey-01-digital-customer-journey-analytics.jpg" width="1600" height="900" alt="Digital Customer Journey Analytics: Introducing Oaken Financial CJ Analytics." loading="lazy" decoding="async">
-        </div>
-        <div class="deck__bar">
-          <div class="deck__text">
-            <span class="deck__title">Digital Customer Journey Analytics</span>
-            <span class="text-md">Introducing Oaken Financial CJ Analytics.</span>
-          </div>
-          <div class="deck__controls">
-            <button type="button" class="deck__btn" data-prev aria-label="Previous slide of Customer Journey Analytics"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 8H3M7 4L3 8l4 4"/></svg></button>
-            <span class="deck__count" aria-live="polite">1 / 6</span>
-            <button type="button" class="deck__btn deck__btn--next" data-next aria-label="Next slide of Customer Journey Analytics"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></button>
-          </div>
-        </div>
-        <div class="deck__thumbs">
-        <button type="button" class="deck__thumb" data-slide="0" data-src="../assets/img/banking-decks/customer-journey-01-digital-customer-journey-analytics.jpg" data-title="Digital Customer Journey Analytics" data-caption="Introducing Oaken Financial CJ Analytics." aria-label="Go to slide 1: Digital Customer Journey Analytics" aria-current="true"><img src="../assets/img/banking-decks/customer-journey-01-digital-customer-journey-analytics-thumb.jpg" width="320" height="180" alt="" loading="lazy" decoding="async"></button>
-        <button type="button" class="deck__thumb" data-slide="1" data-src="../assets/img/banking-decks/customer-journey-02-the-problem.jpg" data-title="The problem" data-caption="Our data tracking needed a major overhaul. Insights were fragmented, unreliable and hard to act on." aria-label="Go to slide 2: The problem"><img src="../assets/img/banking-decks/customer-journey-02-the-problem-thumb.jpg" width="320" height="180" alt="" loading="lazy" decoding="async"></button>
-        <button type="button" class="deck__thumb" data-slide="2" data-src="../assets/img/banking-decks/customer-journey-03-a-closer-look.jpg" data-title="A closer look" data-caption="Multiple tools, siloed teams, no shared view of the truth." aria-label="Go to slide 3: A closer look"><img src="../assets/img/banking-decks/customer-journey-03-a-closer-look-thumb.jpg" width="320" height="180" alt="" loading="lazy" decoding="async"></button>
-        <button type="button" class="deck__thumb" data-slide="3" data-src="../assets/img/banking-decks/customer-journey-04-why-this-matters.jpg" data-title="Why this matters" data-caption="When the data foundation is weak, confidence, innovation and growth start to crumble." aria-label="Go to slide 4: Why this matters"><img src="../assets/img/banking-decks/customer-journey-04-why-this-matters-thumb.jpg" width="320" height="180" alt="" loading="lazy" decoding="async"></button>
-        <button type="button" class="deck__thumb" data-slide="4" data-src="../assets/img/banking-decks/customer-journey-05-data-driven-ux.jpg" data-title="Data-driven UX" data-caption="Great product design sits where data, empathy and gut feeling meet." aria-label="Go to slide 5: Data-driven UX"><img src="../assets/img/banking-decks/customer-journey-05-data-driven-ux-thumb.jpg" width="320" height="180" alt="" loading="lazy" decoding="async"></button>
-        <button type="button" class="deck__thumb" data-slide="5" data-src="../assets/img/banking-decks/customer-journey-06-we-re-on-the-right.jpg" data-title="We&#x27;re on the right track" data-caption="Even this early, we&#x27;ve seen what&#x27;s possible when teams connect data, empathy and design intent." aria-label="Go to slide 6: We&#x27;re on the right track"><img src="../assets/img/banking-decks/customer-journey-06-we-re-on-the-right-thumb.jpg" width="320" height="180" alt="" loading="lazy" decoding="async"></button>
-        </div>
-      </div>
-    </div>
-  </div>
+<section id="customer-journey" class="cs" style="display: flex; flex-direction: column; gap: 14px; scroll-margin-top: 24px">
+<h2>Deck 02 · Customer Journey Analytics</h2>
+<h3>One reliable view of the customer</h3>
+<p>Our data tracking needed a major overhaul: insights were fragmented, unreliable and hard to act on. A unified data source replaced the silos.</p>
+<figure class="wide"><img src="/assets/media/eeea19a7f6a7.jpg" alt="Digital Customer Journey Analytics: Introducing Oaken Financial CJ Analytics." loading="lazy"><figcaption>01 · Digital Customer Journey Analytics. Introducing Oaken Financial CJ Analytics.</figcaption></figure>
+<figure class="wide"><img src="/assets/media/2b3c977d3d5d.jpg" alt="The problem: Our data tracking needed a major overhaul. Insights were fragmented, unreliable and hard to act on." loading="lazy"><figcaption>02 · The problem. Our data tracking needed a major overhaul. Insights were fragmented, unreliable and hard to act on.</figcaption></figure>
+<figure class="wide"><img src="/assets/media/746cc68ce88d.jpg" alt="A closer look: Multiple tools, siloed teams, no shared view of the truth." loading="lazy"><figcaption>03 · A closer look. Multiple tools, siloed teams, no shared view of the truth.</figcaption></figure>
+<figure class="wide"><img src="/assets/media/b44bed123fd5.jpg" alt="Why this matters: When the data foundation is weak, confidence, innovation and growth start to crumble." loading="lazy"><figcaption>04 · Why this matters. When the data foundation is weak, confidence, innovation and growth start to crumble.</figcaption></figure>
+<figure class="wide"><img src="/assets/media/84a43b904f13.jpg" alt="Data-driven UX: Great product design sits where data, empathy and gut feeling meet." loading="lazy"><figcaption>05 · Data-driven UX. Great product design sits where data, empathy and gut feeling meet.</figcaption></figure>
+<figure class="wide"><img src="/assets/media/c31fdcbf60cb.jpg" alt="We&#x27;re on the right track: Even this early, we&#x27;ve seen what&#x27;s possible when teams connect data, empathy and design intent." loading="lazy"><figcaption>06 · We're on the right track. Even this early, we've seen what's possible when teams connect data, empathy and design intent.</figcaption></figure>
 </section>
 
-<section class="container cs-next">
-<a class="text-link" href="oaken-digital.html">← Oaken Digital</a>
-<a class="btn btn--ink btn--round" href="../index.html#work">All work</a>
-</section>
-</main>
+<nav aria-label="Next case study" style="display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; padding-top: 8px; font-family: var(--mono); font-size: 13px"><a href="/projects.html">← All projects</a><a href="/work/founding-design-property-vista.html">Next: Founding AI design at Property Vista →</a></nav>
 
-<section id="hello" class="on-dark">
-  <div class="container contact">
-    <h2 class="serif display-cta">Building something hard? I'd like to hear about it.</h2>
-    <div class="actions">
-      <a class="btn btn--light" href="mailto:varunuxd@gmail.com">varunuxd@gmail.com</a>
-      <a class="text-link" href="https://www.linkedin.com/in/varunvelhankar/">LinkedIn</a>
-    </div>
-    <footer class="site-footer">
-      <span>© 2026 Varun Velhankar</span>
-      <nav aria-label="Footer"><a href="../index.html#work">All work</a><a href="https://www.linkedin.com/in/varunvelhankar/">LinkedIn</a><a href="../about.html">About</a></nav>
-    </footer>
-  </div>
-</section>
+<footer style="padding-top: 24px; border-top: 1px solid var(--line); display: flex; flex-direction: column; gap: 8px">
+<p style="margin: 0">Say hello at <a href="mailto:varunuxd@gmail.com">varunuxd@gmail.com</a> or on <a href="https://www.linkedin.com/in/varunvelhankar/">LinkedIn</a>, or read my <a href="/resume.html">résumé</a>.</p>
+<span style="font-family: var(--mono); font-size: 12px; color: var(--muted)">© 2026 Varun Velhankar</span>
+</footer>
 
+</div>
+</div>
+<script>
+(function(){var root=document.querySelector('.mm');if(!root)return;var k='vv-theme';
+try{var s=localStorage.getItem(k);if(s==='dark'||s==='light')root.setAttribute('data-theme',s);}catch(e){}
+var b=document.getElementById('theme-toggle');function lab(){if(b)b.setAttribute('aria-label',root.getAttribute('data-theme')==='dark'?'Switch to light theme':'Switch to dark theme');}
+lab();if(b)b.addEventListener('click',function(){var d=root.getAttribute('data-theme')==='dark'?'light':'dark';root.setAttribute('data-theme',d);try{localStorage.setItem(k,d);}catch(e){}lab();});})();
+</script>
 </body>
 </html>

@@ -2,432 +2,149 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<title>Founding AI design at Property Vista — Varun Velhankar</title>
+<meta name="description" content="How I built an AI-native product design function from zero as Head of Design at Property Vista.">
+<link rel="icon" type="image/png" href="/assets/media/911ac5585da3.png">
+<link rel="apple-touch-icon" href="/assets/media/30bafb827bce.png">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Founding design at Property Vista — Varun Velhankar</title>
-<meta name="description" content="Case study: founding an AI-native product design function at Property Vista, from operating model to design stack to measurable impact.">
+<link rel="canonical" href="https://www.varunvelhankar.com/work/founding-design-property-vista.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Founding AI design at Property Vista — Varun Velhankar">
+<meta property="og:description" content="How I built an AI-native product design function from zero as Head of Design at Property Vista.">
+<meta property="og:url" content="https://www.varunvelhankar.com/work/founding-design-property-vista.html">
+<meta property="og:image" content="https://www.varunvelhankar.com/assets/media/bc9236260c94.webp">
+<meta name="twitter:card" content="summary">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap">
-<link rel="stylesheet" href="../assets/css/tokens.css">
-<link rel="stylesheet" href="../assets/css/site.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,400..700;1,14..32,400..700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap">
+<style>
+body{margin:0}
+.mm{--bg:#ffffff;--ink:#111111;--text:#333333;--muted:#666666;--line:#e8e8e8;--accent:#9e5038;--serif:"Source Serif 4",Georgia,serif;--mono:"JetBrains Mono",ui-monospace,monospace}
+.mm[data-theme="dark"]{--bg:#141413;--ink:#f2f0ea;--text:#d6d3cc;--muted:#9a978f;--line:#2c2b28;--accent:#e0927a}
+@media (prefers-color-scheme:dark){.mm[data-theme="auto"]{--bg:#141413;--ink:#f2f0ea;--text:#d6d3cc;--muted:#9a978f;--line:#2c2b28;--accent:#e0927a}}
+.mm a{color:var(--text);text-decoration:underline;text-decoration-color:var(--muted);text-decoration-thickness:1px;text-underline-offset:3px}
+.mm a:hover{color:var(--ink);text-decoration-color:var(--ink)}
+.mm a:focus-visible,.mm button:focus-visible{outline:2px solid var(--ink);outline-offset:3px;border-radius:2px}
+.mm .row{text-decoration:none;color:var(--ink)}
+.mm .row:hover .t{text-decoration:underline;text-decoration-color:var(--muted);text-underline-offset:3px}
+.mm h3{margin:0;font-family:var(--serif);font-weight:600;font-size:21px;line-height:1.3;letter-spacing:-0.2px;color:var(--ink)}
+.mm p{margin:0}
+.mm [aria-current="page"]{color:var(--ink);text-decoration:underline;text-decoration-color:var(--ink);text-underline-offset:6px}
+.mm .wide{width:min(920px,calc(100vw - 40px));position:relative;left:50%;transform:translateX(-50%);margin:0}
+.mm figure{margin:0;display:flex;flex-direction:column;gap:8px}
+.mm figure img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:6px;background:var(--line)}
+.mm figcaption{font-family:var(--mono);font-size:12px;color:var(--muted)}
+.mm .grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:16px}
+.mm .grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+.mm .cs h2{margin:0;font-family:var(--mono);font-weight:400;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.mm .cs h3{margin:0;font-family:var(--serif);font-weight:600;font-size:21px;line-height:1.3;letter-spacing:-.2px;color:var(--ink)}
+.mm .cs ul{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:6px}
+.mm .cs .lead{font-size:19px;line-height:1.55;color:var(--ink)}
+.mm .quote{margin:0;padding-left:16px;border-left:2px solid var(--ink);color:var(--ink);font-style:italic}
+.mm .note{font-family:var(--mono);font-size:12px;line-height:1.6;color:var(--muted);padding:12px 14px;border:1px dashed var(--line)}
+.mm{--serif:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;--mono:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif}
+.mm .ascii{font-family:"JetBrains Mono",ui-monospace,monospace!important}
+</style>
 </head>
 <body>
-<a class="skip-link" href="#main">Skip to content</a>
+<div class="mm" data-theme="light" style="background: var(--bg); color: var(--text); font-family: var(--serif); font-size: 17px; line-height: 1.65; min-height: 100vh">
+<div style="max-width: 575px; margin: 0 auto; padding: 32px 20px 96px; display: flex; flex-direction: column; gap: 40px">
 
-<header class="container site-header">
-  <a class="brand" href="../index.html">Varun Velhankar</a>
-  <nav class="nav" aria-label="Primary">
-    <a href="../index.html#work" aria-current="page">Work</a>
-    <a href="../how-i-think.html">How I think</a>
-    <a href="../writing.html">Writing</a>
-    <a href="../about.html">About</a>
-    <a class="nav__cta" href="#hello">Say hello</a>
-  </nav>
+<header style="display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap">
+<a href="/" aria-label="Varun Velhankar, home" title="Varun Velhankar" style="text-decoration: none; color: var(--ink); display: inline-flex; align-items: center; gap: 14px; line-height: 1"><svg width="38" height="38" viewBox="0 0 200 200" aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" style="flex: none"><rect x="10" y="10" width="180" height="180" rx="20" stroke-width="10"></rect><g transform="translate(40.5 30)" stroke-width="5.5"><g transform="translate(0 0)"><path d="M2 2Q2 24 10 24Q18 24 18 2M-1 2H21M0 9H4M16 9H20"></path></g><g transform="translate(31 0)"><path d="M0 13Q9 2 18 13Q9 24 0 13ZM18 13L24 6M18 13L24 20"></path></g><g transform="translate(67 0)"><circle cx="10" cy="4" r="3"></circle><path d="M10 7V17M3 11H17M10 17L5 26M10 17L15 26"></path></g><g transform="translate(98 0)"><path d="M4 1V25M11 1V25M18 1V25"></path></g></g><g transform="translate(-6 10)" stroke-width="6.5"><path d="M46 122Q46 101 70 100H124Q138 100 141 112Q143 125 133 131H60Q46 131 46 122Z"></path><path d="M133 103Q139 89 151 84L167 93Q170 99 162 101L142 113"></path><circle cx="154" cy="91" r="1.6" fill="currentColor" stroke="none"></circle><path d="M152 85Q159 70 172 62"></path><path d="M148 87L144 79"></path><path d="M138 106Q143 114 139 122M131 104Q136 113 132 122" stroke-width="4"></path><path d="M62 131V156M75 131V153M120 131V153M132 130V156"></path><path d="M47 114Q37 121 40 138"></path><path d="M160 120Q168 131 176 120ZM168 126V160M161 160H175M164 113H172"></path></g></svg><span style="font-family: var(--serif); font-weight: 600; font-size: 20px; letter-spacing: -0.3px; line-height: 1; color: var(--ink); white-space: nowrap">Varun Velhankar</span></a>
+<nav aria-label="Primary" style="display: flex; align-items: center; gap: 4px 20px; flex-wrap: wrap; font-family: var(--mono); font-size: 14px">
+<a href="/projects.html" aria-current="page" style="text-decoration: none; padding: 8px 0">Projects</a>
+<a href="/writing.html" style="text-decoration: none; padding: 8px 0">Writing</a>
+<a href="/thinking.html" style="text-decoration: none; padding: 8px 0">Thinking</a>
+<a href="/about.html" style="text-decoration: none; padding: 8px 0">About</a>
+<button type="button" id="theme-toggle" aria-label="Switch to dark theme" style="width: 36px; height: 36px; display: inline-flex; align-items: center; justify-content: center; background: transparent; border: 0; color: var(--text); cursor: pointer; padding: 0">
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.5 9.5A5.5 5.5 0 1 1 6.5 2.5a4.5 4.5 0 0 0 7 7z"></path></svg>
+</button>
+</nav>
 </header>
 
-<main id="main">
-<section class="container cs-hero cs-hero--split">
-<div style="flex: 1 1 620px; min-width: 0; display: flex; flex-direction: column; gap: 26px">
-<a class="cs-back" href="../index.html#work">← All work</a>
-<p class="eyebrow">Property Vista · 2026 · Org, practice and platform</p>
-<h1 class="serif cs-title">Founding an <em class="em-agent">AI-native</em> product design function.</h1>
-<p style="margin: 0; max-width: 640px; font-size: 19px; line-height: 1.5; color: var(--body-strong)">I joined Property Vista as its first designer and founding AI designer. The mandate fit in four words: frictionless workflows, faster time to value. Everything below is how I turned that into a practice, a system and a seat at the strategy table.</p>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 20px 28px; padding-top: 6px">
-<div class="cs-meta"><span class="mono-label">Role</span><span class="cs-meta__value">Head of Design,<br>Founding AI designer</span></div>
-<div class="cs-meta"><span class="mono-label">Partners</span><span class="cs-meta__value">VP Product, Head of PMM, Head of Engineering</span></div>
-<div class="cs-meta"><span class="mono-label">Products</span><span class="cs-meta__value">Vivian and Vida, across every channel</span></div>
-<div class="cs-meta"><span class="mono-label">Since</span><span class="cs-meta__value">May 2026</span></div>
-</div>
-</div>
-<figure class="hero-figure">
-<img class="cs-img" src="../assets/img/founding-design/hero-after-van-gogh.jpg" alt="Abstract painting after Van Gogh's The Starry Night: swirling blue sky, glowing stars and a crescent moon above a sleeping village, with a dark cypress rising on the left" width="720" height="960">
-<figcaption class="fig-caption"><em>The Starry Night</em>, after Vincent van Gogh (1889)</figcaption>
-</figure>
-</section>
-<section class="band-soft" id="mandate">
-<div class="container row cs-band">
-<span class="row__label cs-label">The mandate</span>
-<div class="row__body cs-body">
-<h2 class="serif heading-2">Two north stars, twelve things I own</h2>
-<div class="on-dark" style="background: var(--dark); color: var(--on-dark); border-radius: 16px; padding: 36px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 28px 48px">
-<div class="stack" style="gap: 10px"><span class="cs-kicker cs-kicker--accent">North star 01</span><span class="cs-num cs-num--star">Frictionless workflow</span><span class="text-md cs-soft">Every task a renter, resident or property team does should take fewer steps than it did yesterday, and none of them should need a manual.</span></div>
-<div class="stack" style="gap: 10px"><span class="cs-kicker cs-kicker--accent">North star 02</span><span class="cs-num cs-num--star">Time to value</span><span class="text-md cs-soft">From signed contract to visible ROI, as short as possible. If a buyer can't see the value, it doesn't exist yet.</span></div>
-</div>
-<p class="cs-p">Property Vista hired a designer to make AI feel effortless for the people using it, and obvious for the people paying for it. In practice that meant owning the whole surface, from a renter's first message to the economic buyer's ROI report.</p>
-<div class="grid-fit" style="--min: 240px; gap: 16px">
-<div class="cs-card" style="border-radius: 14px; padding: 28px; gap: 16px">
-<span class="mono-meta">01</span>
-<div class="stack" style="gap: 4px"><span class="cs-num cs-num--34">Experience</span><span class="text-sm muted">The journeys people live in</span></div>
-<ul class="cs-dotlist"><li><span class="cs-bullet" aria-hidden="true"></span>End-to-end user journeys across every channel</li>
-<li><span class="cs-bullet" aria-hidden="true"></span>Information architecture and feature adoption</li>
-<li><span class="cs-bullet" aria-hidden="true"></span>Platform layout and discoverability</li></ul>
-</div>
-<div class="cs-card" style="border-radius: 14px; padding: 28px; gap: 16px">
-<span class="mono-meta">02</span>
-<div class="stack" style="gap: 4px"><span class="cs-num cs-num--34">Value</span><span class="text-sm muted">The proof buyers pay for</span></div>
-<ul class="cs-dotlist"><li><span class="cs-bullet" aria-hidden="true"></span>Economic-buyer journeys and ROI visualization</li>
-<li><span class="cs-bullet" aria-hidden="true"></span>Executive dashboards and reporting modules</li>
-<li><span class="cs-bullet" aria-hidden="true"></span>Value-realization screens</li></ul>
-</div>
-<div class="cs-card" style="border-radius: 14px; padding: 28px; gap: 16px">
-<span class="mono-meta">03</span>
-<div class="stack" style="gap: 4px"><span class="cs-num cs-num--34">Craft</span><span class="text-sm muted">The system that ships it</span></div>
-<ul class="cs-dotlist"><li><span class="cs-bullet" aria-hidden="true"></span>A design system I created and own</li>
-<li><span class="cs-bullet" aria-hidden="true"></span>Pristine engineering handoff</li>
-<li><span class="cs-bullet" aria-hidden="true"></span>AI-powered prototypes and motion demos for customers</li></ul>
-</div>
-<div class="cs-card" style="border-radius: 14px; padding: 28px; gap: 16px">
-<span class="mono-meta">04</span>
-<div class="stack" style="gap: 4px"><span class="cs-num cs-num--34">Signal</span><span class="text-sm muted">The loops that keep us honest</span></div>
-<ul class="cs-dotlist"><li><span class="cs-bullet" aria-hidden="true"></span>Customer advisory board feedback mechanism</li>
-<li><span class="cs-bullet" aria-hidden="true"></span>Synthetic and solo user testing</li>
-<li><span class="cs-bullet" aria-hidden="true"></span>An AI-native design stack</li></ul>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="why-now">
-<div class="container row cs-band">
-<span class="row__label cs-label">Why now</span>
-<div class="row__body cs-body">
-<h2 class="serif heading-2">The case I made to leadership</h2>
-<p class="cs-p">In my first weeks I wrote two short memos for our leadership: one on how design should operate in an AI-first product company, one on how design and engineering should work together. Both started from the same observation.</p>
-<div class="grid-fit" style="--min: 300px; gap: 32px">
-<div class="stack" style="gap: 10px">
-<h3 class="cs-h3">What changed</h3>
-<ul class="cs-list">
-<li>Product complexity is increasing</li>
-<li>AI and rapid prototyping are compressing feedback cycles</li>
-<li>Speed and quality are no longer trade-offs</li>
-</ul>
-</div>
-<div class="stack" style="gap: 10px">
-<h3 class="cs-h3">The challenge</h3>
-<p class="cs-p">Traditional design processes, built for linear phases and gated approvals, can't keep up. They reduce risk, but they also reduce learning.</p>
-</div>
-</div>
-<p class="cs-callout">AI changes the cost structure of design. Prototyping is now cheaper than documentation.</p>
-<div class="grid-fit" style="--min: 300px; gap: 16px">
-<div class="cs-card" style="padding: 28px; gap: 14px"><span class="cs-kicker cs-kicker--faded">The old model</span><ul class="cs-list"><li>Standardized processes and frameworks</li>
-<li>Linear phases and gated approvals</li>
-<li>Artifacts as the main way to align</li>
-<li>Rigid, sequential, slow</li></ul></div>
-<div class="cs-tool cs-tool--dark on-dark" style="border-radius: 12px; padding: 28px; gap: 14px"><span class="cs-kicker cs-kicker--faded">The model I set up</span><ul class="cs-list"><li>Research, prototyping and testing run continuously</li>
-<li>Teams move by risk and uncertainty, not by phase</li>
-<li>Learning decides the next action</li>
-<li>Flexibility adds speed without losing quality</li></ul></div>
-</div>
-</div>
-</div>
-</section>
-<section class="band-soft" id="operating-model">
-<div class="container row cs-band">
-<span class="row__label cs-label">Operating model</span>
-<div class="row__body cs-body">
-<h2 class="serif heading-2">Judgment over process</h2>
-<p class="cs-p">Design is a decision-making function. Its core value is experienced judgment: pattern recognition from shipped products, market exposure and real user behaviour. So instead of enforcing steps, I set principles.</p>
-<div class="grid-fit" style="--min: 240px; gap: 16px">
-<div class="cs-card"><span class="cs-card__title">Start where uncertainty is highest</span><div class="cs-card__text">Point design at the riskiest unknown first, not the first screen in the flow.</div></div>
-<div class="cs-card"><span class="cs-card__title">Do the smallest thing that reduces risk</span><div class="cs-card__text">A prototype, a transcript review, a five-user test. Whatever answers the question fastest.</div></div>
-<div class="cs-card"><span class="cs-card__title">Let evidence pick the next step</span><div class="cs-card__text">Learning decides what comes next, not a template.</div></div>
-<div class="cs-card"><span class="cs-card__title">Skip steps that don't add learning</span><div class="cs-card__text">Consistency in thinking, not in sequence.</div></div>
-</div>
-<div class="grid-fit" style="--min: 300px; gap: 16px">
-<div class="cs-card" style="padding: 28px; gap: 14px"><span class="cs-kicker cs-kicker--faded">What we kept from process</span><ul class="cs-list"><li>A shared language</li>
-<li>Alignment checkpoints</li>
-<li>Governance where risk is high</li></ul></div>
-<div class="cs-card" style="padding: 28px; gap: 14px"><span class="cs-kicker cs-kicker--faded">What we removed</span><ul class="cs-list"><li>Performative artifacts</li>
-<li>One-size-fits-all flows</li>
-<li>Process as a proxy for quality</li></ul></div>
-</div>
-<div class="grid-fit" style="--min: 300px; gap: 32px">
-<div class="stack" style="gap: 10px">
-<h3 class="cs-h3">Less emphasis on</h3>
-<ul class="cs-list">
-<li>Number of deliverables</li>
-<li>Strict adherence to frameworks</li>
-<li>Perfect upfront clarity</li>
-</ul>
-</div>
-<div class="stack" style="gap: 10px">
-<h3 class="cs-h3">More emphasis on</h3>
-<ul class="cs-list">
-<li>Speed to insight</li>
-<li>Decision quality</li>
-<li>Measurable product impact</li>
-</ul>
-</div>
-</div>
-<p class="cs-callout">Process scales teams. Experienced judgment scales impact.</p>
-</div>
-</div>
-</section>
-<section id="engineering">
-<div class="container row cs-band">
-<span class="row__label cs-label">Engineering</span>
-<div class="row__body cs-body">
-<h2 class="serif heading-2">Design as an accelerator, not a gate</h2>
-<blockquote class="cs-quote">"Good UX reduces entropy. Bad UX creates it."</blockquote>
-<p class="cs-p">UX exists to clarify decisions, not slow them. If design adds friction for engineers, it's failing. Lower cognitive load for users and developers means fewer mid-sprint changes, fewer undefined states and fewer post-release fixes.</p>
-<div class="grid-fit" style="--min: 240px; gap: 16px">
-<div class="cs-card"><span class="cs-card__title">One system, not two teams</span><div class="cs-card__text">Align early on constraints and trade-offs, and design within technical reality. I'd rather adjust a design early than defend it late.</div></div>
-<div class="cs-card"><span class="cs-card__title">Ship in layers</span><div class="cs-card__text">The MVP is the core decision flow, not a stripped UI. Reuse patterns aggressively and iterate on real usage, not opinions.</div></div>
-<div class="cs-card"><span class="cs-card__title">Prevent downstream cost</span><div class="cs-card__text">Clearer intent, defined states and edge cases, and shared understanding before build. UX is cheaper than refactoring.</div></div>
-<div class="cs-card"><span class="cs-card__title">Pristine handoff</span><div class="cs-card__text">Specs with every state and edge case, tokens mapped to code, and handoff straight into Claude Code and Figma Dev Mode.</div></div>
-</div>
-<div class="stack" style="gap: 12px">
-<h3 class="cs-h3">For AI-driven features, trust is part of the spec</h3>
-<ul class="cs-list">
-<li>Make the "why" visible, not just the "what": sources, confidence and recency</li>
-<li>Separate facts, inferences and predictions clearly</li>
-<li>Human in the loop by default</li>
-</ul>
-</div>
-<p class="cs-callout">Opaque AI creates UX debt, and engineering debt.</p>
-</div>
-</div>
-</section>
-<section class="band-soft" id="stack">
-<div class="container row cs-band">
-<span class="row__label cs-label">AI-native stack</span>
-<div class="row__body cs-body">
-<h2 class="serif heading-2">An AI-powered design pipeline</h2>
-<p class="cs-p">I built the design stack around AI from day one. Four phases, two feedback loops, and an AI collaboration layer running underneath all of it.</p>
-<div class="stack" role="img" aria-label="AI-powered design pipeline: Ideation, then Design, then Validation, then Handoff, with feedback loops from validation back to design and from handoff back to ideation" style="gap: 14px">
-<div class="cs-scroll">
-<div style="min-width: 920px; display: grid; grid-template-columns: minmax(0,1fr) 28px minmax(0,1fr) 28px minmax(0,1fr) 28px minmax(0,1fr); gap: 8px; align-items: stretch">
-<div class="cs-phase">
-<span class="mono-label">Phase 01</span>
-<span class="cs-num cs-num--30 cs-phase__title">Ideation</span>
-<div class="cs-tool cs-tool--dark on-dark"><span class="cs-tool__lead"><span class="cs-accent-dot" aria-hidden="true"></span>Claude</span><span class="cs-small cs-soft">Requirements and wireframes</span></div><div class="cs-card" style="border-radius: 10px; padding: 12px 14px; gap: 3px"><span class="cs-strong cs-strong--14">Figma MCP</span><span class="cs-small muted">The bridge between AI and design</span></div><div class="cs-card" style="border-radius: 10px; padding: 12px 14px; gap: 3px"><span class="cs-strong cs-strong--14">Pencil.dev / v0</span><span class="cs-small muted">AI component generation</span></div>
-</div><div class="cs-arrow" aria-hidden="true"><svg width="28" height="16" viewBox="0 0 28 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 8h22M18 3l6 5-6 5"></path></svg></div><div class="cs-phase">
-<span class="mono-label">Phase 02</span>
-<span class="cs-num cs-num--30 cs-phase__title">Design</span>
-<div class="cs-tool cs-tool--dark on-dark"><span class="cs-tool__lead"><span class="cs-accent-dot" aria-hidden="true"></span>Figma</span><span class="cs-small cs-soft">High-fidelity design, components, design system</span></div><div class="cs-card" style="border-radius: 10px; padding: 12px 14px; gap: 3px"><span class="cs-strong cs-strong--14">AI plugins</span><span class="cs-small muted">Automator, Content Reel</span></div><div class="cs-card" style="border-radius: 10px; padding: 12px 14px; gap: 3px"><span class="cs-strong cs-strong--14">Claude</span><span class="cs-small muted">Design review and iteration</span></div>
-</div><div class="cs-arrow" aria-hidden="true"><svg width="28" height="16" viewBox="0 0 28 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 8h22M18 3l6 5-6 5"></path></svg></div><div class="cs-phase">
-<span class="mono-label">Phase 03</span>
-<span class="cs-num cs-num--30 cs-phase__title">Validation</span>
-<div class="cs-tool cs-tool--dark on-dark"><span class="cs-tool__lead"><span class="cs-accent-dot" aria-hidden="true"></span>Synthetic user testing</span><span class="cs-small cs-soft">AI-powered usability simulation</span></div><div class="cs-card" style="border-radius: 10px; padding: 12px 14px; gap: 3px"><span class="cs-strong cs-strong--14">Synthetic users</span><span class="cs-small muted">UserTesting AI, Sprig AI, Claude analysis</span></div><div class="cs-card" style="border-radius: 10px; padding: 12px 14px; gap: 3px"><span class="cs-strong cs-strong--14">Accessibility</span><span class="cs-small muted">A11y testing, WCAG checks, AI audit</span></div>
-</div><div class="cs-arrow" aria-hidden="true"><svg width="28" height="16" viewBox="0 0 28 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 8h22M18 3l6 5-6 5"></path></svg></div><div class="cs-phase">
-<span class="mono-label">Phase 04</span>
-<span class="cs-num cs-num--30 cs-phase__title">Handoff</span>
-<div class="cs-tool cs-tool--dark on-dark"><span class="cs-tool__lead"><span class="cs-accent-dot" aria-hidden="true"></span>Dev handoff</span><span class="cs-small cs-soft">Design to code</span></div><div class="cs-card" style="border-radius: 10px; padding: 12px 14px; gap: 3px"><span class="cs-strong cs-strong--14">Tools</span><span class="cs-small muted">Figma Dev Mode, Zeplin, Claude Code</span></div>
-</div>
-</div>
-</div>
-<div class="cs-legend">
-<span class="cs-inline"><svg width="30" height="10" viewBox="0 0 30 10" aria-hidden="true"><path d="M1 5h24" stroke="currentColor" stroke-width="1.5" stroke-dasharray="3 3"></path><path d="M22 1l6 4-6 4" fill="none" stroke="currentColor" stroke-width="1.5"></path></svg>Insights and refinements: validation feeds back into design</span>
-<span class="cs-inline"><svg width="30" height="10" viewBox="0 0 30 10" aria-hidden="true"><path d="M1 5h24" stroke="currentColor" stroke-width="1.5" stroke-dasharray="3 3"></path><path d="M22 1l6 4-6 4" fill="none" stroke="currentColor" stroke-width="1.5"></path></svg>Implementation feedback loop: handoff feeds back into ideation</span>
-</div>
-</div>
-<div class="cs-layer">
-<span class="cs-kicker cs-kicker--agent">Continuous AI collaboration layer, under every phase</span>
-<div class="grid-fit" style="--min: 200px; gap: 18px">
-<div class="stack" style="gap: 4px"><span class="cs-strong cs-strong--15">Real-time AI assist</span><span class="cs-small">Design suggestions, copy generation, UX patterns</span></div>
-<div class="stack" style="gap: 4px"><span class="cs-strong cs-strong--15">Data integration</span><span class="cs-small">Analytics insights, user behaviour, performance metrics</span></div>
-<div class="stack" style="gap: 4px"><span class="cs-strong cs-strong--15">Version control</span><span class="cs-small">Git integration, design history, AI change logs</span></div>
-<div class="stack" style="gap: 4px"><span class="cs-strong cs-strong--15">Team collaboration</span><span class="cs-small">Shared context, AI-assisted reviews, async collaboration</span></div>
-<div class="stack" style="gap: 4px"><span class="cs-strong cs-strong--15">Auto-documentation</span><span class="cs-small">Design decisions, component docs, API references</span></div>
-<div class="stack" style="gap: 4px"><span class="cs-strong cs-strong--15">Quality assurance</span><span class="cs-small">Design system QA, consistency checks, brand compliance</span></div>
-</div>
-</div>
-<div class="grid-fit" style="--min: 220px; gap: 24px">
-<div class="stack" style="gap: 6px">
-<h3 class="cs-h3">Faster iteration</h3>
-<p class="cs-p">AI-powered generation and testing compress design cycles.</p>
-</div>
-<div class="stack" style="gap: 6px">
-<h3 class="cs-h3">Continuous feedback</h3>
-<p class="cs-p">Real-time insight from synthetic users and AI analysis.</p>
-</div>
-<div class="stack" style="gap: 6px">
-<h3 class="cs-h3">Seamless handoff</h3>
-<p class="cs-p">Design decisions captured and translated to code.</p>
-</div>
-<div class="stack" style="gap: 6px">
-<h3 class="cs-h3">Human and AI together</h3>
-<p class="cs-p">Designers focus on strategy and judgment; AI takes on execution.</p>
-</div>
-</div>
-<p class="cs-p">This portfolio was designed and built in the same way.</p>
-</div>
-</div>
-</section>
-<section id="value">
-<div class="container row cs-band">
-<span class="row__label cs-label">Economic buyer</span>
-<div class="row__body cs-body">
-<h2 class="serif heading-2">Making value visible to the person who signs</h2>
-<p class="cs-p">AI products live or die on whether the buyer can see the return. I own the economic-buyer journey end to end: the ROI story in the sales demo, the executive dashboards after launch, the reporting modules property teams share upward, and the value-realization screens that make the case for expansion.</p>
-<figure class="cs-figure">
-<div class="cs-tool cs-tool--dark on-dark" style="border-radius: 16px; padding: 24px; gap: 18px">
-<div class="cs-spread"><span class="text-md cs-medium">Portfolio value · The Alder group (name changed)</span><span class="cs-mono-sm cs-soft">Executive view · last 6 months</span></div>
-<div class="grid-fit" style="--min: 150px; gap: 10px">
-<div class="cs-darkstat"><span class="cs-mono-xs cs-upper cs-soft">Leads handled by AI</span><span class="cs-num cs-num--34">92%</span><span class="cs-tiny cs-soft">without a staff touch</span></div>
-<div class="cs-darkstat"><span class="cs-mono-xs cs-upper cs-soft">Enquiry to lease</span><span class="cs-num cs-num--34">6 min</span><span class="cs-tiny cs-soft">average, all channels</span></div>
-<div class="cs-darkstat"><span class="cs-mono-xs cs-upper cs-soft">After-hours capture</span><span class="cs-num cs-num--34">80%</span><span class="cs-tiny cs-soft">of leads that used to be lost</span></div>
-<div class="cs-darkstat"><span class="cs-mono-xs cs-upper cs-soft">Staff hours returned</span><span class="cs-num cs-num--34">[X]</span><span class="cs-tiny cs-soft">per property, per month</span></div>
-</div>
-<div class="stack" style="gap: 10px"><span class="cs-mono-xs cs-upper cs-soft">Leases signed by Vivian</span><div role="img" aria-label="Bar chart: leases signed by Vivian each month from May to October, rising every month and highest in October" style="height: 140px; display: flex; gap: 10px; align-items: flex-end"><div style="flex: 1; display: flex; flex-direction: column; justify-content: flex-end; gap: 6px; align-items: center"><div style="width: 100%; height: 38px; border-radius: 4px 4px 0 0; background: #3a3732"></div><span class="cs-mono-xs cs-soft">May</span></div><div style="flex: 1; display: flex; flex-direction: column; justify-content: flex-end; gap: 6px; align-items: center"><div style="width: 100%; height: 52px; border-radius: 4px 4px 0 0; background: #3a3732"></div><span class="cs-mono-xs cs-soft">Jun</span></div><div style="flex: 1; display: flex; flex-direction: column; justify-content: flex-end; gap: 6px; align-items: center"><div style="width: 100%; height: 66px; border-radius: 4px 4px 0 0; background: #3a3732"></div><span class="cs-mono-xs cs-soft">Jul</span></div><div style="flex: 1; display: flex; flex-direction: column; justify-content: flex-end; gap: 6px; align-items: center"><div style="width: 100%; height: 81px; border-radius: 4px 4px 0 0; background: #3a3732"></div><span class="cs-mono-xs cs-soft">Aug</span></div><div style="flex: 1; display: flex; flex-direction: column; justify-content: flex-end; gap: 6px; align-items: center"><div style="width: 100%; height: 96px; border-radius: 4px 4px 0 0; background: #3a3732"></div><span class="cs-mono-xs cs-soft">Sep</span></div><div style="flex: 1; display: flex; flex-direction: column; justify-content: flex-end; gap: 6px; align-items: center"><div style="width: 100%; height: 118px; border-radius: 4px 4px 0 0; background: #cc785c"></div><span class="cs-mono-xs cs-soft">Oct</span></div></div></div>
-</div>
-<figcaption class="cs-caption">Concept: the executive value view. Fictional portfolio and illustrative trend; headline rates are our published averages.</figcaption>
-</figure>
-<div class="stack" style="gap: 16px">
-<h3 class="cs-h3">Designing the value-realization curve</h3>
-<div class="grid-fit" style="--min: 180px; gap: 20px">
-<div class="cs-step"><span class="cs-mono-sm">Day 1</span><span class="cs-strong">Connected</span><span class="text-sm">PMS linked, Vivian live on one property</span></div>
-<div class="cs-step"><span class="cs-mono-sm">Week 1</span><span class="cs-strong">First proof</span><span class="text-sm">First AI-led tours and leases show up in Vida</span></div>
-<div class="cs-step"><span class="cs-mono-sm">Month 1</span><span class="cs-strong">ROI in view</span><span class="text-sm">Executive report shows hours returned and leases won</span></div>
-<div class="cs-step cs-step--later"><span class="cs-mono-sm">Quarter 1</span><span class="cs-strong">Expansion</span><span class="text-sm">Value realized becomes the case to roll out portfolio-wide</span></div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="band-soft" id="platform">
-<div class="container row cs-band">
-<span class="row__label cs-label">Platform</span>
-<div class="row__body cs-body">
-<h2 class="serif heading-2">Layout, discoverability and feature adoption</h2>
-<p class="cs-p">As the platform grew from one agent to an ecosystem, the risk shifted from "can it do this?" to "can anyone find it?". I own the information architecture and platform layout, and treat feature adoption as a design outcome, not a marketing one.</p>
-<figure class="cs-figure">
-<div class="cs-phase" style="border-radius: 16px; gap: 12px">
-<span class="mono-label">Vida · top-level navigation</span>
-<div class="grid-fit" style="--min: 190px; gap: 10px">
-<div class="cs-tool cs-tool--dark on-dark" style="padding: 16px"><span class="cs-tool__lead"><span class="cs-accent-dot" aria-hidden="true"></span>Needs a human</span><span class="cs-small cs-soft">Escalations, ranked by urgency and value</span></div>
-<div class="cs-card" style="border-radius: 10px; padding: 16px; gap: 4px"><span class="ink">Agents</span><span class="cs-caption">Configure Vivian: tone, policies, autonomy</span></div>
-<div class="cs-card" style="border-radius: 10px; padding: 16px; gap: 4px"><span class="ink">Conversations</span><span class="cs-caption">Every thread, every channel, searchable</span></div>
-<div class="cs-card" style="border-radius: 10px; padding: 16px; gap: 4px"><span class="ink">Leasing</span><span class="cs-caption">Pipeline from enquiry to signed lease</span></div>
-<div class="cs-card" style="border-radius: 10px; padding: 16px; gap: 4px"><span class="ink">Insights</span><span class="cs-caption">Executive dashboards and reports</span></div>
-<div class="cs-card" style="border-radius: 10px; padding: 16px; gap: 4px"><span class="ink">Settings</span><span class="cs-caption">Properties, people, PMS integrations</span></div>
-</div>
-</div>
-<figcaption class="cs-caption">Simplified and illustrative. The rule: lead with what needs a human now, then everything else.</figcaption>
-</figure>
-<div class="stack" style="gap: 16px">
-<h3 class="cs-h3">The adoption loop we design for</h3>
-<div class="grid-fit" style="--min: 170px; gap: 20px">
-<div class="stack" style="gap: 6px"><span class="cs-num cs-num--28">Discover</span><span class="text-sm">Features surface in context, at the moment they help.</span></div>
-<div class="stack" style="gap: 6px"><span class="cs-num cs-num--28">Try</span><span class="text-sm">Safe defaults and previews before anything goes live.</span></div>
-<div class="stack" style="gap: 6px"><span class="cs-num cs-num--28">Adopt</span><span class="text-sm">Progress and outcomes shown back to the team.</span></div>
-<div class="stack" style="gap: 6px"><span class="cs-num cs-num--28">Expand</span><span class="text-sm">Proven value earns the next feature its place.</span></div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="signal">
-<div class="container row cs-band">
-<span class="row__label cs-label">Signal</span>
-<div class="row__body cs-body">
-<h2 class="serif heading-2">Loops that keep design honest</h2>
-<p class="cs-p">A design function without signal is just taste. I set up feedback that runs continuously, from structured advisory boards to AI-simulated users, and closes the loop with prototypes customers can touch.</p>
-<div class="grid-fit" style="--min: 200px; gap: 12px">
-<div class="cs-card" style="padding: 18px; gap: 6px"><span class="cs-mono-sm">01</span><span class="cs-strong">Customer advisory board</span><span class="text-sm">Operators who shape the roadmap, on a regular cadence</span></div>
-<div class="cs-card" style="padding: 18px; gap: 6px"><span class="cs-mono-sm">02</span><span class="cs-strong">In-product signal</span><span class="text-sm">Feedback, transcripts and adoption data</span></div>
-<div class="cs-card" style="padding: 18px; gap: 6px"><span class="cs-mono-sm">03</span><span class="cs-strong">Synthetic testing</span><span class="text-sm">Breadth: AI-simulated users across scenarios</span></div>
-<div class="cs-card" style="padding: 18px; gap: 6px"><span class="cs-mono-sm">04</span><span class="cs-strong">Solo sessions</span><span class="text-sm">Depth: one-on-one with real operators and renters</span></div>
-<div class="cs-card" style="padding: 18px; gap: 6px"><span class="cs-mono-sm">05</span><span class="cs-strong">Triage with Product</span><span class="text-sm">Shared priorities with the VP Product and PMM</span></div>
-<div class="cs-card" style="padding: 18px; gap: 6px"><span class="cs-mono-sm">06</span><span class="cs-strong">Ship and show</span><span class="text-sm">Prototypes and motion demos back to customers</span></div>
-</div>
-<div class="grid-fit" style="--min: 300px; gap: 32px">
-<div class="stack" style="gap: 8px">
-<h3 class="cs-h3">Synthetic plus solo testing</h3>
-<p class="cs-p">Synthetic users give breadth: hundreds of simulated sessions across personas and edge cases in hours. Solo sessions give depth: watching one real operator or renter is still where the best insight comes from.</p>
-</div>
-<div class="stack" style="gap: 8px">
-<h3 class="cs-h3">Prototypes and motion for customers</h3>
-<p class="cs-p">AI-powered prototypes and motion demos let customers react to the future before it's built, in sales conversations and advisory board sessions alike.</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="band-soft" id="first-90">
-<div class="container row cs-band">
-<span class="row__label cs-label">First 90 days</span>
-<div class="row__body cs-body">
-<h2 class="serif heading-2">From zero to a working practice</h2>
-<div class="grid-fit" style="--min: 240px; gap: 16px">
-<div class="cs-card" style="border-radius: 14px; gap: 12px"><span class="mono-meta">Days 0–30</span><span class="cs-num cs-num--30">Listen and map</span><ul class="cs-list cs-list--tight"><li class="text-md">Shadowed leasing teams and operators</li><li class="text-md">Mapped journeys across every channel</li><li class="text-md">Made the case for judgment-led design to leadership</li></ul></div>
-<div class="cs-card" style="border-radius: 14px; gap: 12px"><span class="mono-meta">Days 31–60</span><span class="cs-num cs-num--30">Lay foundations</span><ul class="cs-list cs-list--tight"><li class="text-md">Design system v1 and AI-state language</li><li class="text-md">AI-native design stack and handoff to Claude Code</li><li class="text-md">First executive dashboard concepts</li></ul></div>
-<div class="cs-card" style="border-radius: 14px; gap: 12px"><span class="mono-meta">Days 61–90</span><span class="cs-num cs-num--30">Build the loops</span><ul class="cs-list cs-list--tight"><li class="text-md">Customer advisory board feedback mechanism</li><li class="text-md">Synthetic plus solo testing cadence</li><li class="text-md">Prototype and motion demos in sales conversations</li></ul></div>
-</div>
-<div class="stack" style="gap: 12px">
-<h3 class="cs-h3">What leadership enabled</h3>
-<ul class="cs-list">
-<li>Psychological safety to experiment</li>
-<li>Trust in experienced design judgment</li>
-<li>Clear outcomes over rigid rituals</li>
-<li>Cross-functional collaboration, early and often</li>
-</ul>
-</div>
-</div>
-</div>
-</section>
-<section id="measure">
-<div class="container row cs-band">
-<span class="row__label cs-label">Measuring design</span>
-<div class="row__body cs-body">
-<h2 class="serif heading-2">Impact, not artifacts</h2>
-<div class="grid-fit" style="--min: 200px; gap: 28px">
-<div class="cs-stat"><span class="cs-stat__value">Time to insight</span><span class="text-md">How quickly a question becomes a validated answer</span></div>
-<div class="cs-stat"><span class="cs-stat__value">Less rework</span><span class="text-md">Fewer mid-sprint changes and post-release fixes</span></div>
-<div class="cs-stat"><span class="cs-stat__value">Adoption</span><span class="text-md">Product adoption and engagement</span></div>
-<div class="cs-stat"><span class="cs-stat__value">Confidence</span><span class="text-md">Stakeholder confidence in decisions</span></div>
-</div>
-<div class="stack" style="gap: 12px">
-<h3 class="cs-h3">What success looks like in the first three to six months</h3>
-<ul class="cs-list">
-<li>Less debate, faster alignment</li>
-<li>More confident releases</li>
-<li>Design seen as leverage, not overhead</li>
-</ul>
-</div>
-<blockquote class="cs-quote">"When UX works well, it almost disappears, because everything just flows."</blockquote>
-</div>
-</div>
-</section>
-<section class="on-dark" id="outcome">
-<div class="container row pad-96">
-<span class="row__label cs-label">Outcome</span>
-<div class="row__body cs-body">
-<h2 class="serif heading-2">What it changed</h2>
-<div class="grid-fit" style="--min: 200px; gap: 28px">
-<div class="cs-stat"><span class="cs-stat__value">6 min</span><span class="text-md cs-soft">Average enquiry to lease</span></div>
-<div class="cs-stat"><span class="cs-stat__value">92%</span><span class="text-md cs-soft">Of leads handled by the AI agent on its own</span></div>
-<div class="cs-stat"><span class="cs-stat__value">80%</span><span class="text-md cs-soft">Of after-hours leads captured instead of lost</span></div>
-</div>
-<ul class="cs-list">
-<li>A design function built from zero, with a seat at the strategy table</li>
-<li>One design language for people and agents, including AI states</li>
-<li>An AI-native stack from ideation to Claude Code handoff</li>
-<li>Feedback loops from advisory boards to synthetic users</li>
-</ul>
-<p class="cs-quote">Mature design organizations measure impact, not artifacts.</p>
-</div>
-</div>
-</section>
-<section class="container cs-next">
-<a class="text-link" href="../index.html#work">← All work</a>
-<a class="btn btn--ink btn--round" href="oaken-digital.html">Next: Oaken Digital<svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"></path></svg></a>
-</section>
-</main>
+<section class="cs" style="display: flex; flex-direction: column; gap: 18px">
+<a href="/projects.html" style="align-self: flex-start; font-family: var(--mono); font-size: 13px; text-decoration: none">← Projects</a>
+<p style="font-family: var(--mono); font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted)">Property Vista · 2026 · Org, practice and platform</p>
+<h1 style="margin: 0; font-family: var(--serif); font-weight: 600; font-size: 38px; line-height: 1.12; letter-spacing: -0.6px; color: var(--ink)">Founding an AI-native product design function</h1>
+<p class="lead">I joined Property Vista as its first designer and founding AI designer. The mandate fit in four words: frictionless workflows, faster time to value. This is how I turned it into a practice, a system and a seat at the strategy table.</p>
+<dl style="margin: 0; display: flex; flex-direction: column; border-bottom: 1px solid var(--line)"><div style="display: flex; gap: 16px; padding: 6px 0; border-top: 1px solid var(--line)"><dt style="flex: 0 0 110px; font-family: var(--mono); font-size: 12px; color: var(--muted); padding-top: 3px">Role</dt><dd style="margin: 0; flex: 1; color: var(--ink)">Head of Design, founding AI designer</dd></div><div style="display: flex; gap: 16px; padding: 6px 0; border-top: 1px solid var(--line)"><dt style="flex: 0 0 110px; font-family: var(--mono); font-size: 12px; color: var(--muted); padding-top: 3px">Partners</dt><dd style="margin: 0; flex: 1; color: var(--ink)">VP Product, Head of PMM, Head of Engineering</dd></div><div style="display: flex; gap: 16px; padding: 6px 0; border-top: 1px solid var(--line)"><dt style="flex: 0 0 110px; font-family: var(--mono); font-size: 12px; color: var(--muted); padding-top: 3px">Products</dt><dd style="margin: 0; flex: 1; color: var(--ink)">Vivian and Vida, across every channel</dd></div><div style="display: flex; gap: 16px; padding: 6px 0; border-top: 1px solid var(--line)"><dt style="flex: 0 0 110px; font-family: var(--mono); font-size: 12px; color: var(--muted); padding-top: 3px">Since</dt><dd style="margin: 0; flex: 1; color: var(--ink)">May 2026</dd></div></dl>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 20px; padding-top: 6px"><div style="display: flex; flex-direction: column; gap: 2px"><span style="font-family: var(--serif); font-weight: 600; font-size: 28px; line-height: 1.1; color: var(--ink); letter-spacing: -0.4px">60%</span><span style="font-size: 14px; line-height: 1.45; color: var(--muted)">Faster time-to-lease</span></div><div style="display: flex; flex-direction: column; gap: 2px"><span style="font-family: var(--serif); font-weight: 600; font-size: 28px; line-height: 1.1; color: var(--ink); letter-spacing: -0.4px">92%</span><span style="font-size: 14px; line-height: 1.45; color: var(--muted)">Of inquiries handled without staff</span></div><div style="display: flex; flex-direction: column; gap: 2px"><span style="font-family: var(--serif); font-weight: 600; font-size: 28px; line-height: 1.1; color: var(--ink); letter-spacing: -0.4px">2</span><span style="font-size: 14px; line-height: 1.45; color: var(--muted)">Enterprise deals supported by the ROI views</span></div></div>
 
-<section id="hello" class="on-dark">
-  <div class="container contact">
-    <h2 class="serif display-cta">Building something hard? I'd like to hear about it.</h2>
-    <div class="actions">
-      <a class="btn btn--light" href="mailto:varunuxd@gmail.com">varunuxd@gmail.com</a>
-      <a class="text-link" href="https://www.linkedin.com/in/varunvelhankar/">LinkedIn</a>
-    </div>
-    <footer class="site-footer">
-      <span>© 2026 Varun Velhankar</span>
-      <nav aria-label="Footer"><a href="../index.html#work">All work</a><a href="https://www.linkedin.com/in/varunvelhankar/">LinkedIn</a><a href="../about.html">About</a></nav>
-    </footer>
-  </div>
 </section>
 
+<section class="cs" style="display: flex; flex-direction: column; gap: 14px">
+<h2>The mandate</h2>
+<h3>Two north stars</h3>
+<ul style="list-style: none; padding: 0; gap: 10px"><li><span style="color: var(--ink)">Frictionless workflow.</span> Every task a renter, resident or property team does should take fewer steps than it did yesterday, and none should need a manual.</li><li><span style="color: var(--ink)">Time to value.</span> From signed contract to visible ROI, as short as possible. If a buyer can't see the value, it doesn't exist yet.</li></ul>
+<p>In practice that meant owning the whole surface, from a renter's first message to the economic buyer's ROI report:</p>
+<div style="overflow-x: auto"><table style="width: 100%; border-collapse: collapse; font-size: 15px; line-height: 1.5"><thead><tr><th style="text-align: left; font-family: var(--mono); font-weight: 400; font-size: 12px; color: var(--muted); padding: 6px 12px 6px 0; border-bottom: 1px solid var(--line)">Area</th><th style="text-align: left; font-family: var(--mono); font-weight: 400; font-size: 12px; color: var(--muted); padding: 6px 12px 6px 0; border-bottom: 1px solid var(--line)">What I own</th></tr></thead><tbody><tr><td style="padding: 8px 12px 8px 0; border-bottom: 1px solid var(--line); vertical-align: top; color: var(--ink)">Experience</td><td style="padding: 8px 12px 8px 0; border-bottom: 1px solid var(--line); vertical-align: top; ">End-to-end journeys across every channel, IA, discoverability and feature adoption</td></tr><tr><td style="padding: 8px 12px 8px 0; border-bottom: 1px solid var(--line); vertical-align: top; color: var(--ink)">Value</td><td style="padding: 8px 12px 8px 0; border-bottom: 1px solid var(--line); vertical-align: top; ">Economic-buyer journeys, ROI visualization, executive dashboards and reporting</td></tr><tr><td style="padding: 8px 12px 8px 0; border-bottom: 1px solid var(--line); vertical-align: top; color: var(--ink)">Craft</td><td style="padding: 8px 12px 8px 0; border-bottom: 1px solid var(--line); vertical-align: top; ">The design system, engineering handoff, AI prototypes and motion demos for customers</td></tr><tr><td style="padding: 8px 12px 8px 0; border-bottom: 1px solid var(--line); vertical-align: top; color: var(--ink)">Signal</td><td style="padding: 8px 12px 8px 0; border-bottom: 1px solid var(--line); vertical-align: top; ">Customer advisory board, synthetic and solo user testing, the AI-native design stack</td></tr></tbody></table></div>
+</section>
+
+<section class="cs" style="display: flex; flex-direction: column; gap: 14px">
+<h2>The case I made</h2>
+<p>In my first weeks I wrote two short memos for leadership: how design should operate in an AI-first company, and how design and engineering should work together. Both started from the same observation: AI changes the cost structure of design. Prototyping is now cheaper than documentation.</p>
+<div style="overflow-x: auto"><table style="width: 100%; border-collapse: collapse; font-size: 15px; line-height: 1.5"><thead><tr><th style="text-align: left; font-family: var(--mono); font-weight: 400; font-size: 12px; color: var(--muted); padding: 6px 12px 6px 0; border-bottom: 1px solid var(--line)">The old model</th><th style="text-align: left; font-family: var(--mono); font-weight: 400; font-size: 12px; color: var(--muted); padding: 6px 12px 6px 0; border-bottom: 1px solid var(--line)">The model I set up</th></tr></thead><tbody><tr><td style="padding: 8px 12px 8px 0; border-bottom: 1px solid var(--line); vertical-align: top; color: var(--ink)">Linear phases and gated approvals</td><td style="padding: 8px 12px 8px 0; border-bottom: 1px solid var(--line); vertical-align: top; ">Research, prototyping and testing run continuously</td></tr><tr><td style="padding: 8px 12px 8px 0; border-bottom: 1px solid var(--line); vertical-align: top; color: var(--ink)">Artifacts as the way to align</td><td style="padding: 8px 12px 8px 0; border-bottom: 1px solid var(--line); vertical-align: top; ">Teams move by risk and uncertainty, not by phase</td></tr><tr><td style="padding: 8px 12px 8px 0; border-bottom: 1px solid var(--line); vertical-align: top; color: var(--ink)">Process as a proxy for quality</td><td style="padding: 8px 12px 8px 0; border-bottom: 1px solid var(--line); vertical-align: top; ">Learning decides the next action</td></tr></tbody></table></div>
+<p class="quote">Process scales teams. Experienced judgment scales impact.</p>
+</section>
+
+<section class="cs" style="display: flex; flex-direction: column; gap: 14px">
+<h2>Operating model</h2>
+<h3>Judgment over process</h3>
+<ul style="list-style: none; padding: 0; gap: 10px"><li><span style="color: var(--ink)">Start where uncertainty is highest.</span> Point design at the riskiest unknown first, not the first screen in the flow.</li><li><span style="color: var(--ink)">Do the smallest thing that reduces risk.</span> A prototype, a transcript review, a five-user test.</li><li><span style="color: var(--ink)">Let evidence pick the next step.</span> Learning decides what comes next, not a template.</li><li><span style="color: var(--ink)">Skip steps that don't add learning.</span> Consistency in thinking, not in sequence.</li></ul>
+</section>
+
+<section class="cs" style="display: flex; flex-direction: column; gap: 14px">
+<h2>Engineering</h2>
+<h3>Design as an accelerator, not a gate</h3>
+<p>If design adds friction for engineers, it is failing. I align early on constraints, ship in layers (the MVP is the core decision flow, not a stripped UI), and hand off specs with every state and edge case, tokens mapped to code, straight into Claude Code and Figma Dev Mode.</p>
+<p>For AI features, trust is part of the spec: make the why visible (sources, confidence, recency), separate facts from inferences and predictions, and keep a human in the loop by default.</p>
+</section>
+
+<section class="cs" style="display: flex; flex-direction: column; gap: 14px">
+<h2>AI-native stack</h2>
+<h3>A design pipeline built around AI</h3>
+<div style="overflow-x: auto"><table style="width: 100%; border-collapse: collapse; font-size: 15px; line-height: 1.5"><thead><tr><th style="text-align: left; font-family: var(--mono); font-weight: 400; font-size: 12px; color: var(--muted); padding: 6px 12px 6px 0; border-bottom: 1px solid var(--line)">Phase</th><th style="text-align: left; font-family: var(--mono); font-weight: 400; font-size: 12px; color: var(--muted); padding: 6px 12px 6px 0; border-bottom: 1px solid var(--line)">Tools and practice</th></tr></thead><tbody><tr><td style="padding: 8px 12px 8px 0; border-bottom: 1px solid var(--line); vertical-align: top; color: var(--ink)">Ideation</td><td style="padding: 8px 12px 8px 0; border-bottom: 1px solid var(--line); vertical-align: top; ">Claude for requirements and wireframes; Figma MCP as the bridge; v0 for component generation</td></tr><tr><td style="padding: 8px 12px 8px 0; border-bottom: 1px solid var(--line); vertical-align: top; color: var(--ink)">Design</td><td style="padding: 8px 12px 8px 0; border-bottom: 1px solid var(--line); vertical-align: top; ">Figma, the design system, AI plugins, Claude for review</td></tr><tr><td style="padding: 8px 12px 8px 0; border-bottom: 1px solid var(--line); vertical-align: top; color: var(--ink)">Validation</td><td style="padding: 8px 12px 8px 0; border-bottom: 1px solid var(--line); vertical-align: top; ">Synthetic user testing, solo sessions, accessibility audits</td></tr><tr><td style="padding: 8px 12px 8px 0; border-bottom: 1px solid var(--line); vertical-align: top; color: var(--ink)">Handoff</td><td style="padding: 8px 12px 8px 0; border-bottom: 1px solid var(--line); vertical-align: top; ">Figma Dev Mode and Claude Code, with feedback loops back into design</td></tr></tbody></table></div>
+<p>The stack (Claude, Claude Code, Codex, Figma Make) cut concept-to-prototype time from weeks to days. This portfolio was designed and built the same way.</p>
+</section>
+
+<section class="cs" style="display: flex; flex-direction: column; gap: 14px">
+<h2>Value and platform</h2>
+<h3>Making value visible to the person who signs</h3>
+<p>AI products live or die on whether the buyer can see the return. I own the ROI story in the sales demo, the executive dashboards after launch, and the value-realization curve: connected on day 1, first AI-led tours and leases in week 1, ROI in view by month 1, and portfolio-wide expansion by quarter 1. These views were used in sales and funding conversations that supported 2 enterprise deals.</p>
+<h3>Can anyone find it?</h3>
+<p>As the platform grew from one agent to an ecosystem, I set Vida's information architecture around one rule: lead with what needs a human now, then everything else.</p>
+<div style="overflow-x: auto"><table style="width: 100%; border-collapse: collapse; font-size: 15px; line-height: 1.5"><thead><tr><th style="text-align: left; font-family: var(--mono); font-weight: 400; font-size: 12px; color: var(--muted); padding: 6px 12px 6px 0; border-bottom: 1px solid var(--line)">Vida section</th><th style="text-align: left; font-family: var(--mono); font-weight: 400; font-size: 12px; color: var(--muted); padding: 6px 12px 6px 0; border-bottom: 1px solid var(--line)">What it holds</th></tr></thead><tbody><tr><td style="padding: 8px 12px 8px 0; border-bottom: 1px solid var(--line); vertical-align: top; color: var(--ink)">Needs a human</td><td style="padding: 8px 12px 8px 0; border-bottom: 1px solid var(--line); vertical-align: top; ">Escalations, ranked by urgency and value</td></tr><tr><td style="padding: 8px 12px 8px 0; border-bottom: 1px solid var(--line); vertical-align: top; color: var(--ink)">Agents</td><td style="padding: 8px 12px 8px 0; border-bottom: 1px solid var(--line); vertical-align: top; ">Configure Vivian: tone, policies, autonomy</td></tr><tr><td style="padding: 8px 12px 8px 0; border-bottom: 1px solid var(--line); vertical-align: top; color: var(--ink)">Conversations</td><td style="padding: 8px 12px 8px 0; border-bottom: 1px solid var(--line); vertical-align: top; ">Every thread, every channel, searchable</td></tr><tr><td style="padding: 8px 12px 8px 0; border-bottom: 1px solid var(--line); vertical-align: top; color: var(--ink)">Leasing</td><td style="padding: 8px 12px 8px 0; border-bottom: 1px solid var(--line); vertical-align: top; ">Pipeline from enquiry to signed lease</td></tr><tr><td style="padding: 8px 12px 8px 0; border-bottom: 1px solid var(--line); vertical-align: top; color: var(--ink)">Insights</td><td style="padding: 8px 12px 8px 0; border-bottom: 1px solid var(--line); vertical-align: top; ">Executive dashboards and reports</td></tr></tbody></table></div>
+</section>
+
+<section class="cs" style="display: flex; flex-direction: column; gap: 14px">
+<h2>Signal</h2>
+<p>A design function without signal is just taste. Synthetic users give breadth: hundreds of simulated sessions across personas and edge cases in hours. Solo sessions with real operators and renters give depth. A customer advisory board shapes the roadmap, and prototypes and motion demos go back to customers before anything is built.</p>
+</section>
+
+<section class="cs" style="display: flex; flex-direction: column; gap: 14px">
+<h2>First 90 days</h2>
+<div style="overflow-x: auto"><table style="width: 100%; border-collapse: collapse; font-size: 15px; line-height: 1.5"><thead><tr><th style="text-align: left; font-family: var(--mono); font-weight: 400; font-size: 12px; color: var(--muted); padding: 6px 12px 6px 0; border-bottom: 1px solid var(--line)">Days</th><th style="text-align: left; font-family: var(--mono); font-weight: 400; font-size: 12px; color: var(--muted); padding: 6px 12px 6px 0; border-bottom: 1px solid var(--line)">Focus</th></tr></thead><tbody><tr><td style="padding: 8px 12px 8px 0; border-bottom: 1px solid var(--line); vertical-align: top; color: var(--ink)">0–30</td><td style="padding: 8px 12px 8px 0; border-bottom: 1px solid var(--line); vertical-align: top; ">Listen and map: shadowed leasing teams, mapped every channel, made the case for judgment-led design</td></tr><tr><td style="padding: 8px 12px 8px 0; border-bottom: 1px solid var(--line); vertical-align: top; color: var(--ink)">31–60</td><td style="padding: 8px 12px 8px 0; border-bottom: 1px solid var(--line); vertical-align: top; ">Lay foundations: design system v1 with AI-state language, the AI-native stack, first executive dashboards</td></tr><tr><td style="padding: 8px 12px 8px 0; border-bottom: 1px solid var(--line); vertical-align: top; color: var(--ink)">61–90</td><td style="padding: 8px 12px 8px 0; border-bottom: 1px solid var(--line); vertical-align: top; ">Build the loops: advisory board, synthetic plus solo testing, prototypes in sales conversations</td></tr></tbody></table></div>
+</section>
+
+<section class="cs" style="display: flex; flex-direction: column; gap: 14px">
+<h2>Outcome</h2>
+<ul><li>A design function built from zero, with a seat at the strategy table</li><li>One design language for people and agents, including AI states</li><li>An AI-native stack from ideation to Claude Code handoff</li><li>Feedback loops from advisory boards to synthetic users</li></ul>
+<p class="quote">Mature design organizations measure impact, not artifacts.</p>
+<nav aria-label="Next case study" style="display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; padding-top: 8px; font-family: var(--mono); font-size: 13px"><a href="/projects.html">← All projects</a><a href="/work/vivian-zero-touch-lease.html">Next: Vivian and Vida →</a></nav>
+</section>
+
+<footer style="padding-top: 24px; border-top: 1px solid var(--line); display: flex; flex-direction: column; gap: 8px">
+<p style="margin: 0">Say hello at <a href="mailto:varunuxd@gmail.com">varunuxd@gmail.com</a> or on <a href="https://www.linkedin.com/in/varunvelhankar/">LinkedIn</a>, or read my <a href="/resume.html">résumé</a>.</p>
+<span style="font-family: var(--mono); font-size: 12px; color: var(--muted)">© 2026 Varun Velhankar</span>
+</footer>
+
+</div>
+</div>
+<script>
+(function(){var root=document.querySelector('.mm');if(!root)return;var k='vv-theme';
+try{var s=localStorage.getItem(k);if(s==='dark'||s==='light')root.setAttribute('data-theme',s);}catch(e){}
+var b=document.getElementById('theme-toggle');function lab(){if(b)b.setAttribute('aria-label',root.getAttribute('data-theme')==='dark'?'Switch to light theme':'Switch to dark theme');}
+lab();if(b)b.addEventListener('click',function(){var d=root.getAttribute('data-theme')==='dark'?'light':'dark';root.setAttribute('data-theme',d);try{localStorage.setItem(k,d);}catch(e){}lab();});})();
+</script>
 </body>
 </html>

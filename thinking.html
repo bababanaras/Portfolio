@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Thinking — Varun Velhankar</title>
+<meta name="description" content="How Varun Velhankar designs AI agents people can trust, and how he leads design.">
+<link rel="icon" type="image/png" href="/assets/media/911ac5585da3.png">
+<link rel="apple-touch-icon" href="/assets/media/30bafb827bce.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="canonical" href="https://www.varunvelhankar.com/thinking.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Thinking — Varun Velhankar">
+<meta property="og:description" content="How Varun Velhankar designs AI agents people can trust, and how he leads design.">
+<meta property="og:url" content="https://www.varunvelhankar.com/thinking.html">
+<meta property="og:image" content="https://www.varunvelhankar.com/assets/media/bc9236260c94.webp">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,400..700;1,14..32,400..700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap">
+<style>
+body{margin:0}
+.mm{--bg:#ffffff;--ink:#111111;--text:#333333;--muted:#666666;--line:#e8e8e8;--accent:#9e5038;--serif:"Source Serif 4",Georgia,serif;--mono:"JetBrains Mono",ui-monospace,monospace}
+.mm[data-theme="dark"]{--bg:#141413;--ink:#f2f0ea;--text:#d6d3cc;--muted:#9a978f;--line:#2c2b28;--accent:#e0927a}
+@media (prefers-color-scheme:dark){.mm[data-theme="auto"]{--bg:#141413;--ink:#f2f0ea;--text:#d6d3cc;--muted:#9a978f;--line:#2c2b28;--accent:#e0927a}}
+.mm a{color:var(--text);text-decoration:underline;text-decoration-color:var(--muted);text-decoration-thickness:1px;text-underline-offset:3px}
+.mm a:hover{color:var(--ink);text-decoration-color:var(--ink)}
+.mm a:focus-visible,.mm button:focus-visible{outline:2px solid var(--ink);outline-offset:3px;border-radius:2px}
+.mm .row{text-decoration:none;color:var(--ink)}
+.mm .row:hover .t{text-decoration:underline;text-decoration-color:var(--muted);text-underline-offset:3px}
+.mm h3{margin:0;font-family:var(--serif);font-weight:600;font-size:21px;line-height:1.3;letter-spacing:-0.2px;color:var(--ink)}
+.mm p{margin:0}
+.mm [aria-current="page"]{color:var(--ink);text-decoration:underline;text-decoration-color:var(--ink);text-underline-offset:6px}
+.mm{--serif:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;--mono:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif}
+.mm .ascii{font-family:"JetBrains Mono",ui-monospace,monospace!important}
+</style>
+</head>
+<body>
+<div class="mm" data-theme="light" style="background: var(--bg); color: var(--text); font-family: var(--serif); font-size: 17px; line-height: 1.65; min-height: 100vh">
+<div style="max-width: 575px; margin: 0 auto; padding: 32px 20px 96px; display: flex; flex-direction: column; gap: 40px">
+
+<header style="display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap">
+<a href="/" aria-label="Varun Velhankar, home" title="Varun Velhankar" style="text-decoration: none; color: var(--ink); display: inline-flex; align-items: center; gap: 14px; line-height: 1"><svg width="38" height="38" viewBox="0 0 200 200" aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" style="flex: none"><rect x="10" y="10" width="180" height="180" rx="20" stroke-width="10"></rect><g transform="translate(40.5 30)" stroke-width="5.5"><g transform="translate(0 0)"><path d="M2 2Q2 24 10 24Q18 24 18 2M-1 2H21M0 9H4M16 9H20"></path></g><g transform="translate(31 0)"><path d="M0 13Q9 2 18 13Q9 24 0 13ZM18 13L24 6M18 13L24 20"></path></g><g transform="translate(67 0)"><circle cx="10" cy="4" r="3"></circle><path d="M10 7V17M3 11H17M10 17L5 26M10 17L15 26"></path></g><g transform="translate(98 0)"><path d="M4 1V25M11 1V25M18 1V25"></path></g></g><g transform="translate(-6 10)" stroke-width="6.5"><path d="M46 122Q46 101 70 100H124Q138 100 141 112Q143 125 133 131H60Q46 131 46 122Z"></path><path d="M133 103Q139 89 151 84L167 93Q170 99 162 101L142 113"></path><circle cx="154" cy="91" r="1.6" fill="currentColor" stroke="none"></circle><path d="M152 85Q159 70 172 62"></path><path d="M148 87L144 79"></path><path d="M138 106Q143 114 139 122M131 104Q136 113 132 122" stroke-width="4"></path><path d="M62 131V156M75 131V153M120 131V153M132 130V156"></path><path d="M47 114Q37 121 40 138"></path><path d="M160 120Q168 131 176 120ZM168 126V160M161 160H175M164 113H172"></path></g></svg><span style="font-family: var(--serif); font-weight: 600; font-size: 20px; letter-spacing: -0.3px; line-height: 1; color: var(--ink); white-space: nowrap">Varun Velhankar</span></a>
+<nav aria-label="Primary" style="display: flex; align-items: center; gap: 4px 20px; flex-wrap: wrap; font-family: var(--mono); font-size: 14px">
+<a href="/projects.html" style="text-decoration: none; padding: 8px 0">Projects</a>
+<a href="/writing.html" style="text-decoration: none; padding: 8px 0">Writing</a>
+<a href="/thinking.html" aria-current="page" style="text-decoration: none; padding: 8px 0">Thinking</a>
+<a href="/about.html" style="text-decoration: none; padding: 8px 0">About</a>
+<button type="button" id="theme-toggle" aria-label="Switch to dark theme" style="width: 36px; height: 36px; display: inline-flex; align-items: center; justify-content: center; background: transparent; border: 0; color: var(--text); cursor: pointer; padding: 0">
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.5 9.5A5.5 5.5 0 1 1 6.5 2.5a4.5 4.5 0 0 0 7 7z"></path></svg>
+</button>
+</nav>
+</header>
+
+<section style="display: flex; flex-direction: column; gap: 18px">
+<h1 style="margin: 0; font-family: var(--serif); font-weight: 600; font-size: 38px; line-height: 1.1; letter-spacing: -0.6px; color: var(--ink)">Thinking</h1>
+<p>Design is a decision-making discipline. My job is to make the right decisions visible, and the wrong ones impossible to ship.</p>
+<p>Two halves of the same practice: how I design <a href="#agents">AI agents people can trust</a>, and how I <a href="#leading">lead design</a> and <a href="#teams">build teams</a> so the right calls get made fast.</p>
+</section>
+
+<section id="agents" aria-labelledby="agents-h" style="display: flex; flex-direction: column; gap: 12px">
+<h2 id="agents-h" style="margin: 0; font-family: var(--mono); font-weight: 700; font-size: 14px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--primary-active, #a9583e)">Part one · Designing agents</h2>
+<p style="color: var(--ink)">Designing AI-native products users can trust.</p>
+<div style="display: flex; flex-direction: column">
+<article id="autonomy" style="display: flex; flex-direction: column; gap: 8px; padding: 14px 0; border-top: 1px solid var(--line)">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="flex: none; font-family: var(--mono); font-size: 12px; color: var(--muted)">01</span><h3>Autonomy is a dial, not a switch</h3></div>
+<p>Every action an agent can take gets its own setting: decide, ask, or hand off. Two questions set it. How much does a mistake cost? Can it be undone? Not: what can the model technically do?</p>
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column"><li style="display: flex; align-items: baseline; gap: 12px; padding: 4px 0"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true" style="flex: none; transform: translateY(3px)"><path d="M3.5 16A8.5 8.5 0 0 1 20.5 16"></path><path d="M12 16L6.6 11.5"></path></svg><span style="flex: 1">Booking a tour</span><span style="flex: none; font-family: var(--mono); font-size: 12px; color: var(--muted)">Decides</span></li><li style="display: flex; align-items: baseline; gap: 12px; padding: 4px 0"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true" style="flex: none; transform: translateY(3px)"><path d="M3.5 16A8.5 8.5 0 0 1 20.5 16"></path><path d="M12 16L12.0 9.0"></path></svg><span style="flex: 1">Changing a move-in date</span><span style="flex: none; font-family: var(--mono); font-size: 12px; color: var(--muted)">Asks</span></li><li style="display: flex; align-items: baseline; gap: 12px; padding: 4px 0"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true" style="flex: none; transform: translateY(3px)"><path d="M3.5 16A8.5 8.5 0 0 1 20.5 16"></path><path d="M12 16L17.4 11.5"></path></svg><span style="flex: 1">Lease exception</span><span style="flex: none; font-family: var(--mono); font-size: 12px; color: var(--muted)">Hands off</span></li></ul>
+</article>
+<article id="handoff" style="display: flex; flex-direction: column; gap: 8px; padding: 14px 0; border-top: 1px solid var(--line)">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="flex: none; font-family: var(--mono); font-size: 12px; color: var(--muted)">02</span><h3>Design the handoff before the happy path</h3></div>
+<p>Trust is won or lost the moment an agent says “this isn’t mine to decide.” I design that moment first: what the renter is told, what the person on the other end receives in Vida, and how fast the loop closes.</p>
+
+</article>
+<article id="undo" style="display: flex; flex-direction: column; gap: 8px; padding: 14px 0; border-top: 1px solid var(--line)">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="flex: none; font-family: var(--mono); font-size: 12px; color: var(--muted)">03</span><h3>If it can’t be undone, explain it first</h3></div>
+<p>Reversible steps move fast. Irreversible ones slow down, show their reasoning and wait for a yes. Signatures, payments and anything legal never happen silently.</p>
+
+</article>
+<article id="cockpit" style="display: flex; flex-direction: column; gap: 8px; padding: 14px 0; border-top: 1px solid var(--line)">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="flex: none; font-family: var(--mono); font-size: 12px; color: var(--muted)">04</span><h3>Operators need a cockpit, not a chat log</h3></div>
+<p>Nobody supervises a portfolio by reading transcripts. Vida leads with what needs a human now, why, and the one action that fixes it.</p>
+
+</article>
+<article id="states" style="display: flex; flex-direction: column; gap: 8px; padding: 14px 0; border-top: 1px solid var(--line)">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="flex: none; font-family: var(--mono); font-size: 12px; color: var(--muted)">05</span><h3>Every AI state is a design state</h3></div>
+<p>Thinking, confident, uncertain, escalated, completed. Each one looks and reads the same everywhere, so renters and operators always know where things stand.</p>
+<div aria-hidden="true" style="display: flex; flex-wrap: wrap; gap: 6px 18px; font-family: var(--mono); font-size: 12px; color: var(--muted)"><span style="display: inline-flex; align-items: center; gap: 6px"><svg width="10" height="10" viewBox="0 0 10 10"><circle cx="5" cy="5" r="3.5" fill="none" stroke="currentColor" stroke-width="1.3" stroke-dasharray="2 2"></circle></svg>Thinking</span><span style="display: inline-flex; align-items: center; gap: 6px"><svg width="10" height="10" viewBox="0 0 10 10"><circle cx="5" cy="5" r="4" fill="currentColor"></circle></svg>Confident</span><span style="display: inline-flex; align-items: center; gap: 6px"><svg width="10" height="10" viewBox="0 0 10 10"><circle cx="5" cy="5" r="3.5" fill="none" stroke="currentColor" stroke-width="1.3"></circle></svg>Uncertain</span><span style="display: inline-flex; align-items: center; gap: 6px"><svg width="10" height="10" viewBox="0 0 10 10"><path d="M5 1L9 9H1Z" fill="var(--accent)"></path></svg>Escalated</span><span style="display: inline-flex; align-items: center; gap: 6px"><svg width="10" height="10" viewBox="0 0 10 10"><path d="M1.5 5.5L4 8L8.5 2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path></svg>Completed</span></div>
+</article>
+</div>
+</section>
+
+<section id="leading" aria-labelledby="leading-h" style="display: flex; flex-direction: column; gap: 12px">
+<h2 id="leading-h" style="margin: 0; font-family: var(--mono); font-weight: 700; font-size: 14px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--primary-active, #a9583e)">Part two · Leading design</h2>
+<p style="color: var(--ink)">Process scales teams. Judgment scales impact.</p>
+<p>I keep the artefacts that sharpen thinking and drop the ones that only look productive. The aim is confident decisions and fast learning loops.</p>
+</section>
+
+<section id="loop" aria-labelledby="loop-h" style="display: flex; flex-direction: column; gap: 12px">
+<h2 id="loop-h" style="margin: 0; font-family: var(--mono); font-weight: 400; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--primary-active, #a9583e)">The loop</h2>
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column">
+<li style="display: flex; align-items: baseline; gap: 12px; padding: 6px 0"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true" style="flex: none; transform: translateY(3px)"><circle cx="12" cy="12" r="8" stroke-dasharray="2 3.2"></circle><circle cx="12.0" cy="4.0" r="2.6" fill="currentColor" stroke="none"></circle></svg><span style="flex: 1; min-width: 0"><span style="color: var(--ink)">Align.</span> Success metrics, owners, timeline</span><span style="flex: none; font-family: var(--mono); font-size: 12px; color: var(--muted)">01</span></li>
+<li style="display: flex; align-items: baseline; gap: 12px; padding: 6px 0"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true" style="flex: none; transform: translateY(3px)"><circle cx="12" cy="12" r="8" stroke-dasharray="2 3.2"></circle><circle cx="18.9" cy="8.0" r="2.6" fill="currentColor" stroke="none"></circle></svg><span style="flex: 1; min-width: 0"><span style="color: var(--ink)">Discover.</span> Research until the problem is sharp</span><span style="flex: none; font-family: var(--mono); font-size: 12px; color: var(--muted)">02</span></li>
+<li style="display: flex; align-items: baseline; gap: 12px; padding: 6px 0"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true" style="flex: none; transform: translateY(3px)"><circle cx="12" cy="12" r="8" stroke-dasharray="2 3.2"></circle><circle cx="18.9" cy="16.0" r="2.6" fill="currentColor" stroke="none"></circle></svg><span style="flex: 1; min-width: 0"><span style="color: var(--ink)">Define.</span> Strategy, architecture, constraints</span><span style="flex: none; font-family: var(--mono); font-size: 12px; color: var(--muted)">03</span></li>
+<li style="display: flex; align-items: baseline; gap: 12px; padding: 6px 0"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true" style="flex: none; transform: translateY(3px)"><circle cx="12" cy="12" r="8" stroke-dasharray="2 3.2"></circle><circle cx="12.0" cy="20.0" r="2.6" fill="currentColor" stroke="none"></circle></svg><span style="flex: 1; min-width: 0"><span style="color: var(--ink)">Design.</span> Iterate and validate with users</span><span style="flex: none; font-family: var(--mono); font-size: 12px; color: var(--muted)">04</span></li>
+<li style="display: flex; align-items: baseline; gap: 12px; padding: 6px 0"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true" style="flex: none; transform: translateY(3px)"><circle cx="12" cy="12" r="8" stroke-dasharray="2 3.2"></circle><circle cx="5.1" cy="16.0" r="2.6" fill="currentColor" stroke="none"></circle></svg><span style="flex: 1; min-width: 0"><span style="color: var(--ink)">Deliver.</span> Handoff, build support, UX QA</span><span style="flex: none; font-family: var(--mono); font-size: 12px; color: var(--muted)">05</span></li>
+<li style="display: flex; align-items: baseline; gap: 12px; padding: 6px 0"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true" style="flex: none; transform: translateY(3px)"><circle cx="12" cy="12" r="8" stroke-dasharray="2 3.2"></circle><circle cx="5.1" cy="8.0" r="2.6" fill="currentColor" stroke="none"></circle></svg><span style="flex: 1; min-width: 0"><span style="color: var(--ink)">Evolve.</span> Measure, learn, feed the roadmap</span><span style="flex: none; font-family: var(--mono); font-size: 12px; color: var(--muted)">06</span></li>
+</ul>
+</section>
+
+<section id="partner" aria-labelledby="partner-h" style="display: flex; flex-direction: column; gap: 12px">
+<h2 id="partner-h" style="margin: 0; font-family: var(--mono); font-weight: 400; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--primary-active, #a9583e)">How I partner</h2>
+<ul style="margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 10px">
+<li><span style="color: var(--ink)">With product.</span> PMs co-own the experience. I help shape the roadmap by user impact, and push back on scope with data, not ego.</li>
+<li><span style="color: var(--ink)">With engineering.</span> Engineers are design partners. I bring them in at discovery and check feasibility before committing to a pattern.</li>
+<li><span style="color: var(--ink)">Handoff is a ceremony.</span> Annotated specs with states, edge cases and accessibility notes, a live walkthrough, and me on hand through the build.</li>
+<li><span style="color: var(--ink)">QA is design’s job too.</span> Nothing ships without UX QA against the spec and WCAG 2.1 AA. I sign off builds with the rigour of a code review.</li>
+<li><span style="color: var(--ink)">A design roadmap.</span> Research sprints, system work and UX debt get their own milestones, so leadership sees design capacity before the crunch.</li>
+<li><span style="color: var(--ink)">Guardrails built in.</span> Compliance, privacy and accessibility are designed in from the start, not bolted on at legal review.</li>
+</ul>
+</section>
+
+<section id="always" aria-labelledby="always-h" style="display: flex; flex-direction: column; gap: 12px">
+<h2 id="always-h" style="margin: 0; font-family: var(--mono); font-weight: 400; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--primary-active, #a9583e)">Always</h2>
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column">
+<li style="display: flex; align-items: baseline; gap: 12px; padding: 4px 0"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; transform: translateY(3px)"><path d="M3 15Q7 7 11 15Q14 20 17 12Q19 7 21 9"></path></svg><span>Users first, always.</span></li>
+<li style="display: flex; align-items: baseline; gap: 12px; padding: 4px 0"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; transform: translateY(3px)"><path d="M4 18Q5 9 9 8Q12 7.5 11 12Q10 16 14 14Q18 12 20 5"></path></svg><span>Data informs. Intuition leads.</span></li>
+<li style="display: flex; align-items: baseline; gap: 12px; padding: 4px 0"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; transform: translateY(3px)"><path d="M3 12Q6 6 9 12Q12 18 15 12Q18 6 21 12"></path></svg><span>Design is a team sport.</span></li>
+<li style="display: flex; align-items: baseline; gap: 12px; padding: 4px 0"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; transform: translateY(3px)"><path d="M5 5Q19 4 12 12Q5 20 19 19"></path></svg><span>Constraints breed creativity.</span></li>
+<li style="display: flex; align-items: baseline; gap: 12px; padding: 4px 0"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; transform: translateY(3px)"><path d="M12 20Q4 14 8 8Q12 3 15 8Q18 13 12 13"></path></svg><span>Ship with intention. Iterate with purpose.</span></li>
+<li style="display: flex; align-items: baseline; gap: 12px; padding: 4px 0"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; transform: translateY(3px)"><path d="M4 8Q8 4 12 8Q16 12 20 8M4 16Q8 12 12 16Q16 20 20 16"></path></svg><span>Accessibility is not optional.</span></li>
+</ul>
+</section>
+
+<section id="teams" aria-labelledby="teams-h" style="display: flex; flex-direction: column; gap: 12px">
+<h2 id="teams-h" style="margin: 0; font-family: var(--mono); font-weight: 700; font-size: 14px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--primary-active, #a9583e)">Part three · How I build teams</h2>
+<p style="color: var(--ink)">Teams scale judgment. Rituals don’t.</p>
+<p>I’ve led a team of 5 designers at Fairstone Bank, owning hiring, budgeting, scoping and the design backlog, and a multi-country team at WebBeds across Spain, the UK, Romania and Dubai, where we took UX maturity from stage 0 to stage 3. Now I’m building Property Vista’s design function from the ground up. The same principles hold at every size:</p>
+<ul style="margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 10px">
+<li><span style="color: var(--ink)">Hire for judgment and range.</span> I look for designers who can make a good call with half the information, and who can move between research, systems and pixels. A paid work sample beats a whiteboard puzzle.</li>
+<li><span style="color: var(--ink)">Small, senior, close to the work.</span> Player-coaches over layers. I set direction, review the work in detail, and still design, so the bar is visible rather than described.</li>
+<li><span style="color: var(--ink)">Clear decision rights.</span> Everyone knows which calls are theirs, which need a review, and which come to me. Fewer meetings, faster and better decisions.</li>
+<li><span style="color: var(--ink)">Critique as evidence.</span> Crits run on data, user sessions and principles, not opinion or seniority. Disagreements end in an experiment, not a vote.</li>
+<li><span style="color: var(--ink)">Grow people on two paths.</span> Separate IC and manager tracks, written expectations for each level, and a growth conversation every quarter, not just at review time.</li>
+<li><span style="color: var(--ink)">Design beyond the design team.</span> At Fairstone I trained 8+ BAs, BSAs and product owners in Figma and design thinking, so good decisions happened without a designer in every room.</li>
+</ul>
+<p>The measure is simple: the team makes good calls when I’m not in the room.</p>
+</section>
+
+<section id="tldr" aria-labelledby="tldr-h" style="display: flex; flex-direction: column; gap: 12px">
+<h2 id="tldr-h" style="margin: 0; font-family: var(--mono); font-weight: 400; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted)">TL;DR</h2>
+<p style="color: var(--ink)">I don’t just design screens. I design the conditions for good decisions, for the people on the team and for the agents we ship.</p>
+<p>Designing agents of your own, or need design leadership for a season? <a href="/work-with-me.html">See how I work with teams</a>.</p>
+</section>
+
+<footer style="padding-top: 24px; border-top: 1px solid var(--line); display: flex; flex-direction: column; gap: 8px">
+<p style="margin: 0">Say hello at <a href="mailto:varunuxd@gmail.com">varunuxd@gmail.com</a> or on <a href="https://www.linkedin.com/in/varunvelhankar/">LinkedIn</a>, or read my <a href="/resume.html">résumé</a>.</p>
+<span style="font-family: var(--mono); font-size: 12px; color: var(--muted)">© 2026 Varun Velhankar</span>
+</footer>
+
+</div>
+</div>
+<script>
+(function(){var root=document.querySelector('.mm');if(!root)return;var k='vv-theme';
+try{var s=localStorage.getItem(k);if(s==='dark'||s==='light')root.setAttribute('data-theme',s);}catch(e){}
+var b=document.getElementById('theme-toggle');function lab(){if(b)b.setAttribute('aria-label',root.getAttribute('data-theme')==='dark'?'Switch to light theme':'Switch to dark theme');}
+lab();if(b)b.addEventListener('click',function(){var d=root.getAttribute('data-theme')==='dark'?'light':'dark';root.setAttribute('data-theme',d);try{localStorage.setItem(k,d);}catch(e){}lab();});})();
+</script>
+</body>
+</html>

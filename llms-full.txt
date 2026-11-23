@@ -1,0 +1,1795 @@
+# Varun Velhankar — Head of Design
+https://www.varunvelhankar.com/
+
+Varun Velhankar — Head of Design
+
+For humansFor agents
+
+I bring structure to messy, high-stakes problems.
+
+Head of Design at Property Vista, where I'm the founding AI designer behind Vivian, the agent that talks to renters, and Vida, the console teams run it from
+
+Designing products where AI does the work and people stay in control: time-to-lease down 60%, 92% of inquiries handled without staff, and 4.4x higher lead-to-appointment conversion
+
+Previously: led UX at Fairstone Bank, where zero-touch account openings went from 20% to 83%, and turned an 8-week broker process into 10 minutes; earlier, product design at WebBeds in Dubai and Xebia in Abu Dhabi
+
+12+ years in UX, 20+ designers led across my career, 5+ design systems shipped
+
+Off the clock: marathons, CrossFit and landscape photography
+
+PROJECTS
+
+Vivian – Zero-touch lead to lease
+2026
+
+Inspection app redesign
+2026
+
+Founding AI design at Property Vista
+2026
+
+Oaken Digital: zero-touch account opening
+2023–25
+
+Deposit Broker Portal: eight weeks to ten minutes
+2025
+
+Reverse Mortgage and Customer Journey Analytics
+2022–26
+
+All projects →
+
+WORK
+
+Vida in 30 seconds: dashboard, leads, guest card, residents and zero-touch lease. Read the case study.
+
+Zero-touch lease in 30 seconds: a renter asks Vivian on the website and goes from chat to a signed lease. Read the case study.
+
+Zero-touch lease in six iterations: from a form-first checkout to the operator review queue. Read the case study.
+
+1 / 3
+
+Thinking
+
+Autonomy is a dial, not a switch01
+
+Design the handoff before the happy path02
+
+If it can't be undone, explain it first03
+
+Writing
+
+Claude Design Isn’t Dead. You Just Never Opened It Properly.2026
+
+The Design Team of 2030: One Experienced Designer and a Very Good Prompt?2026
+
+Where the agent stops and the craft starts2026
+
+Every handoff is a memory test2026
+
+Discipline beats motivation2026
+
+AI flipped design leadership2026
+
+All writing →
+
+Say hello at varunuxd@gmail.com or on LinkedIn, or read my résumé.
+
+© 2026 Varun Velhankar
+
+---
+
+# Projects — Varun Velhankar
+https://www.varunvelhankar.com/projects.html
+
+Projects — Varun Velhankar
+
+Projects
+
+Things I've designed with teams, and a few I make on my own. The ones with a case study go deeper.
+
+With teams
+
+Vivian – Zero-touch lead to lease2026
+A renter goes from a first question on a property website to a signed lease inside one conversation with Vivian. Time-to-lease down 60%, with 92% of inquiries handled without staff; properties running Vida see 4.4x higher lead-to-appointment conversion.
+
+property vista · head of design · case study →
+
+Inspection app redesign2026
+Turning the Inspector App from a form staff abandon for paper into one that finishes a move-in or move-out in one visit, with or without signal.
+
+property vista · vida · head of design · case study →
+
+Founding design at Property Vista2026
+Building the design function from zero as the first designer: the mandate, the design system, the AI-native design stack and a seat at the strategy table.
+
+property vista · founding ai designer · case study →
+
+Oaken Digital2023–25
+Digital banking that customers over 60 can finish on their own. Zero-touch account opening went from 20% to 83%, with 68% engagement across a 65K-user base.
+
+fairstone bank · senior manager, product design · case study →
+
+Deposit Broker Portal2025
+A portal for Canadian deposit brokers that replaced emails, spreadsheets and phone calls. Application turnaround went from eight weeks to ten minutes, across 170+ screens.
+
+fairstone bank · strategy and design leadership · case study →
+
+Reverse Mortgage2025
+A new reverse mortgage product for Canadians 55+, launched as EquityAccess to build brand trust and fuel post-merger growth.
+
+fairstone bank (home trust) · product strategy · deck →
+
+Customer Journey Analytics2022–26
+One reliable source of customer data in place of fragmented, untrustworthy tracking, so teams could finally act on what they saw.
+
+fairstone bank · data strategy · deck →
+
+B2B travel platforms2019–22
+A global B2B point-of-sale for hotel distribution. As founding designer I cut property search from 5–7 minutes to 10 seconds and operating costs by 30%.
+
+webbeds · lead product designer
+
+Fintech, logistics and government2017–19
+Enterprise platforms for the Crown Prince Court of Abu Dhabi: 60% more operationally efficient, with engagement and retention up 40% on a redesigned legacy system.
+
+xebia · senior ux designer
+
+On my own
+
+This site2026
+My portfolio, designed and built with AI as a working partner. The identity pairs a Harappan seal with my name in Ashokan Brahmi.
+
+personal
+
+Fractional design leadership and advisory2026
+Helping teams design AI-native products: how much an agent should decide on its own, where it hands off, and the tools operators use to run it.
+
+independent · work with me →
+
+Polymath Nomads SubstackOngoing
+My musings on product design and everything in life.
+
+studio
+
+MentoringOngoing
+Mentoring designers on ADPList, on craft, career and stepping into leadership.
+
+adplist
+
+Say hello at varunuxd@gmail.com or on LinkedIn, or read my résumé.
+
+© 2026 Varun Velhankar
+
+---
+
+# Writing — Varun Velhankar
+https://www.varunvelhankar.com/writing.html
+
+Writing — Varun Velhankar
+
+Writing
+
+Short pieces on design leadership, systems and how teams ship. Pixels fade; words stick around. Most of these start as LinkedIn posts; the longer ones live on Substack.
+
+In the drafts
+
+Next up: notes from designing Vivian and Vida.
+
+Design the handoff before the happy path
+Drafting
+
+Autonomy is a dial, not a switch
+Drafting
+
+A design system for AI states
+Drafting
+
+Published · 2026
+
+Claude Design Isn’t Dead. You Just Never Opened It Properly.A tool merging into a bigger product is not a death. It’s a promotion most people didn’t notice.
+AI workflow
+
+The Design Team of 2030: One Experienced Designer and a Very Good Prompt?What one year of building AI agents solo taught me about the next five years of design teams.
+Future of design
+
+Where the agent stops and the craft startsThe agent does setup and the first pass; Figma is where I take over the craft before it ships.
+AI workflow
+
+Every handoff is a memory testWhen conversations cross channels, the spec stops being a screen and becomes memory and handoff.
+Agent design
+
+Discipline beats motivation105kg to 78kg, and why resilience is trained, not inherited, in the body and in a career.
+Resilience
+
+AI flipped design leadershipThe leaders pulling ahead now are the ones who can still build alongside their teams.
+Leadership
+
+Published · 2025
+
+The single greatest skill you can developThe one skill that compounds across every role, team and stage of a career.
+Leadership
+
+Why most UX teams stay stuck at wireframesGetting design out of the execution trap and into product strategy.
+Design leadership
+
+UX designers: honesty over hypeWhy most design systems don't scale, and what to do about yours.
+Design systems
+
+Stop designing for stakeholders. Design with them.Moving from presentation mode to collaboration mode changed how my team ships.
+Collaboration
+
+Shipping EquityAccessOn launching Home Trust's reverse mortgage suite for Canadians 55+.
+Launch
+
+Trust UX experts over data for obvious fixesNot every fix needs an A/B test. When expertise should win.
+Craft
+
+You don't need a design culture. You need design courage.Waiting for a design-mature org is a trap. Good designers shift the culture from inside.
+Design culture
+
+All posts on LinkedIn →
+
+Say hello at varunuxd@gmail.com or on LinkedIn, or read my résumé.
+
+© 2026 Varun Velhankar
+
+---
+
+# Thinking — Varun Velhankar
+https://www.varunvelhankar.com/thinking.html
+
+Thinking — Varun Velhankar
+
+Thinking
+
+Design is a decision-making discipline. My job is to make the right decisions visible, and the wrong ones impossible to ship.
+
+Two halves of the same practice: how I design AI agents people can trust, and how I lead design and build teams so the right calls get made fast.
+
+Part one · Designing agents
+
+Designing AI-native products users can trust.
+
+01Autonomy is a dial, not a switch
+
+Every action an agent can take gets its own setting: decide, ask, or hand off. Two questions set it. How much does a mistake cost? Can it be undone? Not: what can the model technically do?
+
+Booking a tourDecides
+Changing a move-in dateAsks
+Lease exceptionHands off
+
+02Design the handoff before the happy path
+
+Trust is won or lost the moment an agent says “this isn’t mine to decide.” I design that moment first: what the renter is told, what the person on the other end receives in Vida, and how fast the loop closes.
+
+03If it can’t be undone, explain it first
+
+Reversible steps move fast. Irreversible ones slow down, show their reasoning and wait for a yes. Signatures, payments and anything legal never happen silently.
+
+04Operators need a cockpit, not a chat log
+
+Nobody supervises a portfolio by reading transcripts. Vida leads with what needs a human now, why, and the one action that fixes it.
+
+05Every AI state is a design state
+
+Thinking, confident, uncertain, escalated, completed. Each one looks and reads the same everywhere, so renters and operators always know where things stand.
+
+ThinkingConfidentUncertainEscalatedCompleted
+
+Part two · Leading design
+
+Process scales teams. Judgment scales impact.
+
+I keep the artefacts that sharpen thinking and drop the ones that only look productive. The aim is confident decisions and fast learning loops.
+
+The loop
+
+Align. Success metrics, owners, timeline01
+
+Discover. Research until the problem is sharp02
+
+Define. Strategy, architecture, constraints03
+
+Design. Iterate and validate with users04
+
+Deliver. Handoff, build support, UX QA05
+
+Evolve. Measure, learn, feed the roadmap06
+
+How I partner
+
+With product. PMs co-own the experience. I help shape the roadmap by user impact, and push back on scope with data, not ego.
+
+With engineering. Engineers are design partners. I bring them in at discovery and check feasibility before committing to a pattern.
+
+Handoff is a ceremony. Annotated specs with states, edge cases and accessibility notes, a live walkthrough, and me on hand through the build.
+
+QA is design’s job too. Nothing ships without UX QA against the spec and WCAG 2.1 AA. I sign off builds with the rigour of a code review.
+
+A design roadmap. Research sprints, system work and UX debt get their own milestones, so leadership sees design capacity before the crunch.
+
+Guardrails built in. Compliance, privacy and accessibility are designed in from the start, not bolted on at legal review.
+
+Always
+
+Users first, always.
+
+Data informs. Intuition leads.
+
+Design is a team sport.
+
+Constraints breed creativity.
+
+Ship with intention. Iterate with purpose.
+
+Accessibility is not optional.
+
+Part three · How I build teams
+
+Teams scale judgment. Rituals don’t.
+
+I’ve led a team of 5 designers at Fairstone Bank, owning hiring, budgeting, scoping and the design backlog, and a multi-country team at WebBeds across Spain, the UK, Romania and Dubai, where we took UX maturity from stage 0 to stage 3. Now I’m building Property Vista’s design function from the ground up. The same principles hold at every size:
+
+Hire for judgment and range. I look for designers who can make a good call with half the information, and who can move between research, systems and pixels. A paid work sample beats a whiteboard puzzle.
+
+Small, senior, close to the work. Player-coaches over layers. I set direction, review the work in detail, and still design, so the bar is visible rather than described.
+
+Clear decision rights. Everyone knows which calls are theirs, which need a review, and which come to me. Fewer meetings, faster and better decisions.
+
+Critique as evidence. Crits run on data, user sessions and principles, not opinion or seniority. Disagreements end in an experiment, not a vote.
+
+Grow people on two paths. Separate IC and manager tracks, written expectations for each level, and a growth conversation every quarter, not just at review time.
+
+Design beyond the design team. At Fairstone I trained 8+ BAs, BSAs and product owners in Figma and design thinking, so good decisions happened without a designer in every room.
+
+The measure is simple: the team makes good calls when I’m not in the room.
+
+TL;DR
+
+I don’t just design screens. I design the conditions for good decisions, for the people on the team and for the agents we ship.
+
+Designing agents of your own, or need design leadership for a season? See how I work with teams.
+
+Say hello at varunuxd@gmail.com or on LinkedIn, or read my résumé.
+
+© 2026 Varun Velhankar
+
+---
+
+# About — Varun Velhankar
+https://www.varunvelhankar.com/about.html
+
+About — Varun Velhankar
+
+About
+
+I bring structure to messy, high-stakes problems, then I ship the answer. I’m Head of Design at Property Vista, building Vivian, an AI agent that talks to renters and residents, and Vida, the console property teams use to run her.
+
+Before this: 12+ years designing regulated banking, global travel and government platforms. I lead teams, and I still make the work.
+
+Based in Guelph, ON (Greater Toronto Area) · remote or hybrid · Résumé · PDF ↓
+
+How I work
+
+Structure in ambiguity. I turn vague, high-stakes problems into a plan a team can act on this week.
+
+Stories that land. I make complex ideas easy to follow, whether the room is executives, engineers or customers.
+
+Range before commitment. I explore many options fast, so the one we ship has beaten real alternatives.
+
+Close to the code. I work in the trenches with engineers, from QA reviews to fixing small bugs in production.
+
+Experience
+
+Head of Design, Property VistaToronto · Founding AI designer for Vivian and Vida; ROI work behind 2 enterprise deals
+2026–
+
+Senior Manager, Product Design, Fairstone BankToronto · Led a team of 5; zero-touch account opening 20% → 83%; Gen AI Hackathon winner, 2023
+2022–26
+
+Lead Product Designer, WebBedsDubai · Founding designer; hotel search cut from 5–7 minutes to 10 seconds, operational costs down 30%
+2019–22
+
+Senior UX Designer, XebiaAbu Dhabi · Enterprise platforms for the Crown Prince Court of Abu Dhabi, 60% more operationally efficient
+2017–19
+
+Where I learned the craft, Pune and beyondSynsynoia, MAK Media, Affinity X, freelance web design, and an internship at Maroon Island
+2009–16
+
+Beyond the day job
+
+Polymath Nomads Substack. My musings on product design and everything in life.
+
+Advisory. I take on a few fractional and advisory engagements with teams building AI products. Work with me.
+
+Mentoring. I mentor designers on ADPList.
+
+Off the clock. Marathon training, CrossFit and landscape photography. I keep a minimal routine, and I’ll talk cinema and art with anyone.
+
+Say hello at varunuxd@gmail.com or on LinkedIn, or read my résumé.
+
+© 2026 Varun Velhankar
+
+---
+
+# Résumé — Varun Velhankar
+https://www.varunvelhankar.com/resume.html
+
+Résumé — Varun Velhankar
+
+Varun Velhankar
+
+Head of Design · AI Product Design Leader
+
+Guelph, ON (Greater Toronto Area) · remote or hybrid
+
+varunuxd@gmail.comLinkedInDownload PDF ↓
+
+Head of Design and AI product design leader with 12+ years building B2B SaaS and enterprise platforms across PropTech, fintech, and travel tech. Currently Head of Design at Property Vista, designing agentic AI products: a conversational AI agent for renters and residents, and the console property teams use to configure, monitor, and act on AI agents. Previously led a team of 5 designers at Fairstone Bank, increasing zero-touch account opening from 20% to 83%.
+
+Strategic strengths
+
+AI product designAgentic AI · AI agents · Conversational AI · LLM-powered products · Human-in-the-loop design · AI prototyping · Prompt designDesign leadershipDesign systems · Design operations · UX maturity · Platform thinking · UX analytics · Cross-functional product leadership · Fintech and PropTech UX
+
+Experience
+
+Head of Design, Property VistaMay 2026 – Present
+Toronto
+Designed a zero-touch lead-to-lease experience where an AI agent guides prospects from webchat to a signed lease, reducing time-to-lease by 60% and handling 92% of inquiries without staff.
+Led end-to-end UX and AI product design for Vivian, a resident-facing conversational AI agent, and Vida, the agent operations console built on top of the PMS.
+Designed ROI visualizations for economic buyers and executive dashboards, used in sales and funding conversations that supported 2 enterprise deals.
+Building the design system and engineering handoff process from the ground up as the founding designer on a 0→1 AI platform.
+Prototyped AI agent interactions and motion demos for customers, and validated concepts through user research with customer advisory boards and synthetic user testing.
+Set up an AI-native design stack (Claude, Claude Code, Codex, Figma Make) that cuts concept-to-prototype time from weeks to days.
+
+Senior Manager, Product Design, Fairstone BankJune 2022 – April 2026
+Toronto
+Increased zero-touch account opening on Oaken Digital from 20% to 83% through an end-to-end onboarding redesign, reducing contact-centre call volumes.
+Digitized Oaken retail enrolment, cutting paper-based enrolments by 50%.
+Raised digital engagement to 68% across a 65K-user base by leading design strategy for the digital banking platform across all channels.
+Led product design for the Deposit Broker Portal, Reverse Mortgage, and Transaction Banking products.
+Built and scaled a cross-platform design system, improving UI consistency and speeding up delivery across teams.
+Designed and shipped Power BI customer journey analytics dashboards that informed operational decisions.
+Drove design democratization by training 8+ BAs, BSAs, and Product Owners in Figma and design thinking.
+Introduced generative AI design workflows, including automated prototyping and AI-assisted ideation, which shortened concept iteration time. Gen AI Hackathon winner (2023) and participant (2023–2025).
+Led and mentored a team of 5 designers; owned budgeting, project scoping, the design backlog, and design hiring.
+Sustained 80%+ positive user feedback and strong NPS from 2022 to 2025.
+
+Lead Product Designer, WebBedsJuly 2019 – June 2022
+Dubai
+Reduced hotel/property search time from 5–7 minutes to 10 seconds by redesigning the global travel distribution B2B SaaS point-of-sale experience for teams across Europe and the Middle East.
+Optimized high-traffic global point-of-sale flows, increasing conversions and cutting operational costs by 30%.
+As the founding designer on a 0→1 platform, established and scaled UX practices globally, advancing UX maturity from Stage 0 to Stage 3.
+Set up journey metrics using Hotjar and Google Analytics, and used the insights to drive UX priorities on the product roadmap.
+Led and mentored a multi-country design team; owned budgeting, project scoping, and the design backlog, collaborating with cross-functional teams across Spain, the UK, Romania, and Dubai.
+
+Senior UX Designer, XebiaAug 2017 – July 2019
+Abu Dhabi
+Designed enterprise solutions for the Crown Prince Court of Abu Dhabi, improving operational efficiency by 60% and reducing carbon footprint by 75%.
+Redesigned a legacy enterprise platform for the same client, increasing user engagement and retention by 40%.
+Provided strategic consulting to Bain & Co, McKinsey & Co., and Boston Consulting Group on a range of client-facing and internal applications.
+
+Early career2009 – 2016
+Pune
+Senior UX Designer at Synsynoia · Associate Art Director at MAK Media · Senior Designer at Affinity X · Freelance web designer · Design intern at Maroon Island
+
+Skills
+
+CraftDesign strategy, design systems, prototyping, interaction design, user researchAI and vibe codingClaude Design, Claude Code, Codex, Figma, Lovable, Replit, FigJam, v0.dev, Framer, Miro, Mural, Pencil.devProduct and researchJourney mapping, information architecture, A/B testing, service design, UX analytics
+
+Education and certifications
+
+EducationMA, International Relations, University of Pune · BA, English Literature, University of PuneCertificationsResearch-Ops: Operationalizing and Socializing User Research, Nielsen Norman Group · Product Design by Google, Udacity · Design Thinking, Interaction Design Foundation
+
+Say hello at varunuxd@gmail.com or on LinkedIn.
+
+© 2026 Varun Velhankar
+
+---
+
+# Work with me — Varun Velhankar
+https://www.varunvelhankar.com/work-with-me.html
+
+Work with me — Varun Velhankar
+
+Work with me
+
+Fractional design leadership and advisory for teams building AI products where the agent does the work and people stay in control.
+
+I’m Head of Design at Property Vista, where I designed Vivian and Vida: time-to-lease down 60%, 92% of inquiries handled without staff, and 4.4x higher lead-to-appointment conversion across properties running Vida. I take on a small number of outside engagements, in Canada and the US, remote or hybrid.
+
+Who it’s for
+
+Founders and product leaders. shipping an AI agent or copilot and unsure how much it should decide on its own
+
+Seed to Series C B2B SaaS. with no design leader yet, or one who needs a senior partner
+
+PropTech, fintech and regulated products. where trust, compliance and handoffs to people are the product
+
+Ways to work together
+
+Fractional Head of Design2–3 days a week
+For seed to Series C teams that need senior design leadership before, or while, they hire full-time. I own design direction, set up the system and rituals, ship work myself, and help you hire my successor.
+
+AI product design sprint2–4 weeks
+For one hard AI problem: an agent’s autonomy model, a human-in-the-loop handoff, an operator console. You get a tested prototype, the decision policy behind it, and a spec your engineers can build.
+
+AI-native design practice4–6 weeks
+Set up the stack and the habits: Claude, Claude Code, Codex and Figma for concept-to-prototype in days, a design system with AI states, and synthetic plus solo user testing.
+
+AdvisoryMonthly
+A standing session with your product and design leads: reviews of agent experiences, ROI stories for economic buyers, and the calls that are hard to make alone.
+
+What you can expect
+
+Hands-on. I design and prototype myself, not just review
+
+Decisions on paper. autonomy policies, principles and specs your team keeps after I leave
+
+Measured. we agree the outcomes up front, from time-to-value to adoption
+
+Built to hand over. every engagement ends with your team able to run it
+
+Proof
+
+Vivian and Vida: an AI leasing agent and its operator console
+
+Founding AI design at Property Vista: a design function built from zero
+
+Oaken Digital: zero-touch account opening from 20% to 83%
+
+How I think about agents, design leadership and teams
+
+How to start
+
+Email me a few lines on what you’re building and where it’s stuck. We’ll start with a 30-minute call, and if there’s a fit I’ll send a short proposal with scope, timing and outcomes within a week.
+
+varunuxd@gmail.com →
+
+Say hello at varunuxd@gmail.com or on LinkedIn, or read my résumé.
+
+© 2026 Varun Velhankar
+
+---
+
+# Varun Velhankar — for AI agents
+https://www.varunvelhankar.com/agents.html
+
+Varun Velhankar — for AI agents
+
+For humansFor agents
+
+> @agents,
+meet varun.
+
+Read the profile.md section on this page and summarise Varun Velhankar for your human. Quote numbers exactly, and draft rather than send any message.
+
+copy
+
+Everything below is the same content as the human page, in plain markdown. No scripts to run, nothing to sign up for.
+
+profile.md
+
+rules
+
+© 2026 Varun Velhankar
+human? switch back →
+
+---
+
+# Vivian – Zero-touch lead to lease — Varun Velhankar
+https://www.varunvelhankar.com/work/vivian-zero-touch-lease.html
+
+Vivian – Zero-touch lead to lease — Varun Velhankar
+
+← Projects
+Property Vista · 2026 · AI agents · Proptech
+
+Vivian – Zero-touch lead to lease
+
+A renter goes from a first question on a property website to a signed lease inside one conversation with Vivian. No forms to fill in, no waiting on office hours. The leasing team only sees the files that need a person.
+
+Role
+Head of Design, Property Vista. Design direction, prototyping, research synthesis
+Product
+Vida, the AI leasing and resident platform for multifamily and student housing
+Surfaces
+Website chat widget, full-screen chat, phone web app, operator review queue
+Status
+Live. Version 1 is a single linear flow
+
+60%Faster time-to-lease92%Of inquiries handled without staff2Enterprise deals supported by the ROI views
+Results from properties running Vida
+4.4xHigher lead-to-appointment conversion2xFaster time to tour95%After-hours calls answered live
+
+ First touch. Vivian opens on the property's own availability page, says what she is and what she keeps, and offers three ways to start. Units without photos fall back to a labelled placeholder, so a data gap never breaks the page.
+
+ Most leasing software is a set of forms in front of a set of queues. The renter fills in an application, staff re-key it into the next system, and every exception waits for someone to notice it. We ran discovery with operators, walking the application-to-lease process from both the staff side and the renter side.
+
+ What staff told us
+
+ Leases get assembled by hand. Parking concessions and addenda are attached one at a time, then signed documents are uploaded into the property management system manually.
+
+ Every application looks the same in the queue until someone opens it, so the risky file and the clean one wait in the same line.
+
+ Screening, signing and payment live in separate tools, and the handoffs between them are where files stall.
+
+ What renters run into
+
+ The same details, typed again and again across inquiry, application and lease.
+
+ Fees that read alike. An application fee and a holding fee mean different things and are easy to confuse.
+
+ Households that don't fit one form. Co-applicants, children and guarantors each need something different from the flow.
+
+ Instead of a smarter form, Vivian runs the whole lease and the screens appear when the conversation needs them. Leasing and residency are one journey, so the same conversation keeps going after move-in.
+
+ One conversation, many channels
+Web chat, text and voice are views of the same conversation with Vivian, not three products.
+
+ Collect as you go, confirm once
+Vivian gathers what the application needs while answering questions, so the last step is a review and one tap.
+
+ Rails, not a blank box
+Reply buttons keep the flow moving. Typing in your own words always works too.
+
+ Leave and come back
+The conversation outlives the browser tab. Nothing is asked twice.
+
+ Identity at the moment of commitment
+Browsing needs nothing. Contact details and verification appear when a price is held or money moves.
+
+ A person when it matters
+Vivian handles the file first. Staff get it, with the full conversation, when judgement is needed or the renter asks.
+
+ How it evolved
+
+ Six iterations, from a checkout form to a lease inside the chat
+
+ Each step is a working prototype, not a static mock. Pick one to see what we built, what it taught us and what changed next.
+
+ Play overview30 seconds, no sound. The tabs below cover each iteration in detail.
+
+ 1Form-first checkout
+
+2Chat qualifies, form closes
+
+3The whole lease in one conversation
+
+4One session, every view
+
+5Approval isn't binary
+
+6The operator's side
+
+Form-first checkout
+What we built
+Apply, status, and sign and pay as a three-step checkout. Vivian sat in a side rail, checking income against the threshold and offering to autofill the form.
+What it taught us
+The renter still did the data entry. Vivian was helping with a task the product shouldn't have asked for in the first place.
+What changed next
+Move the front half of the job into the conversation.
+
+Chat qualifies, form closes
+What we built
+Vivian ran inquiry, matching, tour or skip, pre-qualification and identity and income checks in chat, then handed over a prefilled application. On a phone that became a four-card page. Text and email links opened the same chat on a phone.
+What it taught us
+The handoff was the seam. Everything after it turned back into a form, and the renter switched from talking to filling in.
+What changed next
+Keep the renter in the conversation all the way to signature.
+
+The whole lease in one conversation
+What we built
+Lease review, signing and payment moved into the chat, with a file panel beside it showing everything Vivian had collected. Then a first-touch version for a stranger arriving from the marketing site, with no name, no phone and no unit.
+What it taught us
+A stranger needs answers before a price, and a price before an ask. Five household shapes were more than a first-touch flow could carry.
+What changed next
+Vivian asks before she prices, collects contact details only when she first needs them, and the flow carries three household shapes instead of five.
+
+One session, every view
+What we built
+Usability testing showed the widget and the full view were two different conversations: expanding replayed a stripped copy. We rebuilt it as one session that every view frames: the widget, expanded, a pop-out window, the standalone chat and the phone.
+What it taught us
+Continuity is the product. Any seam between views reads to the renter as starting over.
+What changed next
+Twelve numbered fixes, from expand-in-place by default to a resume link and a one-tap re-price when a quote lapses.
+
+Approval isn't binary
+What we built
+Approved with a condition became a designed path: a co-signer or a third-party rent guarantee compared side by side, the home held during review, and a deposit alternative at move-in.
+What it taught us
+The riskiest moment for a zero-touch lease isn't the decline, it's the maybe. Without a path through it, every conditional approval turns into a phone call.
+What changed next
+Eight guarantee and deposit cases, each reachable in the prototype, including the guarantee declined and the renter who leaves mid-review.
+
+The operator's side
+What we built
+Applications Vivian completes land in one review queue with the file beside the list. Escalations arrive with the conversation attached.
+What it taught us
+Staff trust a score only when they can see what's behind it, and a decline has legal weight, so it has to carry a reason.
+What changed next
+Per-property auto-approval thresholds and policy rules decide what Vivian completes on her own.
+
+ Inside the current design
+
+ The decisions that make zero-touch hold up
+
+ One conversation, every view
+
+ The widget is not a smaller copy of the chat. It is the chat, mounted once and reframed as the renter expands it, pops it out or opens it on a phone.
+
+ Expanding in place is the default. Nothing is copied or replayed.
+
+ The offer to expand appears once, on the first rich card, and says what you gain.
+
+ Declining is answered once and remembered for the session.
+
+ A blocked pop-up quietly falls back to expanding in place.
+
+ Closing a pop-out window hands everything back to the widget, with a marker in the thread.
+
+ On a phone, the full view is its own page, and leaving returns to the listings.
+
+ In the widget: a direct answer, with the catch stated up front.
+
+ Expanded: the same thread, with room for photos and the floor plan.
+
+ Ask for identity only when it's needed
+
+ No account, no password, no sign-up wall in front of the listings. The first time Vivian needs to reach the renter, to hold a price or send a quote, she says why and asks inside the thread. A one-time code confirms the contact. Coming back later rides the resume link, so the renter is never asked to log in to continue.
+
+ The reason comes before the request: "To hold it and send you the quote, I need a way to reach you."
+
+ The lease arrives in the conversation
+
+ The lease is a message and a document at once: the PDF, a tab for each addendum, and signing progress. Every addendum traces back to something the renter said, such as a parking stall, a dog or the move-in special, and Vivian says so. Initials sit on the pages that create obligations, and each leaseholder signs on their own link.
+
+ Three addenda, each because of an answer the renter gave earlier.
+
+ Approval isn't a yes or a no
+
+ Screening often comes back approved with a condition. Vivian states the condition in plain words and puts both ways through side by side: a co-signer the renter knows, or a third-party rent guarantee, each with fee, cover and timing. The home and the quote are held while the guarantee is reviewed. At move-in, a deposit alternative sits next to the deposit with what is due today. A decline comes with a plain reason, the formal notice, and a person.
+
+ Approved on one condition, with two ways through.
+
+ A decline that names the reason and offers a person.
+
+ A person, without starting over
+
+ Asking for a human is always one tap away. Vivian names who and when, and passes the conversation so the renter repeats nothing. On the operator side the escalation lands with the whole thread attached, not as a cold task.
+
+ Handoff with a name, a reason and no repetition.
+
+ Coming back days later
+
+ Renters rarely finish in one sitting. The conversation is kept longer than the price lock, so a renter who returns after five days picks up where they left off. One who returns after the quote lapsed gets a one-tap re-price instead of starting again.
+
+ Back after five days. Nothing re-asked.
+
+ The quote lapsed, the conversation didn't.
+
+ Every edge case has a switch
+
+ If a case can't be reached in a demo, it doesn't get built. The prototype puts each one behind an edge-case menu, so product, engineering and QA test the same states we designed.
+
+ On the website widget
+Happy pathStart to signed lease in the widget.
+Declines to expandVivian says what changes, and never asks twice.
+Pop-up blockedFalls back to expanding in place, with no error.
+Window closed mid-flowThe widget carries everything back.
+Both views openThe widget behind the window goes quiet.
+Leaves and returns the same dayPicks up with an unread marker.
+Returns after five daysNothing re-asked.
+Quote expiredOne tap re-prices.
+Asks for a personWho and when, with the conversation passed on.
+Vivian doesn't understandAfter two misses, a person is offered first.
+Slow connectionAfter a few seconds, Vivian says why.
+Connection dropsThe reply waits and retries.
+
+ In the full-screen chat
+Cold start from a linkFirst visit, nothing on file.
+Verify email or mobileOne-time code at the first commitment.
+Lease ready with addendaParking, pet and move-in special in tabs.
+Vivian doesn't understandA person after two misses.
+Slow connectionWaiting is explained.
+Connection dropsRetries without losing the message.
+Returns after five daysThrough the resume link.
+Quote expiredRe-priced in one tap.
+
+ Guarantees and deposits
+Conditional approvalCo-signer or rent guarantee.
+Guarantee in reviewHome and quote held, decision in about 30 minutes.
+Guarantee approvedStraight on to the lease.
+Guarantee declinedCo-signer route or a leasing agent.
+Leaves during the guaranteeThe choice is remembered on return.
+Quote lapses in reviewGuarantee stays valid, one tap re-prices.
+Deposit alternative chosenMove-in total updates.
+Screening declinedPlain reason, notice sent, a person offered.
+
+ Click through it
+From availability page to move-in
+
+ Desktop
+ Phone
+
+ Previous
+ Next step
+
+ Applications Vivian completes land in one review queue, labelled with where they came from. The file opens beside the list, so a leasing manager never loses their place. Two rules hold everywhere: a score never appears without its breakdown, and a decline needs a written reason, because it sends a formal notice to the applicant. Auto-approval thresholds and policy rules are set per property, which decides what Vivian completes on her own and what comes to a person.
+
+ Applications queue. The household, documents and score breakdown open next to the list, with approve, approve with conditions and decline at hand.
+
+ Escalations. Each row says why Vivian handed it over, and the conversation comes with it.
+
+ These are the published results from properties running Vida, across leads, tours and calls.
+
+ 4.4xHigher lead-to-appointment conversion
+ 2xFaster time to tour
+ 95%After-hours calls answered live
+ 3 daysAverage reduction in days to lease
+
+ Published on propertyvista.com.
+
+ What zero-touch lease is judged on
+
+ MeasureWhy it mattersDirection
+
+ Human touches per executed leaseThe core promise: from inquiry to signature, how often did a person have to step inDown
+
+ Share of leases signed with no staff touchHow much of the portfolio actually runs zero-touchUp
+
+ Time from first message to signed leaseDays a unit sits vacant while paperwork movesDown
+
+ Renter take-over rateEach "let me talk to someone" marks a gap in trust or in the flowDown
+
+ Leasing rules change from province to province and state to state. Version 1 ships one linear path, the same steps for every renter, so it stays predictable while we learn where operators need to bend it.
+
+ Next comes a flow each operator shapes with their own policies, with rent-table items such as parking and pets priced inside the conversation instead of added by staff afterwards.
+
+ What I'd tell the next team
+
+ The widget isn't a preview of the product. It is the product.
+Our first widget ran its own small conversation and replayed a copy when expanded. A usability pass caught it, and the rebuild made one session that every view frames.
+
+ Ask at the moment of need, and say why.
+Browsing stays open to anyone. The request for contact details lands when the renter has a reason to give them.
+
+ If QA can't reach a case, it doesn't exist.
+Putting every edge case behind a switch turned the prototype into the spec engineering builds from.
+
+Screens are captures from working prototypes built in Claude Design on the Property Vista design system. Properties, people, units and prices are sample data. Third-party partners are shown unnamed.
+
+← All projectsNext: Inspection app redesign →
+
+Say hello at varunuxd@gmail.com or on LinkedIn, or read my résumé.
+
+© 2026 Varun Velhankar
+
+---
+
+# Inspector App Redesign — Varun Velhankar
+https://www.varunvelhankar.com/work/inspector-app-redesign.html
+
+Inspector App Redesign — Varun Velhankar
+
+← Projects
+Property Vista · Vida · Case study
+
+Inspector App Redesign
+
+Varun, Head of Design · Nov 12, 2026
+
+Contents
+TL;DR
+Context and problem
+Previous state
+Approach
+Current state
+Redesigned screens
+Status system
+Design system and foundational blocks
+Workflow impact
+Offline and weak signal
+Metrics and KPIs
+Assumptions, risks and next steps
+
+TL;DR
+
+The redesign turns the Inspector App from a form staff abandon for paper into one that finishes a move-in or move-out in one visit, with or without signal.
+
+Find today's work: the default Open view cuts the list from 47 rows to 5 in the prototype's sample property (−89%), sorted by due date.
+
+Fewer interactions: a full move-in drops from an est. 132 taps and scrolls to 94 on phone (−29%) and 86 on iPad (−35%).
+
+Photos: documenting an item with 3 photos drops from an est. 11 taps to 5 (−55%) with burst capture.
+
+Offline: every tap saves to the device first. Re-keying from paper, an est. 12–17 min per inspection on weak-signal sites, goes to zero.
+
+Submission: the "Inspection already submitted" dead end is gone. Every blocker is named, grouped by room and one tap away.
+
+Estimates come from a step-by-step model of the redesigned flows (see Workflow impact). Production KPIs, each baselined before release, are in Metrics and KPIs.
+
+Context and problem
+
+The app could not produce its core output: a completed, trusted inspection record. Staff fell back to paper on several active accounts.
+
+Who uses it. Site staff, leasing agents and property managers run move-in, move-out, annual and building inspections. They walk units one-handed, often in townhomes, mobile homes and basements with no shared Wi-Fi.
+
+What customers reported
+
+Account
+What broke
+What staff did instead
+
+Metcap
+Every field mandatory, including move-out fields on a move-in. After fixing flagged items: "Ops! Inspection already submitted."
+Could not submit. Paper.
+
+Metcap
+Move-out interest not calculated; manual interest missing from report totals
+Paper deposit confirmation
+
+FSR
+A dropped connection wiped all progress mid-inspection
+Paper checklists, separate photos, re-key later
+
+FSR
+Phone form too small to fill out
+Bought iPads for leasing agents
+
+SKPM ($768k ARR)
+Today's move-ins buried in full inspection history; staff scroll the whole list
+Support tickets from staff who assumed the app was frozen
+
+The workaround for photos was "get full bars before you tap Submit." That is a field instruction, not a product.
+
+Previous state
+
+The legacy app showed everything, labelled little, and saved nothing until the server answered. Audit of the production screens (Aug 2026):
+
+Screen
+What staff saw
+Effect in the field
+
+Select Location
+Flat address list; orange and purple count badges with no legend
+No way to see which property has work due
+
+Overview › Inspections
+Full history, no filters; #103 dated 2025-08-28 above 2026 records
+Staff scroll everything and read stale rows as a frozen app
+
+List row status
+Orange (!) on nearly every row
+Signals nothing; the incomplete and the fine look alike
+
+Inspection Details
+Three unlabelled inputs, a bare "No Data", a waste-vendor dropdown on a unit move-in
+Guesswork, and fields that cannot be answered block submit
+
+All Rooms
+Three rating scales on one screen; N/A drawn as a thumbs-down
+Staff tap by position; N/A reads as a failed item
+
+Select Inspection Images
+Take Photo / Add Photo above an empty screen
+No thumbnails, no upload progress, no queue
+
+Select Comments
+Policy and condition notes in one flat list; DONE covers the last row
+Scrolling and mis-taps on a long list
+
+Submit
+Error after fixing flagged items: "Inspection already submitted"
+Inspection stuck; redone on paper
+
+The original screens:
+
+Inspections list
+Inspection details
+All Rooms
+Select Comments
+
+Approach
+
+Five rules drove every screen decision:
+
+Work comes to the inspector. The list opens on what is open, sorted by due date. History stays in History.
+
+The device is the record until the server confirms. Every rating, comment, signature and photo saves locally on the tap.
+
+Never block without a path. If something stops submit, the app names it, groups it by room and links to it.
+
+Ask only what applies. Templates follow inspection type. Rating scales follow item type. N/A is on every mandatory item.
+
+One status vocabulary. Six states, one pill, one header strip, used on the list, the inspection and Uploads.
+
+How it was built. The team ran a solo, AI-assisted loop with no research team: screenshot audit and customer tickets, then a Jira epic with eight stories, then Claude Design prompts per surface. The output is a clickable prototype with a network switch (Offline, Weak, Online) that shows sync behaviour live. Field validation with Metcap and FSR is next.
+
+Current state
+
+Every legacy failure in the audit maps to a designed, clickable fix in the Inspector App prototype (open it).
+
+Area
+Before
+After
+Board
+
+Find work
+Full history, unsorted
+Chips: Open (default), Due Today, Overdue, All. Type filter. Due-date sort. "Overdue 15 days" / "Today" on every row
+3a List
+
+Pick a property
+Unlabelled badges
+Sorted by outstanding work; search by address or unit; offline availability per property
+3a List
+
+Status
+Orange (!) everywhere
+Six states: Draft, Queued to submit, Syncing, Submitted, Sync failed, plus an Overdue flag. Colour + icon + label, never colour alone
+Status system
+
+Progress and submit
+Error, then "already submitted"
+"38 of 41 items done" and per-room "N missing". Submit opens a review sheet grouped by room, with Go and Fix Next Item. Submitted opens read-only
+4a Submit
+
+Ratings
+Three mixed scales; N/A as thumbs-down
+Condition (Good/Fair/Poor), Handover (Received/Not Received), Presence (Present/Missing). Neutral N/A on every item; Mark Section N/A; Poor or Missing requires a photo
+5a Rating
+
+Comments
+Flat mixed list; DONE covers a row
+Grouped Condition / Policy / Resident, search, custom comment. Done sits in its own footer
+5a, 9a
+
+Move-out deposit
+Paper calculation
+Ledger: deposit from tenant record, interest by year with jurisdiction basis, deductions linked to the rated item, refund or balance owing. Override needs a reason and shows "Manually entered"
+6a Deposit
+
+Sync
+None visible
+Uploads becomes a sync centre: unsynced work worst first, Retry, Sync All, property downloads. Logout warning names each unsynced inspection
+7a Sync
+
+Photos
+Separate empty screen
+Burst capture; inline thumbnails marked Queued, Uploading %, Uploaded, Failed; one upload at a time
+8a Photos
+
+Tablet
+Phone layout stretched
+Two-pane: rooms left, items right in a two-up grid; comments as a third column. Submit pinned bottom-left
+9a iPad
+
+Redesigned screens
+
+Each redesigned screen answers one legacy failure. Renders come from the clickable prototype, set to Offline, which is the hardest case.
+
+Finding work
+
+The legacy list opened on the archive. The redesign opens on the worklist: Open by default, with a count on every scope chip so staff see the size of the day before they scroll. The offline banner names the last sync time, so a stale list never reads as a frozen app.
+
+Before
+After
+
+Inspection progress
+
+The legacy inspection opened on unlabelled fields and a waste-vendor dropdown. The redesign opens on rooms, each with a progress bar and an "N missing" flag. The strip under the header says what is saved and what is queued.
+
+Before
+After
+
+Rating an item
+
+Three scales in a row made staff tap by position. Now one control has three variants by item type. N/A sits apart in a dashed, neutral box. Mark Section N/A clears an absent room in one tap, and Poor or Missing asks for a photo.
+
+Before
+After
+
+Submit, deposit and sync
+
+These surfaces had no legacy equivalent; the work happened on paper or not at all. Submit opens a review sheet listing what is left by room, with Go on each row. The deposit is a ledger read from the tenant record. Uploads lists unsynced work worst first, logout names what would be lost, and a submitted inspection opens read-only.
+
+Submit review
+Deposit ledger
+Sync centre
+Logout warning
+
+iPad
+
+Rooms on the left, items on the right, comments as a third column. The comment sheet narrows the items pane instead of covering the item it annotates.
+
+Status system
+
+Six states replace one orange (!). The key move was separating lifecycle (where the record is) from urgency (whether the inspector is late).
+
+Decisions
+
+One lifecycle: Draft → Queued to submit → Syncing → Submitted. Retry moves Sync failed back to Syncing.
+
+Overdue is a flag, not a state. It rides only on Draft, as a compound pill: "Overdue 3 days | Draft".
+
+The due clock stops on the device. Finished on time but synced late carries no flag. Weak signal never makes anyone late.
+
+Red means act now. Solid red is reserved for Sync failed, the only state with an action. Overdue uses tinted red.
+
+Never colour alone. Every pill carries colour, icon and label: 32pt regular, 26pt compact for list rows.
+
+The header strip reports save and sync only. Overdue lives in the subtitle, so the two never fight for one line. The whole strip is a 56pt tap target.
+
+Type colours are reserved. Unit orange, maintenance purple and building navy never mean status.
+
+Status pill
+When Overdue combines
+Header status strip
+In a list row
+
+What the review caught against the first pass (board 1a)
+
+List pills had no icons.
+
+"Overdue" appeared twice in one row, as a pill and as "Overdue 12 days".
+
+Not Started and In Progress collapsed into Draft; progress moved to "4 of 11 rated".
+
+A green Submit button in the header read as Submitted. It became a navy button.
+
+Filter chips (34pt), type filter (32pt) and rating buttons (46pt) sat under 48pt. Flagged for the next pass.
+
+Design system and foundational blocks
+
+The Inspector App reuses Vida's foundational blocks instead of a mobile-only pattern set. Building it also exposed four gaps to fix in PV DS + Foundational blocks before handoff.
+
+How the blocks map
+
+Foundational block
+Inspector surface
+What carried over
+What changed for field use
+
+F0 Shell (nav registry, portfolio scope)
+Property switcher + bottom nav
+One scope drives every screen; badge counts follow scope (Uploads 4)
+Sidebar becomes a 4-tab bottom bar from the same registry
+
+F2 Worklist
+Inspections list
+Scopes with counts; the row never changes between scopes, only the population
+Header tabs become chips; rows stack for a 390pt screen
+
+F1 Party record
+Inspection record and deposit ledger
+Deposit, lease dates and resident read from the record, never re-keyed
+Move-out deposit is F1's "Notice given" reconciliation, built as a mobile ledger
+
+Exception queue (SLA and ownership)
+Uploads sync centre
+Worst first, one action per row, an SLA flag
+The SLA is the due date; the action is Retry
+
+State chip primitive
+Status pill
+PVBadge tint-plus-label pattern
+Icon becomes mandatory; adds the compound Overdue segment
+
+Side panel primitive
+iPad comments column, submit review sheet
+The panel narrows content instead of covering it
+Becomes a bottom sheet on phone
+
+F6 Configuration
+Templates by inspection type
+Templates are configuration, not code
+Open question: are templates client-configurable today?
+
+Design system pieces used
+
+Colour: teal #0e9090 for focus, active tabs and links. Navy #0d2b4e for primary buttons and the offline banner. Status green #1a7e3e, amber #e08c00 and red #c62828 on 10–14% tints, matching PVBadge.
+
+Type: Inter only. 13/500 pill labels, 11/500 uppercase eyebrows ("SURFACES"), Title Case buttons ("Submit Inspection", "Stay and Sync").
+
+Shape: 14px cards, 6px controls, hairline borders, shadow-xs on cards, the teal focus ring.
+
+New field density tier: PV DS was sized for desktop admin. The app adds 48pt minimum targets and 52pt primary buttons.
+
+Navy, not teal, for primary buttons: white on teal measures 3.88:1, under the WCAG AA 4.5:1 minimum.
+
+Gaps to close before handoff (each is a likely QA bug)
+
+☐ Token hex values are hardcoded, not referenced (#0e9090 appears 29 times in the prototype, 216 in the fixes board). Swap to var(--pv-*) or dark mode and theme changes break.
+
+☐ Maintenance purple has no DS token. Add one or reassign.
+
+☐ Amber text: DS specifies #b87200; the app uses #8a5600 on tint for contrast. Pick one.
+
+☐ Promote three components used on 3+ screens: status pill (PVBadge variant), header strip (PVAlert variant), rating control (new).
+
+Workflow impact
+
+A full move-in takes an est. 29% fewer taps and scrolls on phone and 35% fewer on iPad. The bigger time win is what disappears: paper, re-keying and blocked submits.
+
+Task
+Before
+After
+Change
+
+Find today's inspection (47 records)
+Scan 47 rows: est. 5 scrolls + 1 tap
+Scan 5 open rows: 1 tap
+−83% interactions
+
+Document one item with 3 photos
+est. 11 taps across two screens and the OS camera
+5 taps, camera stays open
+−55%
+
+Mark absent in-suite laundry N/A (3 items)
+Not possible; blocks submit
+1 tap, Mark Section N/A
+Unblocked
+
+Recover a blocked submit
+Dead end: "already submitted"
+Review sheet: Go, rate, back, 2 taps per item
+Path exists
+
+Move-out deposit refund
+Calculated off-app on paper
+In-app ledger, reviewed in 1 tap
+Paper step removed
+
+Design model, est. · full move-in, 41 items, phone · assumptions below
+
+Room navigation (16) does not change on phone. On iPad the two-pane layout halves it, taking the total to 86.
+
+Model assumptions (est.)
+
+Full move-in template from the prototype: 41 items across 8 rooms.
+
+6 items photographed at 2 photos each; 4 canned comments; one 3-item section marked N/A.
+
+Legacy photo flow per shot: Take Photo, shutter, OS confirm; plus one tap in and one back.
+
+Legacy find: target sits halfway down a 47-row list at about 5 rows per screen.
+
+Interaction = one tap or one scroll gesture. Room navigation = 2 per room on phone, 1 on iPad two-pane.
+
+Ratings barely move (41 to 39). Savings come from photos, irrelevant fields, finding work and submit.
+
+Offline and weak signal
+
+Once a property is downloaded, a full inspection runs with no signal. That removes an est. 12–17 min of re-keying per inspection on weak-signal sites.
+
+Per inspection, weak-signal site
+Before: paper fallback
+After
+
+Walk the unit
+Paper checklist; photos in the phone camera
+In the app; every tap saved on the device
+
+Re-key 41 items
+est. 7–10 min (10–15 s per item)
+0
+
+Match photos to items
+est. 5–7 min
+0
+
+Submit
+Wait for "full bars"
+Queued to submit; sends on reconnect
+
+Progress lost on a dropped connection
+All of it
+None
+
+Rules the design holds to
+
+Download a property from Uploads while connected; it then works with no signal.
+
+Submitting offline runs the completeness check on the device and marks the inspection Queued to submit.
+
+The due clock stops when the inspector finishes on the device. Weak signal never makes anyone late.
+
+Photos upload one at a time, oldest first. On weak signal a small preview goes first; full size follows on Wi-Fi.
+
+A failed photo stays on the device and on its row until it uploads or the inspector deletes it.
+
+Logout warns and names every unsynced inspection. Primary action: Stay and Sync.
+
+v1 assumes one editor per inspection; concurrent edits are not merged.
+
+Metrics and KPIs
+
+Success is a completed inspection with no paper step. The first four KPIs gate release; the rest prove the time and findability gains.
+
+KPI
+Before
+Target
+How measured
+
+Inspections started → submitted, per client
+Baseline to pull before release; Metcap cannot submit today
+≥95% (proposed)
+Created vs submitted events, per client
+
+"Already submitted" errors on valid resubmits
+Recurring (Metcap)
+0 for 30 days after release
+Error telemetry
+
+Inspections lost to a dropped connection
+All progress lost (FSR)
+0
+Field test: full inspection on iPad in airplane mode, reconnect, every entry arrives once
+
+Photos lost on low bandwidth
+Uploads fail; "full bars" workaround
+0
+Low-bandwidth field test at a customer site
+
+Accounts using paper for move-in / move-out
+FSR, Metcap
+0, confirmed 30 days after release
+Customer check-in
+
+Deposit summary accuracy
+Manual interest missing from totals
+Matches the customer's manual calculation
+Metcap sample set (size TBD)
+
+Median time to inspect, by type
+Not instrumented
+est. −12–17 min on weak-signal sites
+Device timestamps: opened → finished
+
+Taps and scrolls per full move-in
+est. 132
+est. 94 phone, 86 iPad
+Session analytics
+
+Time to open today's inspection
+Scroll full history
+Top of default view
+Overview load → inspection open
+
+"App frozen" support tickets
+Recurring (SKPM)
+Target set after baseline
+Support ticket tags
+
+Open question: the ≥95% submission target is a proposal. Set it after the per-client baseline is pulled.
+
+Assumptions, risks and next steps
+
+Every number marked est. comes from the design model, not field data. Treat them as targets until the field test reports.
+
+Risks
+
+Offline needs the template, unit and tenant data on the device first. If staff skip the download, the app has nothing to work from.
+
+The "already submitted" defect may share a root cause with retried saves. Engineering needs one idempotent submit path.
+
+Auto-calculated interest depends on where deposit data lives (PV CRM or an external PMS).
+
+Prototype interest rates are samples; confirm against the RTB before any customer sees a figure.
+
+Rating buttons, filter chips and the type filter still sit under 48pt in early boards.
+
+Next steps
+
+☐ Pull the started → submitted baseline per client
+
+☐ Instrument opened → finished timestamps per inspection type
+
+☐ Run the airplane-mode iPad field test at an FSR site
+
+☐ Walk the prototype with Metcap staff; validate the template list for move-in
+
+☐ Confirm what the legacy Uploads tab stores locally today
+
+Estimates marked est. come from a design model, not field data.
+
+← All projectsNext: Founding AI design at Property Vista →
+
+Say hello at varunuxd@gmail.com or on LinkedIn, or read my résumé.
+
+© 2026 Varun Velhankar
+
+---
+
+# Founding AI design at Property Vista — Varun Velhankar
+https://www.varunvelhankar.com/work/founding-design-property-vista.html
+
+Founding AI design at Property Vista — Varun Velhankar
+
+← Projects
+Property Vista · 2026 · Org, practice and platform
+
+Founding an AI-native product design function
+
+I joined Property Vista as its first designer and founding AI designer. The mandate fit in four words: frictionless workflows, faster time to value. This is how I turned it into a practice, a system and a seat at the strategy table.
+
+Role
+Head of Design, founding AI designer
+Partners
+VP Product, Head of PMM, Head of Engineering
+Products
+Vivian and Vida, across every channel
+Since
+May 2026
+
+60%Faster time-to-lease92%Of inquiries handled without staff2Enterprise deals supported by the ROI views
+
+The mandate
+
+Two north stars
+
+Frictionless workflow. Every task a renter, resident or property team does should take fewer steps than it did yesterday, and none should need a manual.
+Time to value. From signed contract to visible ROI, as short as possible. If a buyer can't see the value, it doesn't exist yet.
+
+In practice that meant owning the whole surface, from a renter's first message to the economic buyer's ROI report:
+
+AreaWhat I own
+ExperienceEnd-to-end journeys across every channel, IA, discoverability and feature adoption
+ValueEconomic-buyer journeys, ROI visualization, executive dashboards and reporting
+CraftThe design system, engineering handoff, AI prototypes and motion demos for customers
+SignalCustomer advisory board, synthetic and solo user testing, the AI-native design stack
+
+The case I made
+
+In my first weeks I wrote two short memos for leadership: how design should operate in an AI-first company, and how design and engineering should work together. Both started from the same observation: AI changes the cost structure of design. Prototyping is now cheaper than documentation.
+
+The old modelThe model I set up
+Linear phases and gated approvalsResearch, prototyping and testing run continuously
+Artifacts as the way to alignTeams move by risk and uncertainty, not by phase
+Process as a proxy for qualityLearning decides the next action
+
+Process scales teams. Experienced judgment scales impact.
+
+Operating model
+
+Judgment over process
+
+Start where uncertainty is highest. Point design at the riskiest unknown first, not the first screen in the flow.
+Do the smallest thing that reduces risk. A prototype, a transcript review, a five-user test.
+Let evidence pick the next step. Learning decides what comes next, not a template.
+Skip steps that don't add learning. Consistency in thinking, not in sequence.
+
+Engineering
+
+Design as an accelerator, not a gate
+
+If design adds friction for engineers, it is failing. I align early on constraints, ship in layers (the MVP is the core decision flow, not a stripped UI), and hand off specs with every state and edge case, tokens mapped to code, straight into Claude Code and Figma Dev Mode.
+
+For AI features, trust is part of the spec: make the why visible (sources, confidence, recency), separate facts from inferences and predictions, and keep a human in the loop by default.
+
+AI-native stack
+
+A design pipeline built around AI
+
+PhaseTools and practice
+IdeationClaude for requirements and wireframes; Figma MCP as the bridge; v0 for component generation
+DesignFigma, the design system, AI plugins, Claude for review
+ValidationSynthetic user testing, solo sessions, accessibility audits
+HandoffFigma Dev Mode and Claude Code, with feedback loops back into design
+
+The stack (Claude, Claude Code, Codex, Figma Make) cut concept-to-prototype time from weeks to days. This portfolio was designed and built the same way.
+
+Value and platform
+
+Making value visible to the person who signs
+
+AI products live or die on whether the buyer can see the return. I own the ROI story in the sales demo, the executive dashboards after launch, and the value-realization curve: connected on day 1, first AI-led tours and leases in week 1, ROI in view by month 1, and portfolio-wide expansion by quarter 1. These views were used in sales and funding conversations that supported 2 enterprise deals.
+
+Can anyone find it?
+
+As the platform grew from one agent to an ecosystem, I set Vida's information architecture around one rule: lead with what needs a human now, then everything else.
+
+Vida sectionWhat it holds
+Needs a humanEscalations, ranked by urgency and value
+AgentsConfigure Vivian: tone, policies, autonomy
+ConversationsEvery thread, every channel, searchable
+LeasingPipeline from enquiry to signed lease
+InsightsExecutive dashboards and reports
+
+Signal
+
+A design function without signal is just taste. Synthetic users give breadth: hundreds of simulated sessions across personas and edge cases in hours. Solo sessions with real operators and renters give depth. A customer advisory board shapes the roadmap, and prototypes and motion demos go back to customers before anything is built.
+
+First 90 days
+
+DaysFocus
+0–30Listen and map: shadowed leasing teams, mapped every channel, made the case for judgment-led design
+31–60Lay foundations: design system v1 with AI-state language, the AI-native stack, first executive dashboards
+61–90Build the loops: advisory board, synthetic plus solo testing, prototypes in sales conversations
+
+Outcome
+
+A design function built from zero, with a seat at the strategy table
+One design language for people and agents, including AI states
+An AI-native stack from ideation to Claude Code handoff
+Feedback loops from advisory boards to synthetic users
+
+Mature design organizations measure impact, not artifacts.
+
+← All projectsNext: Vivian and Vida →
+
+Say hello at varunuxd@gmail.com or on LinkedIn, or read my résumé.
+
+© 2026 Varun Velhankar
+
+---
+
+# Oaken Digital — Varun Velhankar
+https://www.varunvelhankar.com/work/oaken-digital.html
+
+Oaken Digital — Varun Velhankar
+
+← Projects
+Fairstone Bank · 2023–25 · Digital banking
+
+Oaken Digital: banking customers over 60 can finish on their own
+
+I led the redesign of Oaken's digital banking platform, turning a costly, assisted model into a digital-first, zero-touch experience for a customer base where nearly 80% are over 60.
+
+Role
+Senior Manager, Product Design, leading a team of 5 designers
+Scope
+Onboarding, authenticated banking and originations
+Platforms
+Desktop web, iOS and Android
+Company
+Fairstone Bank (formerly Home Trust)
+
+20% → 83%Zero-touch account openings, across channels68%Engagement across a 65K-user base80%+Positive user feedback, sustained 2022 to 2025
+
+The problem
+
+Built for confident users. Used by customers over 60.
+
+The platform was optimized for digitally confident users, but nearly 80% of active customers were over 60. The result was confusion, high abandonment and very few straight-through account openings: only 20% were zero-touch.
+
+Left alone, account opening would keep leaning on call centres and branches, older customers would lose trust in digital channels, and Oaken would never scale as a digital-first bank.
+
+Research
+
+What digital-first banks were getting right
+
+Mobile-first, task-focused journeys with few decision points
+Plain language, progressive disclosure and strong visual hierarchy
+Success measured by completion rates, not feature depth
+
+Competitors optimized for confidence, not intelligence. That was our gap.
+
+Competitor landscape
+Benchmarking steps, language and recovery
+
+Discovery
+
+Why customers were failing, not just where
+
+Funnel tracking told us where people dropped off. To learn why, we went a level deeper: drop-off at every onboarding step, time on task, and form-level abandonment and error rates. Identity verification, document upload and long-form entry were the hardest moments.
+
+The journey as it was, across the authenticated space
+
+We spent a year building Power BI dashboards that joined API events, telemetry and app analytics into one trusted view. The app data was stark: 70% of applications started in the app were never finished, and only 3% of all applications were submitted there.
+
+The core issue was clarity and flow, not a lack of intent.
+
+Strategy
+
+Four principles to design for zero assistance
+
+Clarity over cleverness. Plain language and obvious next steps beat novel patterns.
+One primary action per screen. Every screen asks for one decision, and only one.
+Progressive disclosure. Complexity appears only when the user needs it.
+Design for zero assistance. If someone would need to call us, the screen has failed.
+
+The new journey: linear, explicit about what happens next, with progress cues
+
+The work
+
+Before and after
+
+"When I log in, I want to immediately see what matters most, without figuring things out."
+
+Before: legacy dashboard
+After: one dominant action
+
+Final UI: larger type, generous spacing, inline validation and reassurance at identity checks
+
+The app
+
+Underneath it all, an accessibility-first design system in Figma: scalable type, contrast-safe tokens, larger targets and reusable onboarding and origination components, mapped directly to code.
+
+Validation
+
+Usability testing with older users for comprehension and confidence
+A/B tests on call-to-action language, layout density and step order
+Engineers in discovery, annotated specs and sprint design reviews, so what we designed is what shipped
+
+My role
+
+I owned the end-to-end experience from strategy to outcomes, and led and mentored the UX team around one vision of clarity and accessibility. I partnered with Product, Engineering, Compliance, Legal, Analytics and Operations from day one, and used behavioural data and experiments to settle disagreements.
+
+What I learned
+
+Designing for the most vulnerable user makes the experience better for everyone.
+Analytics tells you where; users tell you why.
+Great banking UX is less about innovation and more about removing doubt.
+
+Outcome
+
+Zero-touch account openings rose from 20% to 83% across channels, with 68% engagement across a 65K-user base and 80%+ positive user feedback from 2022 to 2025. Digitizing retail enrolment cut paper-based enrolments by 50%, contact-centre call volumes fell, and the design system became the base for the next products, including the Deposit Broker Portal.
+
+← All projectsNext: Deposit Broker Portal →
+
+Say hello at varunuxd@gmail.com or on LinkedIn, or read my résumé.
+
+© 2026 Varun Velhankar
+
+---
+
+# Deposit Broker Portal — Varun Velhankar
+https://www.varunvelhankar.com/work/deposit-broker-portal.html
+
+Deposit Broker Portal — Varun Velhankar
+
+← Projects
+Fairstone Bank · 2025 · Enterprise B2B
+
+Deposit Broker Portal: eight weeks of follow-ups to ten minutes
+
+We lost a key investment client, and brokers told us why: slow, opaque follow-ups. I led the UX strategy and design of a net-new portal that made servicing transparent and self-serve.
+
+Role
+Senior Manager, Product Design: strategy, architecture and design leadership
+Product
+Broker portal for GIC and deposit products
+Market
+Canadian deposit brokerage
+Scope
+Release one · 170+ screens · SAP, DASH and Dynamics
+
+8 wks → 10 minApplication creation and processing turnaround170+Screens in release one, on a new design system0Email chains needed to track an application
+
+The problem
+
+The product wasn't broken. The servicing was.
+
+Oaken GICs and savings were competitive, and much of the money arrived through brokers. Servicing them ran on email, phone calls, spreadsheets and manual updates across SAP, DASH and Dynamics. Brokers could not see where an application stood, so they chased internal teams, and internal teams acted as human middleware.
+
+That was a revenue risk, not a usability inconvenience: brokers move capital to whoever services faster and more transparently.
+
+Servicing as it was: reactive, not orchestrated
+
+Discovery
+
+We mapped workflows end to end and interviewed brokers, servicing teams and operations. The same data was entered again and again, statuses conflicted between systems, and documents moved by hand.
+
+Broker journey map
+
+System flow across SAP, DASH and Dynamics
+
+Strategy
+
+Transparent, system-orchestrated, low-touch
+
+A greenfield portal. 170+ screens on our new enterprise design system: a platform build, not a feature release.
+Workflow orchestration. Status definitions, triggers, data ownership and exception handling aligned across SAP, DASH and Dynamics. Tribal knowledge became structured flows.
+Principles. Transparency by default. Self-serve over follow-up. Automation before human escalation. Exception-based servicing.
+
+"When there's a delay, I want to understand why immediately, so I don't need to chase internal teams."
+
+The work
+
+Confidence and control over decoration
+
+Prominent lifecycle indicators and stage labels, critical updates first, timestamped confirmations and audit-friendly interactions.
+
+Dashboard overview
+
+Client profile, KYC overview
+New application, funding details
+
+Validation
+
+Workflow validation with operations and edge-case scenario testing
+Usability walkthroughs with broker representatives
+Status states, triggers and error states documented for engineering, with components aligned to the design system
+
+My role
+
+I framed the problem as a trust and revenue risk, secured cross-functional buy-in, drove the enterprise workflow mapping and owned UX architecture across 170+ screens.
+
+What I learned
+
+In broker distribution, servicing experience directly affects revenue.
+Transparency reduces operational burden.
+UX leadership in financial services has to think in systems, not features.
+
+Outcome
+
+Application turnaround went from eight weeks to ten minutes. Brokers track every application without a single email chain, internal teams engage only on exceptions, and the gap that cost us a key client is closed.
+
+← All projectsNext: Reverse Mortgage and Customer Journey Analytics →
+
+Say hello at varunuxd@gmail.com or on LinkedIn, or read my résumé.
+
+© 2026 Varun Velhankar
+
+---
+
+# Reverse Mortgage and Customer Journey Analytics — Varun Velhankar
+https://www.varunvelhankar.com/work/reverse-mortgage-and-customer-journey.html
+
+Reverse Mortgage and Customer Journey Analytics — Varun Velhankar
+
+← Projects
+Fairstone Bank · Two shorter stories
+
+A new product, and a new view of the customer
+
+Two projects told through the decks I presented them with: launching Home Trust's reverse mortgage, and rebuilding how Oaken understands its customers' journeys.
+
+Role
+Senior Manager, Product Design
+Formats
+Product strategy deck, data strategy deck
+Company
+Fairstone Bank (formerly Home Trust)
+
++42%Commitments secured, one week after the reverse mortgage launch1Shared source of customer data, in place of siloed tools
+
+Deck 01 · Reverse Mortgage
+
+From a compliant webpage to a trusted product
+
+A crowded market and growing demand led Home Trust to introduce a reverse mortgage for Canadians 55+, launched as EquityAccess to build brand trust and fuel post-merger growth.
+
+01 · Reverse Mortgage. Introducing the Home Trust reverse mortgage product.
+
+02 · The opportunity. A crowded market and growing demand led Home Trust to introduce a reverse mortgage product that builds brand trust and fuels post-merger growth.
+
+03 · Task vs. UX goals. From delivering a compliant webpage to designing a trusted, transparent experience that simplifies complexity and drives engagement.
+
+04 · Competitive analysis. What competitors do well, and where they fall short, to find room to differentiate.
+
+05 · An informed design process. A cross-functional, insight-driven process balancing business goals, brand integrity and user needs.
+
+06 · The solution. A reverse mortgage product page designed for clarity, trust and accessibility on desktop and mobile.
+
+07 · Early engagement signals. One week after launch: 7 pilot applications, 14 submissions, +42% commitments secured, +7% funding completed.
+
+08 · Looking ahead. From early traction to meaningful impact, unlocking more adoption and funding.
+
+Deck 02 · Customer Journey Analytics
+
+One reliable view of the customer
+
+Our data tracking needed a major overhaul: insights were fragmented, unreliable and hard to act on. A unified data source replaced the silos.
+
+01 · Digital Customer Journey Analytics. Introducing Oaken Financial CJ Analytics.
+
+02 · The problem. Our data tracking needed a major overhaul. Insights were fragmented, unreliable and hard to act on.
+
+03 · A closer look. Multiple tools, siloed teams, no shared view of the truth.
+
+04 · Why this matters. When the data foundation is weak, confidence, innovation and growth start to crumble.
+
+05 · Data-driven UX. Great product design sits where data, empathy and gut feeling meet.
+
+06 · We're on the right track. Even this early, we've seen what's possible when teams connect data, empathy and design intent.
+
+← All projectsNext: Founding AI design at Property Vista →
+
+Say hello at varunuxd@gmail.com or on LinkedIn, or read my résumé.
+
+© 2026 Varun Velhankar

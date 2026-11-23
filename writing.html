@@ -2,160 +2,155 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Writing — Varun Velhankar</title>
-<meta name="description" content="Short pieces on design leadership, systems and how teams ship.">
+<meta name="description" content="Essays and posts by Varun Velhankar on design leadership, AI agents and how teams ship.">
+<link rel="icon" type="image/png" href="/assets/media/911ac5585da3.png">
+<link rel="apple-touch-icon" href="/assets/media/30bafb827bce.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="canonical" href="https://www.varunvelhankar.com/writing.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Writing — Varun Velhankar">
+<meta property="og:description" content="Essays and posts by Varun Velhankar on design leadership, AI agents and how teams ship.">
+<meta property="og:url" content="https://www.varunvelhankar.com/writing.html">
+<meta property="og:image" content="https://www.varunvelhankar.com/assets/media/bc9236260c94.webp">
+<meta name="twitter:card" content="summary">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap">
-<link rel="stylesheet" href="assets/css/tokens.css">
-<link rel="stylesheet" href="assets/css/site.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,400..700;1,14..32,400..700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap">
+<style>
+body{margin:0}
+.mm{--bg:#ffffff;--ink:#111111;--text:#333333;--muted:#666666;--line:#e8e8e8;--accent:#9e5038;--serif:"Source Serif 4",Georgia,serif;--mono:"JetBrains Mono",ui-monospace,monospace}
+.mm[data-theme="dark"]{--bg:#141413;--ink:#f2f0ea;--text:#d6d3cc;--muted:#9a978f;--line:#2c2b28;--accent:#e0927a}
+@media (prefers-color-scheme:dark){.mm[data-theme="auto"]{--bg:#141413;--ink:#f2f0ea;--text:#d6d3cc;--muted:#9a978f;--line:#2c2b28;--accent:#e0927a}}
+.mm a{color:var(--text);text-decoration:underline;text-decoration-color:var(--muted);text-decoration-thickness:1px;text-underline-offset:3px}
+.mm a:hover{color:var(--ink);text-decoration-color:var(--ink)}
+.mm a:focus-visible,.mm button:focus-visible{outline:2px solid var(--ink);outline-offset:3px;border-radius:2px}
+.mm .row{text-decoration:none;color:var(--ink)}
+.mm .row:hover .t{text-decoration:underline;text-decoration-color:var(--muted);text-underline-offset:3px}
+.mm h3{margin:0;font-family:var(--serif);font-weight:600;font-size:21px;line-height:1.3;letter-spacing:-0.2px;color:var(--ink)}
+.mm p{margin:0}
+.mm [aria-current="page"]{color:var(--ink);text-decoration:underline;text-decoration-color:var(--ink);text-underline-offset:6px}
+.mm{--serif:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;--mono:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif}
+.mm .ascii{font-family:"JetBrains Mono",ui-monospace,monospace!important}
+</style>
 </head>
 <body>
-<a class="skip-link" href="#main">Skip to content</a>
+<div class="mm" data-theme="light" style="background: var(--bg); color: var(--text); font-family: var(--serif); font-size: 17px; line-height: 1.65; min-height: 100vh">
+<div style="max-width: 575px; margin: 0 auto; padding: 32px 20px 96px; display: flex; flex-direction: column; gap: 40px">
 
-<header class="container site-header">
-  <a class="brand" href="index.html">Varun Velhankar</a>
-  <nav class="nav" aria-label="Primary">
-    <a href="index.html#work">Work</a>
-    <a href="how-i-think.html">How I think</a>
-    <a href="writing.html" aria-current="page">Writing</a>
-    <a href="about.html">About</a>
-    <a class="nav__cta" href="#hello">Say hello</a>
-  </nav>
+<header style="display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap">
+<a href="/" aria-label="Varun Velhankar, home" title="Varun Velhankar" style="text-decoration: none; color: var(--ink); display: inline-flex; align-items: center; gap: 14px; line-height: 1"><svg width="38" height="38" viewBox="0 0 200 200" aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" style="flex: none"><rect x="10" y="10" width="180" height="180" rx="20" stroke-width="10"></rect><g transform="translate(40.5 30)" stroke-width="5.5"><g transform="translate(0 0)"><path d="M2 2Q2 24 10 24Q18 24 18 2M-1 2H21M0 9H4M16 9H20"></path></g><g transform="translate(31 0)"><path d="M0 13Q9 2 18 13Q9 24 0 13ZM18 13L24 6M18 13L24 20"></path></g><g transform="translate(67 0)"><circle cx="10" cy="4" r="3"></circle><path d="M10 7V17M3 11H17M10 17L5 26M10 17L15 26"></path></g><g transform="translate(98 0)"><path d="M4 1V25M11 1V25M18 1V25"></path></g></g><g transform="translate(-6 10)" stroke-width="6.5"><path d="M46 122Q46 101 70 100H124Q138 100 141 112Q143 125 133 131H60Q46 131 46 122Z"></path><path d="M133 103Q139 89 151 84L167 93Q170 99 162 101L142 113"></path><circle cx="154" cy="91" r="1.6" fill="currentColor" stroke="none"></circle><path d="M152 85Q159 70 172 62"></path><path d="M148 87L144 79"></path><path d="M138 106Q143 114 139 122M131 104Q136 113 132 122" stroke-width="4"></path><path d="M62 131V156M75 131V153M120 131V153M132 130V156"></path><path d="M47 114Q37 121 40 138"></path><path d="M160 120Q168 131 176 120ZM168 126V160M161 160H175M164 113H172"></path></g></svg><span style="font-family: var(--serif); font-weight: 600; font-size: 20px; letter-spacing: -0.3px; line-height: 1; color: var(--ink); white-space: nowrap">Varun Velhankar</span></a>
+<nav aria-label="Primary" style="display: flex; align-items: center; gap: 4px 20px; flex-wrap: wrap; font-family: var(--mono); font-size: 14px">
+<a href="/projects.html" style="text-decoration: none; padding: 8px 0">Projects</a>
+<a href="/writing.html" aria-current="page" style="text-decoration: none; padding: 8px 0">Writing</a>
+<a href="/thinking.html" style="text-decoration: none; padding: 8px 0">Thinking</a>
+<a href="/about.html" style="text-decoration: none; padding: 8px 0">About</a>
+<button type="button" id="theme-toggle" aria-label="Switch to dark theme" style="width: 36px; height: 36px; display: inline-flex; align-items: center; justify-content: center; background: transparent; border: 0; color: var(--text); cursor: pointer; padding: 0">
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.5 9.5A5.5 5.5 0 1 1 6.5 2.5a4.5 4.5 0 0 0 7 7z"></path></svg>
+</button>
+</nav>
 </header>
 
-<main id="main">
-
-<section class="container hero hero--end">
-  <div class="hero__copy" style="flex-basis: 620px">
-    <p class="eyebrow">Writing</p>
-    <h1 class="display display-hero">Pixels fade.<br>Words stick around.</h1>
-    <p class="lede">Short pieces on design leadership, systems and how teams ship. Most start as LinkedIn posts.</p>
-  </div>
-  <figure class="hero-figure">
-    <img src="assets/img/writing/hero.jpg" width="720" height="960" alt="Abstract painting: coloured squares scattering and fading at the top, above calm flowing ink lines and a coral sun">
-  </figure>
+<section style="display: flex; flex-direction: column; gap: 18px">
+<h1 style="margin: 0; font-family: var(--serif); font-weight: 600; font-size: 38px; line-height: 1.1; letter-spacing: -0.6px; color: var(--ink)">Writing</h1>
+<p>Short pieces on design leadership, systems and how teams ship. Pixels fade; words stick around. Most of these start as LinkedIn posts; the longer ones live on <a href="https://substack.com/@polymathnomad" target="_blank" rel="noopener">Substack</a>.</p>
 </section>
 
-<section class="band-soft">
-  <div class="container row" style="padding-top: 56px; padding-bottom: 56px">
-    <span class="row__label" style="padding-top: 8px">In the drafts</span>
-    <div class="row__body stack" style="gap: 18px">
-      <p>Next up: notes from designing Vivian and Vida.</p>
-      <div class="grid-fit">
-        <div class="draft-card"><span class="mono-label">Drafting</span><span class="serif title-26">Design the handoff before the happy path</span></div>
-        <div class="draft-card"><span class="mono-label">Drafting</span><span class="serif title-26">Autonomy is a dial, not a switch</span></div>
-        <div class="draft-card"><span class="mono-label">Drafting</span><span class="serif title-26">A design system for AI states</span></div>
-      </div>
-    </div>
-  </div>
+<section id="drafts" aria-labelledby="drafts-h" style="display: flex; flex-direction: column; gap: 12px">
+<h2 id="drafts-h" style="margin: 0; font-family: var(--mono); font-weight: 700; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--primary-active, #a9583e)">In the drafts</h2>
+<p>Next up: notes from designing Vivian and Vida.</p>
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column">
+<li style="display: flex; align-items: baseline; gap: 12px; padding: 6px 0; color: var(--muted)">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; transform: translateY(3px)"><path d="M4 12H14M14 12L10 8M14 12L10 16M18 6V18"></path></svg>
+<span style="flex: 1; min-width: 0">Design the handoff before the happy path</span>
+<span style="flex: none; font-family: var(--mono); font-size: 12px; color: var(--accent)">Drafting</span></li>
+<li style="display: flex; align-items: baseline; gap: 12px; padding: 6px 0; color: var(--muted)">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; transform: translateY(3px)"><path d="M5 17A8 8 0 1 1 19 17M12 13L16 8"></path></svg>
+<span style="flex: 1; min-width: 0">Autonomy is a dial, not a switch</span>
+<span style="flex: none; font-family: var(--mono); font-size: 12px; color: var(--accent)">Drafting</span></li>
+<li style="display: flex; align-items: baseline; gap: 12px; padding: 6px 0; color: var(--muted)">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; transform: translateY(3px)"><path d="M4 12H6M9 12H11M14 12H16M19 12H20"></path></svg>
+<span style="flex: 1; min-width: 0">A design system for AI states</span>
+<span style="flex: none; font-family: var(--mono); font-size: 12px; color: var(--accent)">Drafting</span></li>
+</ul>
 </section>
 
-<section class="container row" style="padding-top: 72px; padding-bottom: 96px">
-  <span class="row__label" style="padding-top: 4px">Published</span>
-  <div class="row__body stack" style="gap: 56px">
-      <article class="article-row">
-        <figure class="article-thumb">
-          <img src="assets/img/writing/study-1.jpg" width="640" height="400" loading="lazy" decoding="async" alt="Abstract painting: a coral sun over cream and teal waves on a deep navy field">
-          <figcaption class="fig-caption">Study No. 1, <em>Night tide</em>, 2026</figcaption>
-        </figure>
-        <div class="article-row__copy">
-          <span class="mono-label article-row__meta">2025 · Leadership</span>
-          <h3 class="serif article-row__title">The single greatest skill you can develop</h3>
-          <p>The one skill that compounds across every role, team and stage of a career.</p>
-          <a class="article-row__link" href="https://www.linkedin.com/posts/varunvelhankar_the-single-greatest-skill-you-can-develop-activity-7419568436038541312-g8M0" target="_blank" rel="noopener">Read on LinkedIn ›<span class="sr-only"> (opens in a new tab)</span></a>
-        </div>
-      </article>
-      <article class="article-row">
-        <figure class="article-thumb">
-          <img src="assets/img/writing/study-2.jpg" width="640" height="400" loading="lazy" decoding="async" alt="Abstract painting: overlapping ink, amber, teal and clay rectangles with a single circle on cream">
-          <figcaption class="fig-caption">Study No. 2, <em>Stacked fields</em>, 2026</figcaption>
-        </figure>
-        <div class="article-row__copy">
-          <span class="mono-label article-row__meta">2025 · Design leadership</span>
-          <h3 class="serif article-row__title">Why most UX teams stay stuck at wireframes</h3>
-          <p>Getting design out of the execution trap and into product strategy.</p>
-          <a class="article-row__link" href="https://www.linkedin.com/posts/varunvelhankar_ux-productdesign-designleadership-activity-7411590111445868544-E-R_" target="_blank" rel="noopener">Read on LinkedIn ›<span class="sr-only"> (opens in a new tab)</span></a>
-        </div>
-      </article>
-      <article class="article-row">
-        <figure class="article-thumb">
-          <img src="assets/img/writing/study-3.jpg" width="640" height="400" loading="lazy" decoding="async" alt="Abstract painting: loose ink strokes crossing a soft blush cloud with a small coral form">
-          <figcaption class="fig-caption">Study No. 3, <em>Lines in tension</em>, 2026</figcaption>
-        </figure>
-        <div class="article-row__copy">
-          <span class="mono-label article-row__meta">2025 · Design systems</span>
-          <h3 class="serif article-row__title">UX designers: honesty over hype</h3>
-          <p>Why most design systems don't scale, and what to do about yours.</p>
-          <a class="article-row__link" href="https://www.linkedin.com/posts/activity-7394360727953833984-KqHs" target="_blank" rel="noopener">Read on LinkedIn ›<span class="sr-only"> (opens in a new tab)</span></a>
-        </div>
-      </article>
-      <article class="article-row">
-        <figure class="article-thumb">
-          <img src="assets/img/writing/study-4.jpg" width="640" height="400" loading="lazy" decoding="async" alt="Abstract painting: concentric arcs in coral, ink, amber and teal with a small black form">
-          <figcaption class="fig-caption">Study No. 4, <em>Arcs</em>, 2026</figcaption>
-        </figure>
-        <div class="article-row__copy">
-          <span class="mono-label article-row__meta">2025 · Collaboration</span>
-          <h3 class="serif article-row__title">Stop designing for stakeholders. Design with them.</h3>
-          <p>Moving from presentation mode to collaboration mode changed how my team ships.</p>
-          <a class="article-row__link" href="https://www.linkedin.com/posts/activity-7389425663843131392-OriI" target="_blank" rel="noopener">Read on LinkedIn ›<span class="sr-only"> (opens in a new tab)</span></a>
-        </div>
-      </article>
-      <article class="article-row">
-        <figure class="article-thumb">
-          <img src="assets/img/writing/study-5.jpg" width="640" height="400" loading="lazy" decoding="async" alt="Abstract painting: layered rolling bands in amber, coral, olive, teal and slate under a pale moon">
-          <figcaption class="fig-caption">Study No. 5, <em>Fold of hills</em>, 2026</figcaption>
-        </figure>
-        <div class="article-row__copy">
-          <span class="mono-label article-row__meta">2025 · Launch</span>
-          <h3 class="serif article-row__title">Shipping EquityAccess</h3>
-          <p>On launching Home Trust's reverse mortgage suite for Canadians 55+.</p>
-          <a class="article-row__link" href="https://www.linkedin.com/posts/activity-7386174268675624960-X6bm" target="_blank" rel="noopener">Read on LinkedIn ›<span class="sr-only"> (opens in a new tab)</span></a>
-        </div>
-      </article>
-      <article class="article-row">
-        <figure class="article-thumb">
-          <img src="assets/img/writing/study-6.jpg" width="640" height="400" loading="lazy" decoding="async" alt="Abstract painting: a grid of cream and slate dots on black, with one coral dot">
-          <figcaption class="fig-caption">Study No. 6, <em>One of forty</em>, 2026</figcaption>
-        </figure>
-        <div class="article-row__copy">
-          <span class="mono-label article-row__meta">2025 · Craft</span>
-          <h3 class="serif article-row__title">Trust UX experts over data for obvious fixes</h3>
-          <p>Not every fix needs an A/B test. When expertise should win.</p>
-          <a class="article-row__link" href="https://www.linkedin.com/posts/activity-7380973415295373312-tyTc" target="_blank" rel="noopener">Read on LinkedIn ›<span class="sr-only"> (opens in a new tab)</span></a>
-        </div>
-      </article>
-      <article class="article-row">
-        <figure class="article-thumb">
-          <img src="assets/img/writing/study-7.jpg" width="640" height="400" loading="lazy" decoding="async" alt="Abstract painting: clay and ink diagonal bands with an amber form and a teal stroke on cream">
-          <figcaption class="fig-caption">Study No. 7, <em>Diagonal</em>, 2026</figcaption>
-        </figure>
-        <div class="article-row__copy">
-          <span class="mono-label article-row__meta">2025 · Design culture</span>
-          <h3 class="serif article-row__title">You don't need a design culture. You need design courage.</h3>
-          <p>Waiting for a design-mature org is a trap. Good designers shift the culture from inside.</p>
-          <a class="article-row__link" href="https://www.linkedin.com/posts/activity-7372656753349660672-aopF" target="_blank" rel="noopener">Read on LinkedIn ›<span class="sr-only"> (opens in a new tab)</span></a>
-        </div>
-      </article>
-      <a class="btn btn--pill-outline" href="https://www.linkedin.com/in/varunvelhankar/recent-activity/all/" target="_blank" rel="noopener">View all on LinkedIn<span class="sr-only"> (opens in a new tab)</span></a>
-  </div>
+<section id="published-2026" aria-labelledby="published-2026-h" style="display: flex; flex-direction: column; gap: 12px">
+<h2 id="published-2026-h" style="margin: 0; font-family: var(--mono); font-weight: 700; font-size: 14px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--primary-active, #a9583e)">Published · 2026</h2>
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column">
+<li><a class="row" href="https://polymathnomad.substack.com/p/claude-design-isnt-dead-you-just" target="_blank" rel="noopener" style="display: flex; align-items: baseline; gap: 12px; padding: 10px 0">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; transform: translateY(3px)"><path d="M4 16Q8 8 12 14Q16 20 20 10"></path></svg>
+<span style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px"><span class="t">Claude Design Isn’t Dead. You Just Never Opened It Properly.</span><span style="font-size: 15px; line-height: 1.5; color: var(--muted)">A tool merging into a bigger product is not a death. It’s a promotion most people didn’t notice.</span></span>
+<span style="flex: none; font-family: var(--mono); font-size: 12px; color: var(--muted)">AI workflow</span></a></li>
+<li><a class="row" href="https://polymathnomad.substack.com/p/the-design-team-of-2030-one-experienced" target="_blank" rel="noopener" style="display: flex; align-items: baseline; gap: 12px; padding: 10px 0">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; transform: translateY(3px)"><path d="M4 12Q8 4 12 12Q16 20 20 12"></path></svg>
+<span style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px"><span class="t">The Design Team of 2030: One Experienced Designer and a Very Good Prompt?</span><span style="font-size: 15px; line-height: 1.5; color: var(--muted)">What one year of building AI agents solo taught me about the next five years of design teams.</span></span>
+<span style="flex: none; font-family: var(--mono); font-size: 12px; color: var(--muted)">Future of design</span></a></li>
+<li><a class="row" href="https://www.linkedin.com/posts/varunvelhankar_this-mirrors-our-workflow-at-property-vista-share-7506384833653198849-qYVa/" target="_blank" rel="noopener" style="display: flex; align-items: baseline; gap: 12px; padding: 10px 0">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; transform: translateY(3px)"><path d="M3 16L9 8L15 14L21 6"></path></svg>
+<span style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px"><span class="t">Where the agent stops and the craft starts</span><span style="font-size: 15px; line-height: 1.5; color: var(--muted)">The agent does setup and the first pass; Figma is where I take over the craft before it ships.</span></span>
+<span style="flex: none; font-family: var(--mono); font-size: 12px; color: var(--muted)">AI workflow</span></a></li>
+<li><a class="row" href="https://www.linkedin.com/posts/varunvelhankar_proptech-leadmanagement-realtech-share-7493433089717661697-RVko/" target="_blank" rel="noopener" style="display: flex; align-items: baseline; gap: 12px; padding: 10px 0">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; transform: translateY(3px)"><path d="M4 6Q12 20 20 6"></path></svg>
+<span style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px"><span class="t">Every handoff is a memory test</span><span style="font-size: 15px; line-height: 1.5; color: var(--muted)">When conversations cross channels, the spec stops being a screen and becomes memory and handoff.</span></span>
+<span style="flex: none; font-family: var(--mono); font-size: 12px; color: var(--muted)">Agent design</span></a></li>
+<li><a class="row" href="https://www.linkedin.com/posts/varunvelhankar_105kg-in-2018-78kg-now-nobody-cares-about-share-7480283624567726080-vNtx/" target="_blank" rel="noopener" style="display: flex; align-items: baseline; gap: 12px; padding: 10px 0">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; transform: translateY(3px)"><path d="M5 19V5M10 19V5M15 19V5M20 19V5"></path></svg>
+<span style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px"><span class="t">Discipline beats motivation</span><span style="font-size: 15px; line-height: 1.5; color: var(--muted)">105kg to 78kg, and why resilience is trained, not inherited, in the body and in a career.</span></span>
+<span style="flex: none; font-family: var(--mono); font-size: 12px; color: var(--muted)">Resilience</span></a></li>
+<li><a class="row" href="https://www.linkedin.com/posts/varunvelhankar_aimusings-share-7473482959128289280-OmIo/" target="_blank" rel="noopener" style="display: flex; align-items: baseline; gap: 12px; padding: 10px 0">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; transform: translateY(3px)"><path d="M4 18H20M6 14H18M8 10H16M10 6H14"></path></svg>
+<span style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px"><span class="t">AI flipped design leadership</span><span style="font-size: 15px; line-height: 1.5; color: var(--muted)">The leaders pulling ahead now are the ones who can still build alongside their teams.</span></span>
+<span style="flex: none; font-family: var(--mono); font-size: 12px; color: var(--muted)">Leadership</span></a></li>
+</ul>
 </section>
 
-</main>
-
-<section id="hello" class="on-dark">
-  <div class="container contact">
-    <h2 class="serif display-cta">New posts land on LinkedIn first.</h2>
-    <div class="actions">
-      <a class="btn btn--light" href="https://www.linkedin.com/in/varunvelhankar/" target="_blank" rel="noopener">Follow on LinkedIn<span class="sr-only"> (opens in a new tab)</span></a>
-    </div>
-    <footer class="site-footer site-footer--plain">
-      <span>© 2026 Varun Velhankar • Handcrafted by yours truly 🍁</span>
-    </footer>
-  </div>
+<section id="published" aria-labelledby="published-h" style="display: flex; flex-direction: column; gap: 12px">
+<h2 id="published-h" style="margin: 0; font-family: var(--mono); font-weight: 700; font-size: 14px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--primary-active, #a9583e)">Published · 2025</h2>
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column">
+<li><a class="row" href="https://www.linkedin.com/posts/varunvelhankar_the-single-greatest-skill-you-can-develop-activity-7419568436038541312-g8M0" target="_blank" rel="noopener" style="display: flex; align-items: baseline; gap: 12px; padding: 10px 0">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; transform: translateY(3px)"><path d="M4 14Q8 6 12 12Q16 18 20 8"></path></svg>
+<span style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px"><span class="t">The single greatest skill you can develop</span><span style="font-size: 15px; line-height: 1.5; color: var(--muted)">The one skill that compounds across every role, team and stage of a career.</span></span>
+<span style="flex: none; font-family: var(--mono); font-size: 12px; color: var(--muted)">Leadership</span></a></li>
+<li><a class="row" href="https://www.linkedin.com/posts/varunvelhankar_ux-productdesign-designleadership-activity-7411590111445868544-E-R_" target="_blank" rel="noopener" style="display: flex; align-items: baseline; gap: 12px; padding: 10px 0">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; transform: translateY(3px)"><path d="M5 17Q5 7 12 7Q19 7 17 13Q15 18 10 15"></path></svg>
+<span style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px"><span class="t">Why most UX teams stay stuck at wireframes</span><span style="font-size: 15px; line-height: 1.5; color: var(--muted)">Getting design out of the execution trap and into product strategy.</span></span>
+<span style="flex: none; font-family: var(--mono); font-size: 12px; color: var(--muted)">Design leadership</span></a></li>
+<li><a class="row" href="https://www.linkedin.com/posts/activity-7394360727953833984-KqHs" target="_blank" rel="noopener" style="display: flex; align-items: baseline; gap: 12px; padding: 10px 0">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; transform: translateY(3px)"><path d="M3 10Q7 14 11 10Q15 6 19 10Q21 12 21 16"></path></svg>
+<span style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px"><span class="t">UX designers: honesty over hype</span><span style="font-size: 15px; line-height: 1.5; color: var(--muted)">Why most design systems don't scale, and what to do about yours.</span></span>
+<span style="flex: none; font-family: var(--mono); font-size: 12px; color: var(--muted)">Design systems</span></a></li>
+<li><a class="row" href="https://www.linkedin.com/posts/activity-7389425663843131392-OriI" target="_blank" rel="noopener" style="display: flex; align-items: baseline; gap: 12px; padding: 10px 0">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; transform: translateY(3px)"><path d="M6 4Q18 8 8 12Q-2 16 18 20"></path></svg>
+<span style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px"><span class="t">Stop designing for stakeholders. Design with them.</span><span style="font-size: 15px; line-height: 1.5; color: var(--muted)">Moving from presentation mode to collaboration mode changed how my team ships.</span></span>
+<span style="flex: none; font-family: var(--mono); font-size: 12px; color: var(--muted)">Collaboration</span></a></li>
+<li><a class="row" href="https://www.linkedin.com/posts/activity-7386174268675624960-X6bm" target="_blank" rel="noopener" style="display: flex; align-items: baseline; gap: 12px; padding: 10px 0">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; transform: translateY(3px)"><path d="M4 18L9 9L13 15L20 5"></path></svg>
+<span style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px"><span class="t">Shipping EquityAccess</span><span style="font-size: 15px; line-height: 1.5; color: var(--muted)">On launching Home Trust's reverse mortgage suite for Canadians 55+.</span></span>
+<span style="flex: none; font-family: var(--mono); font-size: 12px; color: var(--muted)">Launch</span></a></li>
+<li><a class="row" href="https://www.linkedin.com/posts/activity-7380973415295373312-tyTc" target="_blank" rel="noopener" style="display: flex; align-items: baseline; gap: 12px; padding: 10px 0">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; transform: translateY(3px)"><path d="M12 4Q4 8 8 13Q12 18 16 13Q20 8 12 12"></path></svg>
+<span style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px"><span class="t">Trust UX experts over data for obvious fixes</span><span style="font-size: 15px; line-height: 1.5; color: var(--muted)">Not every fix needs an A/B test. When expertise should win.</span></span>
+<span style="flex: none; font-family: var(--mono); font-size: 12px; color: var(--muted)">Craft</span></a></li>
+<li><a class="row" href="https://www.linkedin.com/posts/activity-7372656753349660672-aopF" target="_blank" rel="noopener" style="display: flex; align-items: baseline; gap: 12px; padding: 10px 0">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; transform: translateY(3px)"><path d="M3 15Q7 7 11 15Q14 20 17 12Q19 7 21 9"></path></svg>
+<span style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px"><span class="t">You don't need a design culture. You need design courage.</span><span style="font-size: 15px; line-height: 1.5; color: var(--muted)">Waiting for a design-mature org is a trap. Good designers shift the culture from inside.</span></span>
+<span style="flex: none; font-family: var(--mono); font-size: 12px; color: var(--muted)">Design culture</span></a></li>
+</ul>
+<a href="https://www.linkedin.com/in/varunvelhankar/recent-activity/all/" target="_blank" rel="noopener" style="align-self: flex-start; font-family: var(--mono); font-size: 13px; padding: 6px 0">All posts on LinkedIn →</a>
 </section>
 
+<footer style="padding-top: 24px; border-top: 1px solid var(--line); display: flex; flex-direction: column; gap: 8px">
+<p style="margin: 0">Say hello at <a href="mailto:varunuxd@gmail.com">varunuxd@gmail.com</a> or on <a href="https://www.linkedin.com/in/varunvelhankar/">LinkedIn</a>, or read my <a href="/resume.html">résumé</a>.</p>
+<span style="font-family: var(--mono); font-size: 12px; color: var(--muted)">© 2026 Varun Velhankar</span>
+</footer>
+
+</div>
+</div>
+<script>
+(function(){var root=document.querySelector('.mm');if(!root)return;var k='vv-theme';
+try{var s=localStorage.getItem(k);if(s==='dark'||s==='light')root.setAttribute('data-theme',s);}catch(e){}
+var b=document.getElementById('theme-toggle');function lab(){if(b)b.setAttribute('aria-label',root.getAttribute('data-theme')==='dark'?'Switch to light theme':'Switch to dark theme');}
+lab();if(b)b.addEventListener('click',function(){var d=root.getAttribute('data-theme')==='dark'?'light':'dark';root.setAttribute('data-theme',d);try{localStorage.setItem(k,d);}catch(e){}lab();});})();
+</script>
 </body>
 </html>

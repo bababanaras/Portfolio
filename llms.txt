@@ -1,0 +1,28 @@
+# Varun Velhankar
+
+> Head of Design at Property Vista. AI product design leader with 12+ years across PropTech, fintech, travel and government platforms. Based in Guelph, Ontario (Greater Toronto Area).
+
+- Email: varunuxd@gmail.com
+- LinkedIn: https://www.linkedin.com/in/varunvelhankar/
+- Résumé: https://www.varunvelhankar.com/resume.html
+
+## Pages
+
+- [Varun Velhankar — Head of Design](https://www.varunvelhankar.com/): Varun Velhankar is Head of Design at Property Vista, designing AI agents where AI does the work and people stay in control. Case studies, writing and how he thinks.
+- [Projects — Varun Velhankar](https://www.varunvelhankar.com/projects.html): Projects and case studies by Varun Velhankar: AI agents at Property Vista, digital banking at Fairstone Bank, and more.
+- [Writing — Varun Velhankar](https://www.varunvelhankar.com/writing.html): Essays and posts by Varun Velhankar on design leadership, AI agents and how teams ship.
+- [Thinking — Varun Velhankar](https://www.varunvelhankar.com/thinking.html): How Varun Velhankar designs AI agents people can trust, and how he leads design.
+- [About — Varun Velhankar](https://www.varunvelhankar.com/about.html): About Varun Velhankar: Head of Design with 12+ years across banking, travel, government and AI-native products.
+- [Résumé — Varun Velhankar](https://www.varunvelhankar.com/resume.html): Résumé of Varun Velhankar, Head of Design and AI product design leader. Guelph, ON (Greater Toronto Area).
+- [Work with me — Varun Velhankar](https://www.varunvelhankar.com/work-with-me.html): Fractional Head of Design and AI product design advisory from Varun Velhankar, for teams building AI agents and copilots.
+- [Varun Velhankar — for AI agents](https://www.varunvelhankar.com/agents.html): A plain-markdown profile of Varun Velhankar, Head of Design, written for AI agents to read and summarise.
+- [Vivian – Zero-touch lead to lease — Varun Velhankar](https://www.varunvelhankar.com/work/vivian-zero-touch-lease.html): Case study: Vivian takes a renter from a first question on a property website to a signed lease inside one conversation.
+- [Inspector App Redesign — Varun Velhankar](https://www.varunvelhankar.com/work/inspector-app-redesign.html): Case study: redesigning the Property Vista Inspector App so staff finish a move-in or move-out in one visit, with or without signal.
+- [Founding AI design at Property Vista — Varun Velhankar](https://www.varunvelhankar.com/work/founding-design-property-vista.html): How I built an AI-native product design function from zero as Head of Design at Property Vista.
+- [Oaken Digital — Varun Velhankar](https://www.varunvelhankar.com/work/oaken-digital.html): Case study: redesigning Oaken digital banking for customers over 60. Zero-touch account openings went from 20% to 83%.
+- [Deposit Broker Portal — Varun Velhankar](https://www.varunvelhankar.com/work/deposit-broker-portal.html): Case study: a net-new broker portal that cut application turnaround from eight weeks to ten minutes.
+- [Reverse Mortgage and Customer Journey Analytics — Varun Velhankar](https://www.varunvelhankar.com/work/reverse-mortgage-and-customer-journey.html): Two decks: launching the Home Trust reverse mortgage, and building one reliable view of the Oaken customer.
+
+## Full text
+
+See https://www.varunvelhankar.com/llms-full.txt

@@ -1,0 +1,655 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Inspector App Redesign — Varun Velhankar</title>
+<meta name="description" content="Case study: redesigning the Property Vista Inspector App so staff finish a move-in or move-out in one visit, with or without signal.">
+<link rel="icon" type="image/png" href="/assets/media/911ac5585da3.png">
+<link rel="apple-touch-icon" href="/assets/media/30bafb827bce.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="canonical" href="https://www.varunvelhankar.com/work/inspector-app-redesign.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Inspector App Redesign — Varun Velhankar">
+<meta property="og:description" content="Case study: redesigning the Property Vista Inspector App so staff finish a move-in or move-out in one visit, with or without signal.">
+<meta property="og:url" content="https://www.varunvelhankar.com/work/inspector-app-redesign.html">
+<meta property="og:image" content="https://www.varunvelhankar.com/assets/media/bc9236260c94.webp">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,400..700;1,14..32,400..700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap">
+<style>
+body{margin:0}
+.mm{--bg:#ffffff;--ink:#111111;--text:#333333;--muted:#666666;--line:#e8e8e8;--accent:#9e5038;--serif:"Source Serif 4",Georgia,serif;--mono:"JetBrains Mono",ui-monospace,monospace}
+.mm[data-theme="dark"]{--bg:#141413;--ink:#f2f0ea;--text:#d6d3cc;--muted:#9a978f;--line:#2c2b28;--accent:#e0927a}
+@media (prefers-color-scheme:dark){.mm[data-theme="auto"]{--bg:#141413;--ink:#f2f0ea;--text:#d6d3cc;--muted:#9a978f;--line:#2c2b28;--accent:#e0927a}}
+.mm a{color:var(--text);text-decoration:underline;text-decoration-color:var(--muted);text-decoration-thickness:1px;text-underline-offset:3px}
+.mm a:hover{color:var(--ink);text-decoration-color:var(--ink)}
+.mm a:focus-visible,.mm button:focus-visible{outline:2px solid var(--ink);outline-offset:3px;border-radius:2px}
+.mm .row{text-decoration:none;color:var(--ink)}
+.mm .row:hover .t{text-decoration:underline;text-decoration-color:var(--muted);text-underline-offset:3px}
+.mm h3{margin:0;font-family:var(--serif);font-weight:600;font-size:21px;line-height:1.3;letter-spacing:-0.2px;color:var(--ink)}
+.mm p{margin:0}
+.mm [aria-current="page"]{color:var(--ink);text-decoration:underline;text-decoration-color:var(--ink);text-underline-offset:6px}
+.mm .wide{width:min(920px,calc(100vw - 40px));position:relative;left:50%;transform:translateX(-50%);margin:0}
+.mm figure{margin:0;display:flex;flex-direction:column;gap:8px}
+.mm figure img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:6px;background:var(--line)}
+.mm figcaption{font-family:var(--mono);font-size:12px;color:var(--muted)}
+.mm .grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:16px}
+.mm .grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+.mm .cs h2{margin:0;font-family:var(--mono);font-weight:400;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.mm .cs h3{margin:0;font-family:var(--serif);font-weight:600;font-size:21px;line-height:1.3;letter-spacing:-.2px;color:var(--ink)}
+.mm .cs ul{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:6px}
+.mm .cs .lead{font-size:19px;line-height:1.55;color:var(--ink)}
+.mm .quote{margin:0;padding-left:16px;border-left:2px solid var(--ink);color:var(--ink);font-style:italic}
+.mm .note{font-family:var(--mono);font-size:12px;line-height:1.6;color:var(--muted);padding:12px 14px;border:1px dashed var(--line)}
+.mm{--serif:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;--mono:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif}
+.mm .ascii{font-family:"JetBrains Mono",ui-monospace,monospace!important}
+.mm{--good:#1a7e3e;--bad:#c62828;--muted-bar:#b9bdc6;--ref:#9aa0aa;--axis:#9aa0aa}
+.mm[data-theme="dark"]{--good:#3fbf6a;--bad:#ef5350;--muted-bar:#64748b;--ref:#64748b;--axis:#64748b}
+@media (prefers-color-scheme:dark){.mm[data-theme="auto"]{--good:#3fbf6a;--bad:#ef5350;--muted-bar:#64748b;--ref:#64748b;--axis:#64748b}}
+.mm .cs h3{margin-top:10px}
+.mm .cs ol{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px}
+.mm .cs strong{font-weight:600;color:var(--ink)}
+.mm .toc ol{margin:0;padding-left:20px;columns:2;column-gap:28px;font-size:15px;line-height:1.7;display:block}
+.mm .toc a{text-decoration:none}
+@media (max-width:560px){.mm .toc ol{columns:1}}
+.mm .tw{overflow-x:auto;border:1px solid var(--line);border-radius:10px}
+.mm .tw table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.45}
+.mm .tw th{text-align:left;font-weight:600;font-size:13px;color:var(--ink);background:color-mix(in srgb,var(--muted) 8%,transparent)}
+.mm .tw th,.mm .tw td{padding:10px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+.mm .tw tr:last-child td{border-bottom:0}
+.mm .gallery{display:grid;gap:16px}
+.mm .g2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.mm .g4{grid-template-columns:repeat(4,minmax(0,1fr))}
+@media (max-width:760px){.mm .g4{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.mm .gallery img,.mm figure.wide img{background:#fff;border-radius:12px}
+.mm .gallery figcaption{text-align:center}
+.mm .chart{box-sizing:border-box;border:1px solid var(--line);border-radius:10px;padding:12px}
+.mm .chart svg{width:100%;height:auto;display:block;font-family:inherit}
+.mm .chart .t{font-size:16px;font-weight:600;fill:var(--ink)}
+.mm .chart .l{font-size:12px;fill:var(--muted)}
+.mm .chart .v{font-size:12px;fill:var(--ink)}
+.mm .chart figcaption{text-align:center}
+</style>
+</head>
+<body>
+<div class="mm" data-theme="light" style="background: var(--bg); color: var(--text); font-family: var(--serif); font-size: 17px; line-height: 1.65; min-height: 100vh">
+<div style="max-width: 575px; margin: 0 auto; padding: 32px 20px 96px; display: flex; flex-direction: column; gap: 40px">
+
+<header style="display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap">
+<a href="/" aria-label="Varun Velhankar, home" title="Varun Velhankar" style="text-decoration: none; color: var(--ink); display: inline-flex; align-items: center; gap: 14px; line-height: 1"><svg width="38" height="38" viewBox="0 0 200 200" aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" style="flex: none"><rect x="10" y="10" width="180" height="180" rx="20" stroke-width="10"></rect><g transform="translate(40.5 30)" stroke-width="5.5"><g transform="translate(0 0)"><path d="M2 2Q2 24 10 24Q18 24 18 2M-1 2H21M0 9H4M16 9H20"></path></g><g transform="translate(31 0)"><path d="M0 13Q9 2 18 13Q9 24 0 13ZM18 13L24 6M18 13L24 20"></path></g><g transform="translate(67 0)"><circle cx="10" cy="4" r="3"></circle><path d="M10 7V17M3 11H17M10 17L5 26M10 17L15 26"></path></g><g transform="translate(98 0)"><path d="M4 1V25M11 1V25M18 1V25"></path></g></g><g transform="translate(-6 10)" stroke-width="6.5"><path d="M46 122Q46 101 70 100H124Q138 100 141 112Q143 125 133 131H60Q46 131 46 122Z"></path><path d="M133 103Q139 89 151 84L167 93Q170 99 162 101L142 113"></path><circle cx="154" cy="91" r="1.6" fill="currentColor" stroke="none"></circle><path d="M152 85Q159 70 172 62"></path><path d="M148 87L144 79"></path><path d="M138 106Q143 114 139 122M131 104Q136 113 132 122" stroke-width="4"></path><path d="M62 131V156M75 131V153M120 131V153M132 130V156"></path><path d="M47 114Q37 121 40 138"></path><path d="M160 120Q168 131 176 120ZM168 126V160M161 160H175M164 113H172"></path></g></svg><span style="font-family: var(--serif); font-weight: 600; font-size: 20px; letter-spacing: -0.3px; line-height: 1; color: var(--ink); white-space: nowrap">Varun Velhankar</span></a>
+<nav aria-label="Primary" style="display: flex; align-items: center; gap: 4px 20px; flex-wrap: wrap; font-family: var(--mono); font-size: 14px">
+<a href="/projects.html" aria-current="page" style="text-decoration: none; padding: 8px 0">Projects</a>
+<a href="/writing.html" style="text-decoration: none; padding: 8px 0">Writing</a>
+<a href="/thinking.html" style="text-decoration: none; padding: 8px 0">Thinking</a>
+<a href="/about.html" style="text-decoration: none; padding: 8px 0">About</a>
+<button type="button" id="theme-toggle" aria-label="Switch to dark theme" style="width: 36px; height: 36px; display: inline-flex; align-items: center; justify-content: center; background: transparent; border: 0; color: var(--text); cursor: pointer; padding: 0">
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.5 9.5A5.5 5.5 0 1 1 6.5 2.5a4.5 4.5 0 0 0 7 7z"></path></svg>
+</button>
+</nav>
+</header>
+
+<section class="cs" style="display: flex; flex-direction: column; gap: 18px">
+<a href="/projects.html" style="align-self: flex-start; font-family: var(--mono); font-size: 13px; text-decoration: none">← Projects</a>
+<p style="font-family: var(--mono); font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted)">Property Vista · Vida · Case study</p>
+<h1 style="margin: 0; font-family: var(--serif); font-weight: 600; font-size: 38px; line-height: 1.12; letter-spacing: -0.6px; color: var(--ink)">Inspector App Redesign</h1>
+<p style="font-family: var(--mono); font-size: 13px; color: var(--muted)">Varun, Head of Design · Nov 12, 2026</p>
+<nav class="toc" aria-label="Contents"><p style="font-family: var(--mono); font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin-bottom: 6px">Contents</p><ol><li><a href="#tl-dr">TL;DR</a></li><li><a href="#context-and-problem">Context and problem</a></li><li><a href="#previous-state">Previous state</a></li><li><a href="#approach">Approach</a></li><li><a href="#current-state">Current state</a></li><li><a href="#redesigned-screens">Redesigned screens</a></li><li><a href="#status-system">Status system</a></li><li><a href="#design-system-and-foundational-blocks">Design system and foundational blocks</a></li><li><a href="#workflow-impact">Workflow impact</a></li><li><a href="#offline-and-weak-signal">Offline and weak signal</a></li><li><a href="#metrics-and-kpis">Metrics and KPIs</a></li><li><a href="#assumptions-risks-and-next-steps">Assumptions, risks and next steps</a></li></ol></nav>
+</section>
+
+<section class="cs" id="tl-dr" style="display: flex; flex-direction: column; gap: 14px">
+<h2>TL;DR</h2>
+<p>The redesign turns the Inspector App from a form staff abandon for paper into one that finishes a move-in or move-out in one visit, with or without signal.</p>
+<ul>
+<li><strong>Find today's work:</strong> the default Open view cuts the list from 47 rows to 5 in the prototype's sample property (−89%), sorted by due date.</li>
+<li><strong>Fewer interactions:</strong> a full move-in drops from an est. 132 taps and scrolls to 94 on phone (−29%) and 86 on iPad (−35%).</li>
+<li><strong>Photos:</strong> documenting an item with 3 photos drops from an est. 11 taps to 5 (−55%) with burst capture.</li>
+<li><strong>Offline:</strong> every tap saves to the device first. Re-keying from paper, an est. 12–17 min per inspection on weak-signal sites, goes to zero.</li>
+<li><strong>Submission:</strong> the "Inspection already submitted" dead end is gone. Every blocker is named, grouped by room and one tap away.</li>
+</ul>
+<p>Estimates come from a step-by-step model of the redesigned flows (see Workflow impact). Production KPIs, each baselined before release, are in Metrics and KPIs.</p>
+</section>
+
+<section class="cs" id="context-and-problem" style="display: flex; flex-direction: column; gap: 14px">
+<h2>Context and problem</h2>
+<p>The app could not produce its core output: a completed, trusted inspection record. Staff fell back to paper on several active accounts.</p>
+<p><strong>Who uses it.</strong> Site staff, leasing agents and property managers run move-in, move-out, annual and building inspections. They walk units one-handed, often in townhomes, mobile homes and basements with no shared Wi-Fi.</p>
+<p><strong>What customers reported</strong></p>
+<div class="tw wide"><table>
+<thead>
+<tr>
+<th>Account</th>
+<th>What broke</th>
+<th>What staff did instead</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Metcap</td>
+<td>Every field mandatory, including move-out fields on a move-in. After fixing flagged items: "Ops! Inspection already submitted."</td>
+<td>Could not submit. Paper.</td>
+</tr>
+<tr>
+<td>Metcap</td>
+<td>Move-out interest not calculated; manual interest missing from report totals</td>
+<td>Paper deposit confirmation</td>
+</tr>
+<tr>
+<td>FSR</td>
+<td>A dropped connection wiped all progress mid-inspection</td>
+<td>Paper checklists, separate photos, re-key later</td>
+</tr>
+<tr>
+<td>FSR</td>
+<td>Phone form too small to fill out</td>
+<td>Bought iPads for leasing agents</td>
+</tr>
+<tr>
+<td>SKPM ($768k ARR)</td>
+<td>Today's move-ins buried in full inspection history; staff scroll the whole list</td>
+<td>Support tickets from staff who assumed the app was frozen</td>
+</tr>
+</tbody>
+</table></div>
+<p>The workaround for photos was "get full bars before you tap Submit." That is a field instruction, not a product.</p>
+</section>
+
+<section class="cs" id="previous-state" style="display: flex; flex-direction: column; gap: 14px">
+<h2>Previous state</h2>
+<p>The legacy app showed everything, labelled little, and saved nothing until the server answered. Audit of the production screens (Aug 2026):</p>
+<div class="tw wide"><table>
+<thead>
+<tr>
+<th>Screen</th>
+<th>What staff saw</th>
+<th>Effect in the field</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Select Location</td>
+<td>Flat address list; orange and purple count badges with no legend</td>
+<td>No way to see which property has work due</td>
+</tr>
+<tr>
+<td>Overview › Inspections</td>
+<td>Full history, no filters; #103 dated 2025-08-28 above 2026 records</td>
+<td>Staff scroll everything and read stale rows as a frozen app</td>
+</tr>
+<tr>
+<td>List row status</td>
+<td>Orange (!) on nearly every row</td>
+<td>Signals nothing; the incomplete and the fine look alike</td>
+</tr>
+<tr>
+<td>Inspection Details</td>
+<td>Three unlabelled inputs, a bare "No Data", a waste-vendor dropdown on a unit move-in</td>
+<td>Guesswork, and fields that cannot be answered block submit</td>
+</tr>
+<tr>
+<td>All Rooms</td>
+<td>Three rating scales on one screen; N/A drawn as a thumbs-down</td>
+<td>Staff tap by position; N/A reads as a failed item</td>
+</tr>
+<tr>
+<td>Select Inspection Images</td>
+<td>Take Photo / Add Photo above an empty screen</td>
+<td>No thumbnails, no upload progress, no queue</td>
+</tr>
+<tr>
+<td>Select Comments</td>
+<td>Policy and condition notes in one flat list; DONE covers the last row</td>
+<td>Scrolling and mis-taps on a long list</td>
+</tr>
+<tr>
+<td>Submit</td>
+<td>Error after fixing flagged items: "Inspection already submitted"</td>
+<td>Inspection stuck; redone on paper</td>
+</tr>
+</tbody>
+</table></div>
+<p>The original screens:</p>
+<div class="gallery g4 wide"><figure><img src="/assets/media/174554d38518.webp" loading="lazy" alt="Legacy inspections list: unsorted history, orange (!) on every row"><figcaption>Inspections list</figcaption></figure><figure><img src="/assets/media/01c7ff10dfe8.webp" loading="lazy" alt="Legacy inspection details: unlabelled fields and a waste-vendor dropdown on a move-in"><figcaption>Inspection details</figcaption></figure><figure><img src="/assets/media/c84ba45d74d9.webp" loading="lazy" alt="Legacy All Rooms: three rating scales, N/A as thumbs-down"><figcaption>All Rooms</figcaption></figure><figure><img src="/assets/media/ec436546b554.webp" loading="lazy" alt="Legacy comment picker: mixed list, DONE covering the last row"><figcaption>Select Comments</figcaption></figure></div>
+</section>
+
+<section class="cs" id="approach" style="display: flex; flex-direction: column; gap: 14px">
+<h2>Approach</h2>
+<p>Five rules drove every screen decision:</p>
+<ol>
+<li><strong>Work comes to the inspector.</strong> The list opens on what is open, sorted by due date. History stays in History.</li>
+<li><strong>The device is the record until the server confirms.</strong> Every rating, comment, signature and photo saves locally on the tap.</li>
+<li><strong>Never block without a path.</strong> If something stops submit, the app names it, groups it by room and links to it.</li>
+<li><strong>Ask only what applies.</strong> Templates follow inspection type. Rating scales follow item type. N/A is on every mandatory item.</li>
+<li><strong>One status vocabulary.</strong> Six states, one pill, one header strip, used on the list, the inspection and Uploads.</li>
+</ol>
+<p><strong>How it was built.</strong> The team ran a solo, AI-assisted loop with no research team: screenshot audit and customer tickets, then a Jira epic with eight stories, then Claude Design prompts per surface. The output is a clickable prototype with a network switch (Offline, Weak, Online) that shows sync behaviour live. Field validation with Metcap and FSR is next.</p>
+</section>
+
+<section class="cs" id="current-state" style="display: flex; flex-direction: column; gap: 14px">
+<h2>Current state</h2>
+<p>Every legacy failure in the audit maps to a designed, clickable fix in the Inspector App prototype (<a href="https://claude.ai/artifact/XcBBsJSc4zbrqqDRtnC8eE">open it</a>).</p>
+<div class="tw wide"><table>
+<thead>
+<tr>
+<th>Area</th>
+<th>Before</th>
+<th>After</th>
+<th>Board</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Find work</td>
+<td>Full history, unsorted</td>
+<td>Chips: Open (default), Due Today, Overdue, All. Type filter. Due-date sort. "Overdue 15 days" / "Today" on every row</td>
+<td>3a List</td>
+</tr>
+<tr>
+<td>Pick a property</td>
+<td>Unlabelled badges</td>
+<td>Sorted by outstanding work; search by address or unit; offline availability per property</td>
+<td>3a List</td>
+</tr>
+<tr>
+<td>Status</td>
+<td>Orange (!) everywhere</td>
+<td>Six states: Draft, Queued to submit, Syncing, Submitted, Sync failed, plus an Overdue flag. Colour + icon + label, never colour alone</td>
+<td>Status system</td>
+</tr>
+<tr>
+<td>Progress and submit</td>
+<td>Error, then "already submitted"</td>
+<td>"38 of 41 items done" and per-room "N missing". Submit opens a review sheet grouped by room, with Go and Fix Next Item. Submitted opens read-only</td>
+<td>4a Submit</td>
+</tr>
+<tr>
+<td>Ratings</td>
+<td>Three mixed scales; N/A as thumbs-down</td>
+<td>Condition (Good/Fair/Poor), Handover (Received/Not Received), Presence (Present/Missing). Neutral N/A on every item; Mark Section N/A; Poor or Missing requires a photo</td>
+<td>5a Rating</td>
+</tr>
+<tr>
+<td>Comments</td>
+<td>Flat mixed list; DONE covers a row</td>
+<td>Grouped Condition / Policy / Resident, search, custom comment. Done sits in its own footer</td>
+<td>5a, 9a</td>
+</tr>
+<tr>
+<td>Move-out deposit</td>
+<td>Paper calculation</td>
+<td>Ledger: deposit from tenant record, interest by year with jurisdiction basis, deductions linked to the rated item, refund or balance owing. Override needs a reason and shows "Manually entered"</td>
+<td>6a Deposit</td>
+</tr>
+<tr>
+<td>Sync</td>
+<td>None visible</td>
+<td>Uploads becomes a sync centre: unsynced work worst first, Retry, Sync All, property downloads. Logout warning names each unsynced inspection</td>
+<td>7a Sync</td>
+</tr>
+<tr>
+<td>Photos</td>
+<td>Separate empty screen</td>
+<td>Burst capture; inline thumbnails marked Queued, Uploading %, Uploaded, Failed; one upload at a time</td>
+<td>8a Photos</td>
+</tr>
+<tr>
+<td>Tablet</td>
+<td>Phone layout stretched</td>
+<td>Two-pane: rooms left, items right in a two-up grid; comments as a third column. Submit pinned bottom-left</td>
+<td>9a iPad</td>
+</tr>
+</tbody>
+</table></div>
+</section>
+
+<section class="cs" id="redesigned-screens" style="display: flex; flex-direction: column; gap: 14px">
+<h2>Redesigned screens</h2>
+<p>Each redesigned screen answers one legacy failure. Renders come from the clickable prototype, set to Offline, which is the hardest case.</p>
+<h3>Finding work</h3>
+<p>The legacy list opened on the archive. The redesign opens on the worklist: Open by default, with a count on every scope chip so staff see the size of the day before they scroll. The offline banner names the last sync time, so a stale list never reads as a frozen app.</p>
+<div class="gallery g2"><figure><img src="/assets/media/174554d38518.webp" loading="lazy" alt="Legacy inspections list: unsorted history"><figcaption>Before</figcaption></figure><figure><img src="/assets/media/2261d624699b.webp" loading="lazy" alt="Redesigned inspections list: Open chip with counts, type filter, due-date sort, offline banner"><figcaption>After</figcaption></figure></div>
+<h3>Inspection progress</h3>
+<p>The legacy inspection opened on unlabelled fields and a waste-vendor dropdown. The redesign opens on rooms, each with a progress bar and an "N missing" flag. The strip under the header says what is saved and what is queued.</p>
+<div class="gallery g2"><figure><img src="/assets/media/01c7ff10dfe8.webp" loading="lazy" alt="Legacy inspection details: unlabelled fields"><figcaption>Before</figcaption></figure><figure><img src="/assets/media/b84c64a5415b.webp" loading="lazy" alt="Redesigned inspection: 36 of 41 items done, rooms with progress and missing flags"><figcaption>After</figcaption></figure></div>
+<h3>Rating an item</h3>
+<p>Three scales in a row made staff tap by position. Now one control has three variants by item type. N/A sits apart in a dashed, neutral box. Mark Section N/A clears an absent room in one tap, and Poor or Missing asks for a photo.</p>
+<div class="gallery g2"><figure><img src="/assets/media/c84ba45d74d9.webp" loading="lazy" alt="Legacy All Rooms: three mixed rating scales"><figcaption>Before</figcaption></figure><figure><img src="/assets/media/181318f7f28a.webp" loading="lazy" alt="Redesigned Kitchen: Good / Fair / Poor with neutral N/A and Mark Section N/A"><figcaption>After</figcaption></figure></div>
+<h3>Submit, deposit and sync</h3>
+<p>These surfaces had no legacy equivalent; the work happened on paper or not at all. Submit opens a review sheet listing what is left by room, with Go on each row. The deposit is a ledger read from the tenant record. Uploads lists unsynced work worst first, logout names what would be lost, and a submitted inspection opens read-only.</p>
+<div class="gallery g4 wide"><figure><img src="/assets/media/cd6fc7dce8b7.webp" loading="lazy" alt="Submit review sheet: 5 items need attention, grouped by room, Go on each"><figcaption>Submit review</figcaption></figure><figure><img src="/assets/media/5fd89450691c.webp" loading="lazy" alt="Move-out deposit ledger: deposit, accrued interest, deductions"><figcaption>Deposit ledger</figcaption></figure><figure><img src="/assets/media/f33aa21e45e7.webp" loading="lazy" alt="Uploads sync centre: 4 inspections not synced, Sync All, Retry"><figcaption>Sync centre</figcaption></figure><figure><img src="/assets/media/e7ed0a6760f5.webp" loading="lazy" alt="Logout warning naming four unsynced inspections"><figcaption>Logout warning</figcaption></figure></div>
+<h3>iPad</h3>
+<p>Rooms on the left, items on the right, comments as a third column. The comment sheet narrows the items pane instead of covering the item it annotates.</p>
+<figure class="wide"><img src="/assets/media/17210b152c19.webp" loading="lazy" alt="iPad landscape: rooms pane, Kitchen items in a two-up grid, comments as a third column"></figure>
+</section>
+
+<section class="cs" id="status-system" style="display: flex; flex-direction: column; gap: 14px">
+<h2>Status system</h2>
+<p>Six states replace one orange (!). The key move was separating lifecycle (where the record is) from urgency (whether the inspector is late).</p>
+<p><strong>Decisions</strong></p>
+<ul>
+<li><strong>One lifecycle:</strong> Draft → Queued to submit → Syncing → Submitted. Retry moves Sync failed back to Syncing.</li>
+<li><strong>Overdue is a flag, not a state.</strong> It rides only on Draft, as a compound pill: "Overdue 3 days | Draft".</li>
+<li><strong>The due clock stops on the device.</strong> Finished on time but synced late carries no flag. Weak signal never makes anyone late.</li>
+<li><strong>Red means act now.</strong> Solid red is reserved for Sync failed, the only state with an action. Overdue uses tinted red.</li>
+<li><strong>Never colour alone.</strong> Every pill carries colour, icon and label: 32pt regular, 26pt compact for list rows.</li>
+<li><strong>The header strip reports save and sync only.</strong> Overdue lives in the subtitle, so the two never fight for one line. The whole strip is a 56pt tap target.</li>
+<li><strong>Type colours are reserved.</strong> Unit orange, maintenance purple and building navy never mean status.</li>
+</ul>
+<div class="gallery g4 wide"><figure><img src="/assets/media/9ca1f98e13d3.webp" loading="lazy" alt="Status pill: six states with icon and label"><figcaption>Status pill</figcaption></figure><figure><img src="/assets/media/304a415aa340.webp" loading="lazy" alt="Compound pill rules and the seven status rules"><figcaption>When Overdue combines</figcaption></figure><figure><img src="/assets/media/9712375e4c09.webp" loading="lazy" alt="Header strip in six states: saved, offline, syncing, queued, submitted, failed"><figcaption>Header status strip</figcaption></figure><figure><img src="/assets/media/2ddca61f4cda.webp" loading="lazy" alt="Pills in inspection list rows"><figcaption>In a list row</figcaption></figure></div>
+<p><strong>What the review caught against the first pass (board 1a)</strong></p>
+<ul>
+<li>List pills had no icons.</li>
+<li>"Overdue" appeared twice in one row, as a pill and as "Overdue 12 days".</li>
+<li>Not Started and In Progress collapsed into Draft; progress moved to "4 of 11 rated".</li>
+<li>A green Submit button in the header read as Submitted. It became a navy button.</li>
+<li>Filter chips (34pt), type filter (32pt) and rating buttons (46pt) sat under 48pt. Flagged for the next pass.</li>
+</ul>
+</section>
+
+<section class="cs" id="design-system-and-foundational-blocks" style="display: flex; flex-direction: column; gap: 14px">
+<h2>Design system and foundational blocks</h2>
+<p>The Inspector App reuses Vida's foundational blocks instead of a mobile-only pattern set. Building it also exposed four gaps to fix in PV DS + Foundational blocks before handoff.</p>
+<p><strong>How the blocks map</strong></p>
+<div class="tw wide"><table>
+<thead>
+<tr>
+<th>Foundational block</th>
+<th>Inspector surface</th>
+<th>What carried over</th>
+<th>What changed for field use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>F0 Shell (nav registry, portfolio scope)</td>
+<td>Property switcher + bottom nav</td>
+<td>One scope drives every screen; badge counts follow scope (Uploads 4)</td>
+<td>Sidebar becomes a 4-tab bottom bar from the same registry</td>
+</tr>
+<tr>
+<td>F2 Worklist</td>
+<td>Inspections list</td>
+<td>Scopes with counts; the row never changes between scopes, only the population</td>
+<td>Header tabs become chips; rows stack for a 390pt screen</td>
+</tr>
+<tr>
+<td>F1 Party record</td>
+<td>Inspection record and deposit ledger</td>
+<td>Deposit, lease dates and resident read from the record, never re-keyed</td>
+<td>Move-out deposit is F1's "Notice given" reconciliation, built as a mobile ledger</td>
+</tr>
+<tr>
+<td>Exception queue (SLA and ownership)</td>
+<td>Uploads sync centre</td>
+<td>Worst first, one action per row, an SLA flag</td>
+<td>The SLA is the due date; the action is Retry</td>
+</tr>
+<tr>
+<td>State chip primitive</td>
+<td>Status pill</td>
+<td>PVBadge tint-plus-label pattern</td>
+<td>Icon becomes mandatory; adds the compound Overdue segment</td>
+</tr>
+<tr>
+<td>Side panel primitive</td>
+<td>iPad comments column, submit review sheet</td>
+<td>The panel narrows content instead of covering it</td>
+<td>Becomes a bottom sheet on phone</td>
+</tr>
+<tr>
+<td>F6 Configuration</td>
+<td>Templates by inspection type</td>
+<td>Templates are configuration, not code</td>
+<td>Open question: are templates client-configurable today?</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Design system pieces used</strong></p>
+<ul>
+<li><strong>Colour:</strong> teal #0e9090 for focus, active tabs and links. Navy #0d2b4e for primary buttons and the offline banner. Status green #1a7e3e, amber #e08c00 and red #c62828 on 10–14% tints, matching PVBadge.</li>
+<li><strong>Type:</strong> Inter only. 13/500 pill labels, 11/500 uppercase eyebrows ("SURFACES"), Title Case buttons ("Submit Inspection", "Stay and Sync").</li>
+<li><strong>Shape:</strong> 14px cards, 6px controls, hairline borders, shadow-xs on cards, the teal focus ring.</li>
+<li><strong>New field density tier:</strong> PV DS was sized for desktop admin. The app adds 48pt minimum targets and 52pt primary buttons.</li>
+<li><strong>Navy, not teal, for primary buttons:</strong> white on teal measures 3.88:1, under the WCAG AA 4.5:1 minimum.</li>
+</ul>
+<p><strong>Gaps to close before handoff (each is a likely QA bug)</strong></p>
+<ul>
+<li>☐ Token hex values are hardcoded, not referenced (#0e9090 appears 29 times in the prototype, 216 in the fixes board). Swap to var(--pv-*) or dark mode and theme changes break.</li>
+<li>☐ Maintenance purple has no DS token. Add one or reassign.</li>
+<li>☐ Amber text: DS specifies #b87200; the app uses #8a5600 on tint for contrast. Pick one.</li>
+<li>☐ Promote three components used on 3+ screens: status pill (PVBadge variant), header strip (PVAlert variant), rating control (new).</li>
+</ul>
+</section>
+
+<section class="cs" id="workflow-impact" style="display: flex; flex-direction: column; gap: 14px">
+<h2>Workflow impact</h2>
+<p>A full move-in takes an est. 29% fewer taps and scrolls on phone and 35% fewer on iPad. The bigger time win is what disappears: paper, re-keying and blocked submits.</p>
+<div class="tw wide"><table>
+<thead>
+<tr>
+<th>Task</th>
+<th>Before</th>
+<th>After</th>
+<th>Change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Find today's inspection (47 records)</td>
+<td>Scan 47 rows: est. 5 scrolls + 1 tap</td>
+<td>Scan 5 open rows: 1 tap</td>
+<td>−83% interactions</td>
+</tr>
+<tr>
+<td>Document one item with 3 photos</td>
+<td>est. 11 taps across two screens and the OS camera</td>
+<td>5 taps, camera stays open</td>
+<td>−55%</td>
+</tr>
+<tr>
+<td>Mark absent in-suite laundry N/A (3 items)</td>
+<td>Not possible; blocks submit</td>
+<td>1 tap, Mark Section N/A</td>
+<td>Unblocked</td>
+</tr>
+<tr>
+<td>Recover a blocked submit</td>
+<td>Dead end: "already submitted"</td>
+<td>Review sheet: Go, rate, back, 2 taps per item</td>
+<td>Path exists</td>
+</tr>
+<tr>
+<td>Move-out deposit refund</td>
+<td>Calculated off-app on paper</td>
+<td>In-app ledger, reviewed in 1 tap</td>
+<td>Paper step removed</td>
+</tr>
+</tbody>
+</table></div>
+<figure class="chart wide"><svg viewBox="0 0 760 350" role="img" aria-label="Photos drive most of the cut in move-in interactions">
+<text x="48" y="28" class="t">Photos drive most of the cut in move-in interactions</text>
+<text x="48" y="50" class="l">Taps and scrolls per full move-in on phone, est.: 132 before, 94 after (−29%)</text>
+<text x="48" y="70" class="l">Green = fewer interactions · red = more · grey = totals</text>
+<line x1="48" x2="728" y1="316" y2="316" stroke="var(--axis)"/>
+<rect x="65.0" y="96.0" width="51.0" height="220.0" fill="var(--muted-bar)" fill-opacity="1"><title>Before: 132</title></rect><line x1="116.0" x2="150.0" y1="96.0" y2="96.0" stroke="var(--ref)" stroke-dasharray="3 3"/><text x="90.5" y="90.0" text-anchor="middle" class="v">132</text><text x="90.5" y="334" text-anchor="middle" class="l">Before</text><rect x="150.0" y="96.0" width="51.0" height="40.0" fill="var(--good)" fill-opacity="0.75"><title>Photos: −24</title></rect><line x1="201.0" x2="235.0" y1="136.0" y2="136.0" stroke="var(--ref)" stroke-dasharray="3 3"/><text x="175.5" y="90.0" text-anchor="middle" class="v">−24</text><text x="175.5" y="334" text-anchor="middle" class="l">Photos</text><rect x="235.0" y="136.0" width="51.0" height="8.3" fill="var(--good)" fill-opacity="0.75"><title>Find work: −5</title></rect><line x1="286.0" x2="320.0" y1="144.3" y2="144.3" stroke="var(--ref)" stroke-dasharray="3 3"/><text x="260.5" y="130.0" text-anchor="middle" class="v">−5</text><text x="260.5" y="334" text-anchor="middle" class="l">Find work</text><rect x="320.0" y="144.3" width="51.0" height="6.7" fill="var(--good)" fill-opacity="0.75"><title>Fields: −4</title></rect><line x1="371.0" x2="405.0" y1="151.0" y2="151.0" stroke="var(--ref)" stroke-dasharray="3 3"/><text x="345.5" y="138.3" text-anchor="middle" class="v">−4</text><text x="345.5" y="334" text-anchor="middle" class="l">Fields</text><rect x="405.0" y="151.0" width="51.0" height="6.7" fill="var(--good)" fill-opacity="0.75"><title>Comments: −4</title></rect><line x1="456.0" x2="490.0" y1="157.7" y2="157.7" stroke="var(--ref)" stroke-dasharray="3 3"/><text x="430.5" y="145.0" text-anchor="middle" class="v">−4</text><text x="430.5" y="334" text-anchor="middle" class="l">Comments</text><rect x="490.0" y="157.7" width="51.0" height="3.3" fill="var(--good)" fill-opacity="0.75"><title>Ratings: −2</title></rect><line x1="541.0" x2="575.0" y1="161.0" y2="161.0" stroke="var(--ref)" stroke-dasharray="3 3"/><text x="515.5" y="151.7" text-anchor="middle" class="v">−2</text><text x="515.5" y="334" text-anchor="middle" class="l">Ratings</text><rect x="575.0" y="159.3" width="51.0" height="2.0" fill="var(--bad)" fill-opacity="0.75"><title>Submit: +1</title></rect><line x1="626.0" x2="660.0" y1="159.3" y2="159.3" stroke="var(--ref)" stroke-dasharray="3 3"/><text x="600.5" y="153.3" text-anchor="middle" class="v">+1</text><text x="600.5" y="334" text-anchor="middle" class="l">Submit</text><rect x="660.0" y="159.3" width="51.0" height="156.7" fill="var(--muted-bar)"><title>After: 94</title></rect><text x="685.5" y="153.3" text-anchor="middle" class="v">94</text><text x="685.5" y="334" text-anchor="middle" class="l">After</text></svg><figcaption>Design model, est. · full move-in, 41 items, phone · assumptions below</figcaption></figure>
+<p>Room navigation (16) does not change on phone. On iPad the two-pane layout halves it, taking the total to 86.</p>
+<p><strong>Model assumptions (est.)</strong></p>
+<ul>
+<li>Full move-in template from the prototype: 41 items across 8 rooms.</li>
+<li>6 items photographed at 2 photos each; 4 canned comments; one 3-item section marked N/A.</li>
+<li>Legacy photo flow per shot: Take Photo, shutter, OS confirm; plus one tap in and one back.</li>
+<li>Legacy find: target sits halfway down a 47-row list at about 5 rows per screen.</li>
+<li>Interaction = one tap or one scroll gesture. Room navigation = 2 per room on phone, 1 on iPad two-pane.</li>
+<li>Ratings barely move (41 to 39). Savings come from photos, irrelevant fields, finding work and submit.</li>
+</ul>
+</section>
+
+<section class="cs" id="offline-and-weak-signal" style="display: flex; flex-direction: column; gap: 14px">
+<h2>Offline and weak signal</h2>
+<p>Once a property is downloaded, a full inspection runs with no signal. That removes an est. 12–17 min of re-keying per inspection on weak-signal sites.</p>
+<div class="tw wide"><table>
+<thead>
+<tr>
+<th>Per inspection, weak-signal site</th>
+<th>Before: paper fallback</th>
+<th>After</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Walk the unit</td>
+<td>Paper checklist; photos in the phone camera</td>
+<td>In the app; every tap saved on the device</td>
+</tr>
+<tr>
+<td>Re-key 41 items</td>
+<td>est. 7–10 min (10–15 s per item)</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Match photos to items</td>
+<td>est. 5–7 min</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Submit</td>
+<td>Wait for "full bars"</td>
+<td>Queued to submit; sends on reconnect</td>
+</tr>
+<tr>
+<td>Progress lost on a dropped connection</td>
+<td>All of it</td>
+<td>None</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Rules the design holds to</strong></p>
+<ul>
+<li>Download a property from Uploads while connected; it then works with no signal.</li>
+<li>Submitting offline runs the completeness check on the device and marks the inspection Queued to submit.</li>
+<li>The due clock stops when the inspector finishes on the device. Weak signal never makes anyone late.</li>
+<li>Photos upload one at a time, oldest first. On weak signal a small preview goes first; full size follows on Wi-Fi.</li>
+<li>A failed photo stays on the device and on its row until it uploads or the inspector deletes it.</li>
+<li>Logout warns and names every unsynced inspection. Primary action: Stay and Sync.</li>
+<li>v1 assumes one editor per inspection; concurrent edits are not merged.</li>
+</ul>
+</section>
+
+<section class="cs" id="metrics-and-kpis" style="display: flex; flex-direction: column; gap: 14px">
+<h2>Metrics and KPIs</h2>
+<p>Success is a completed inspection with no paper step. The first four KPIs gate release; the rest prove the time and findability gains.</p>
+<div class="tw wide"><table>
+<thead>
+<tr>
+<th>KPI</th>
+<th>Before</th>
+<th>Target</th>
+<th>How measured</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Inspections started → submitted, per client</td>
+<td>Baseline to pull before release; Metcap cannot submit today</td>
+<td>≥95% (proposed)</td>
+<td>Created vs submitted events, per client</td>
+</tr>
+<tr>
+<td>"Already submitted" errors on valid resubmits</td>
+<td>Recurring (Metcap)</td>
+<td>0 for 30 days after release</td>
+<td>Error telemetry</td>
+</tr>
+<tr>
+<td>Inspections lost to a dropped connection</td>
+<td>All progress lost (FSR)</td>
+<td>0</td>
+<td>Field test: full inspection on iPad in airplane mode, reconnect, every entry arrives once</td>
+</tr>
+<tr>
+<td>Photos lost on low bandwidth</td>
+<td>Uploads fail; "full bars" workaround</td>
+<td>0</td>
+<td>Low-bandwidth field test at a customer site</td>
+</tr>
+<tr>
+<td>Accounts using paper for move-in / move-out</td>
+<td>FSR, Metcap</td>
+<td>0, confirmed 30 days after release</td>
+<td>Customer check-in</td>
+</tr>
+<tr>
+<td>Deposit summary accuracy</td>
+<td>Manual interest missing from totals</td>
+<td>Matches the customer's manual calculation</td>
+<td>Metcap sample set (size TBD)</td>
+</tr>
+<tr>
+<td>Median time to inspect, by type</td>
+<td>Not instrumented</td>
+<td>est. −12–17 min on weak-signal sites</td>
+<td>Device timestamps: opened → finished</td>
+</tr>
+<tr>
+<td>Taps and scrolls per full move-in</td>
+<td>est. 132</td>
+<td>est. 94 phone, 86 iPad</td>
+<td>Session analytics</td>
+</tr>
+<tr>
+<td>Time to open today's inspection</td>
+<td>Scroll full history</td>
+<td>Top of default view</td>
+<td>Overview load → inspection open</td>
+</tr>
+<tr>
+<td>"App frozen" support tickets</td>
+<td>Recurring (SKPM)</td>
+<td>Target set after baseline</td>
+<td>Support ticket tags</td>
+</tr>
+</tbody>
+</table></div>
+<p>Open question: the ≥95% submission target is a proposal. Set it after the per-client baseline is pulled.</p>
+</section>
+
+<section class="cs" id="assumptions-risks-and-next-steps" style="display: flex; flex-direction: column; gap: 14px">
+<h2>Assumptions, risks and next steps</h2>
+<p>Every number marked est. comes from the design model, not field data. Treat them as targets until the field test reports.</p>
+<p><strong>Risks</strong></p>
+<ul>
+<li>Offline needs the template, unit and tenant data on the device first. If staff skip the download, the app has nothing to work from.</li>
+<li>The "already submitted" defect may share a root cause with retried saves. Engineering needs one idempotent submit path.</li>
+<li>Auto-calculated interest depends on where deposit data lives (PV CRM or an external PMS).</li>
+<li>Prototype interest rates are samples; confirm against the RTB before any customer sees a figure.</li>
+<li>Rating buttons, filter chips and the type filter still sit under 48pt in early boards.</li>
+</ul>
+<p><strong>Next steps</strong></p>
+<ul>
+<li>☐ Pull the started → submitted baseline per client</li>
+<li>☐ Instrument opened → finished timestamps per inspection type</li>
+<li>☐ Run the airplane-mode iPad field test at an FSR site</li>
+<li>☐ Walk the prototype with Metcap staff; validate the template list for move-in</li>
+<li>☐ Confirm what the legacy Uploads tab stores locally today</li>
+</ul>
+</section>
+
+<section class="cs" style="display: flex; flex-direction: column; gap: 14px">
+<p class="note">Estimates marked est. come from a design model, not field data.</p>
+<nav aria-label="Next case study" style="display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; padding-top: 8px; font-family: var(--mono); font-size: 13px"><a href="/projects.html">← All projects</a><a href="/work/founding-design-property-vista.html">Next: Founding AI design at Property Vista →</a></nav>
+</section>
+
+<footer style="padding-top: 24px; border-top: 1px solid var(--line); display: flex; flex-direction: column; gap: 8px">
+<p style="margin: 0">Say hello at <a href="mailto:varunuxd@gmail.com">varunuxd@gmail.com</a> or on <a href="https://www.linkedin.com/in/varunvelhankar/">LinkedIn</a>, or read my <a href="/resume.html">résumé</a>.</p>
+<span style="font-family: var(--mono); font-size: 12px; color: var(--muted)">© 2026 Varun Velhankar</span>
+</footer>
+
+</div>
+</div>
+<script>
+(function(){var root=document.querySelector('.mm');if(!root)return;var k='vv-theme';
+try{var s=localStorage.getItem(k);if(s==='dark'||s==='light')root.setAttribute('data-theme',s);}catch(e){}
+var b=document.getElementById('theme-toggle');function lab(){if(b)b.setAttribute('aria-label',root.getAttribute('data-theme')==='dark'?'Switch to light theme':'Switch to dark theme');}
+lab();if(b)b.addEventListener('click',function(){var d=root.getAttribute('data-theme')==='dark'?'light':'dark';root.setAttribute('data-theme',d);try{localStorage.setItem(k,d);}catch(e){}lab();});})();
+</script>
+</body>
+</html>

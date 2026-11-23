@@ -1,19 +1,10 @@
 # Varun Velhankar — Portfolio
 
-Static site built from the "Portfolio V03" design canvas (Site — v1). No build step.
+Static site exported from the Portfolio V03 design canvas (Page 3). No build step; served by GitHub Pages at https://www.varunvelhankar.com.
 
-- `index.html`: landing page (hero with the animated lead-to-lease transcript, outcomes, work, principles, contact)
-- `about.html`, `writing.html`, `how-i-think.html`
-- `assets/css/tokens.css`: Warm Editorial tokens. Light by default; dark follows the OS, or set `<html data-theme="light|dark">`.
-- `assets/css/site.css`: layout and components
-- `assets/js/transcript.js`: hero chat demo (shows the whole thread at once under reduced motion)
+- `index.html` landing, `projects.html`, `writing.html`, `thinking.html`, `about.html`, `resume.html`, `work-with-me.html`, `agents.html` (profile for AI agents)
+- `work/` case studies
+- `assets/media/` images, videos and the résumé PDF
+- `llms.txt`, `llms-full.txt`, `sitemap.xml`, `robots.txt`
 
-Run locally:
-
-```bash
-python3 -m http.server 4321
-```
-
-Then open http://localhost:4321.
-
-Placeholders to fill: the case-study anchors (`#lead-to-lease`, `#oaken`, …), `#advisory`, `#adplist`, "[Launch outcome]" and "[Weekly critique, …]".
+Run locally: `python3 -m http.server 4321`, then open http://localhost:4321.
