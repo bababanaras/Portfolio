@@ -44,6 +44,8 @@ body{margin:0}
 .mm{--serif:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;--mono:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif}
 .mm .ascii{font-family:"JetBrains Mono",ui-monospace,monospace!important}
 </style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZJBB0S6Y8N"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-ZJBB0S6Y8N');</script>
 </head>
 <body>
 <div class="mm" data-theme="light" style="background: var(--bg); color: var(--text); font-family: var(--serif); font-size: 17px; line-height: 1.65; min-height: 100vh">
@@ -103,6 +105,7 @@ body{margin:0}
 <footer style="padding-top: 24px; border-top: 1px solid var(--line); display: flex; flex-direction: column; gap: 8px">
 <p style="margin: 0">Say hello at <a href="mailto:varunuxd@gmail.com">varunuxd@gmail.com</a> or on <a href="https://www.linkedin.com/in/varunvelhankar/">LinkedIn</a>, or read my <a href="/resume.html">résumé</a>.</p>
 <span style="font-family: var(--mono); font-size: 12px; color: var(--muted)">© 2026 Varun Velhankar</span>
+<span style="font-family: var(--mono); font-size: 12px; color: var(--muted)">This site uses Google Analytics to understand which pages are read. No ads, and nothing is sold.</span>
 </footer>
 
 </div>
@@ -112,6 +115,18 @@ body{margin:0}
 try{var s=localStorage.getItem(k);if(s==='dark'||s==='light')root.setAttribute('data-theme',s);}catch(e){}
 var b=document.getElementById('theme-toggle');function lab(){if(b)b.setAttribute('aria-label',root.getAttribute('data-theme')==='dark'?'Switch to light theme':'Switch to dark theme');}
 lab();if(b)b.addEventListener('click',function(){var d=root.getAttribute('data-theme')==='dark'?'light':'dark';root.setAttribute('data-theme',d);try{localStorage.setItem(k,d);}catch(e){}lab();});})();
+</script>
+<script>
+(function(){if(typeof gtag!=='function')return;
+document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href]');if(!a)return;var h=a.getAttribute('href')||'';
+if(/\.pdf($|\?)/i.test(h)||a.hasAttribute('download')){gtag('event','resume_download',{file_name:h.split('/').pop(),page_path:location.pathname});}
+else if(h.indexOf('mailto:')===0){gtag('event','contact_click',{method:'email',page_path:location.pathname});}
+else if(/linkedin\.com/i.test(h)){gtag('event','contact_click',{method:'linkedin',page_path:location.pathname});}
+else if(/substack\.com/i.test(h)){gtag('event','writing_click',{link_url:h,page_path:location.pathname});}
+},true);
+document.querySelectorAll('video').forEach(function(v){var sent=false;v.addEventListener('play',function(){if(sent)return;sent=true;
+gtag('event','video_play',{video_title:(v.getAttribute('aria-label')||v.currentSrc||'').slice(0,90),page_path:location.pathname});});});
+})();
 </script>
 </body>
 </html>

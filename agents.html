@@ -36,6 +36,8 @@ body{margin:0}
 .ag{--serif:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;--mono:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif}
 .ag .ascii{font-family:"JetBrains Mono",ui-monospace,monospace!important}
 </style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZJBB0S6Y8N"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-ZJBB0S6Y8N');</script>
 </head>
 <body>
 <div class="ag" style="background: var(--bg); color: var(--ink); font-family: var(--mono); font-size: 15px; line-height: 1.6; min-height: 100vh">
@@ -192,6 +194,7 @@ design.system.add(ai_states); design.system.ship();
 
 <footer style="padding-top: 24px; border-top: 1.5px solid var(--line); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-size: 12px; color: var(--soft)">
 <span>© 2026 Varun Velhankar</span>
+<span style="font-family: var(--mono); font-size: 12px; color: var(--muted)">This site uses Google Analytics to understand which pages are read. No ads, and nothing is sold.</span>
 <span>human? <a href="/" style="color: #ffffff; text-decoration: underline; text-decoration-color: rgba(255,255,255,.5); text-underline-offset: 3px">switch back →</a></span>
 </footer>
 
@@ -201,6 +204,18 @@ design.system.add(ai_states); design.system.ship();
 (function(){var b=document.getElementById('copy-instruction'),t=document.getElementById('instruction-text');if(!b||!t)return;
 b.addEventListener('click',function(){try{navigator.clipboard.writeText(t.textContent);}catch(e){}b.textContent='copied';b.setAttribute('aria-label','Instruction copied');
 clearTimeout(b._t);b._t=setTimeout(function(){b.textContent='copy';b.setAttribute('aria-label','Copy the instruction');},1800);});})();
+</script>
+<script>
+(function(){if(typeof gtag!=='function')return;
+document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href]');if(!a)return;var h=a.getAttribute('href')||'';
+if(/\.pdf($|\?)/i.test(h)||a.hasAttribute('download')){gtag('event','resume_download',{file_name:h.split('/').pop(),page_path:location.pathname});}
+else if(h.indexOf('mailto:')===0){gtag('event','contact_click',{method:'email',page_path:location.pathname});}
+else if(/linkedin\.com/i.test(h)){gtag('event','contact_click',{method:'linkedin',page_path:location.pathname});}
+else if(/substack\.com/i.test(h)){gtag('event','writing_click',{link_url:h,page_path:location.pathname});}
+},true);
+document.querySelectorAll('video').forEach(function(v){var sent=false;v.addEventListener('play',function(){if(sent)return;sent=true;
+gtag('event','video_play',{video_title:(v.getAttribute('aria-label')||v.currentSrc||'').slice(0,90),page_path:location.pathname});});});
+})();
 </script>
 </body>
 </html>
